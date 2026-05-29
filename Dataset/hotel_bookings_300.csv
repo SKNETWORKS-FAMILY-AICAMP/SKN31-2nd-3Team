@@ -1,301 +1,301 @@
 customer_name,status,hotel,lead_time,arrival_date_month,arrival_date_day_of_month,stays_in_weekend_nights,stays_in_week_nights,adults,children,babies,meal,market_segment,distribution_channel,is_repeated_guest,previous_cancellations,previous_bookings_not_canceled,reserved_room_type,assigned_room_type,booking_changes,deposit_type,days_in_waiting_list,customer_type,adr,required_car_parking_spaces,total_of_special_requests,arrival_date,room_assignment_changed,total_stay_nights,total_people,is_adr_0,Agent_check,foreigner,is_canceled
-Guest_001,Expected,City Hotel,125,7,10,1,1,2,0,0,BB,Groups,TA/TO,0,0,0,D,B,0,No Deposit,0,Transient-Party,77.78,0,1,2026-07-10,1,2,2,0,1,1,1
+Guest_001,Expected,Resort Hotel,125,7,10,1,1,2,0,0,BB,Groups,TA/TO,0,0,0,D,B,0,No Deposit,0,Transient-Party,77.78,0,1,2026-07-10,1,2,2,0,1,1,1
 Guest_002,Expected,Resort Hotel,304,6,7,3,2,2,0,0,BB,Groups,TA/TO,0,0,4,A,A,0,No Deposit,0,Transient,47.95,1,0,2026-06-07,0,5,2,0,1,1,0
 Guest_003,Expected,Resort Hotel,293,7,20,0,5,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,1,Transient,119.38,0,4,2026-07-20,0,5,2,0,0,0,0
-Guest_004,Expected,City Hotel,63,7,19,1,4,1,0,0,BB,Direct,Direct,0,0,0,A,A,0,No Deposit,5,Transient,118.47,1,1,2026-07-19,0,5,1,0,1,0,0
-Guest_005,Expected,City Hotel,324,6,16,0,4,2,0,0,BB,Direct,Direct,0,0,8,A,A,0,No Deposit,0,Transient,68.31,0,0,2026-06-16,0,4,2,0,1,1,0
-Guest_006,Expected,City Hotel,175,7,13,3,1,2,0,0,SC,Offline TA/TO,TA/TO,0,0,0,D,D,1,No Deposit,0,Transient,10.55,0,1,2026-07-13,0,4,2,0,1,1,0
-Guest_007,Checked-Out,City Hotel,115,5,25,0,3,1,0,0,BB,Groups,TA/TO,0,1,5,A,B,2,No Deposit,0,Transient,116.43,1,0,2026-05-25,1,3,1,0,1,1,1
+Guest_004,Expected,Resort Hotel,63,7,19,1,4,1,0,0,BB,Direct,Direct,0,0,0,A,A,0,No Deposit,5,Transient,118.47,1,1,2026-07-19,0,5,1,0,1,0,0
+Guest_005,Expected,Resort Hotel,324,6,16,0,4,2,0,0,BB,Direct,Direct,0,0,8,A,A,0,No Deposit,0,Transient,68.31,0,0,2026-06-16,0,4,2,0,1,1,0
+Guest_006,Expected,Resort Hotel,175,7,13,3,1,2,0,0,SC,Offline TA/TO,TA/TO,0,0,0,D,D,1,No Deposit,0,Transient,10.55,0,1,2026-07-13,0,4,2,0,1,1,0
+Guest_007,Checked-Out,Resort Hotel,115,5,25,0,3,1,0,0,BB,Groups,TA/TO,0,1,5,A,B,2,No Deposit,0,Transient,116.43,1,0,2026-05-25,1,3,1,0,1,1,1
 Guest_008,Expected,Resort Hotel,203,7,30,3,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,F,3,No Deposit,0,Transient,92.53,0,2,2026-07-30,1,9,2,0,1,1,0
 Guest_009,Checked-Out,Resort Hotel,320,5,9,0,1,2,2,0,HB,Offline TA/TO,TA/TO,0,0,5,A,A,1,No Deposit,0,Transient,113.44,1,2,2026-05-09,0,1,4,0,1,1,0
 Guest_010,Checked-Out,Resort Hotel,30,5,6,3,2,4,0,0,BB,Online TA,TA/TO,0,0,0,H,D,0,No Deposit,0,Transient,178.29,0,4,2026-05-06,1,5,4,0,1,0,1
-Guest_011,Expected,City Hotel,112,7,24,2,6,1,0,0,BB,Corporate,Corporate,0,0,0,A,A,1,No Deposit,0,Transient,98.93,1,1,2026-07-24,0,8,1,0,1,0,0
+Guest_011,Expected,Resort Hotel,112,7,24,2,6,1,0,0,BB,Corporate,Corporate,0,0,0,A,A,1,No Deposit,0,Transient,98.93,1,1,2026-07-24,0,8,1,0,1,0,0
 Guest_012,Expected,Resort Hotel,364,5,30,0,3,2,0,0,BB,Online TA,TA/TO,0,0,3,A,A,0,No Deposit,0,Transient,79.45,0,1,2026-05-30,0,3,2,0,1,0,0
 Guest_013,Expected,Resort Hotel,324,6,7,0,2,2,0,0,BB,Online TA,TA/TO,0,0,8,A,A,0,Non Refund,0,Transient,54.11,0,2,2026-06-07,0,2,2,0,1,1,1
-Guest_014,Checked-Out,City Hotel,343,5,11,2,7,2,0,0,SC,Direct,Direct,0,0,7,D,E,0,No Deposit,0,Contract,87.5,0,0,2026-05-11,1,9,2,0,1,0,1
-Guest_015,Expected,City Hotel,66,5,30,2,5,2,0,0,HB,Online TA,TA/TO,0,0,4,A,A,0,No Deposit,0,Transient,106.42,0,1,2026-05-30,0,7,2,0,1,1,0
-Guest_016,Checked-Out,City Hotel,74,5,13,0,2,2,0,0,BB,Online TA,TA/TO,0,0,6,A,A,1,No Deposit,0,Transient-Party,102.13,0,1,2026-05-13,0,2,2,0,1,1,1
-Guest_017,Expected,City Hotel,44,6,18,2,5,1,0,0,BB,Direct,Direct,0,0,0,A,A,0,No Deposit,0,Transient,168.94,0,0,2026-06-18,0,7,1,0,1,1,0
-Guest_018,Expected,City Hotel,259,6,5,1,6,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient,119.96,0,1,2026-06-05,0,7,2,0,1,0,0
-Guest_019,Expected,City Hotel,153,6,28,3,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,2,No Deposit,0,Transient,94.61,0,3,2026-06-28,0,8,2,0,0,1,0
-Guest_020,Expected,City Hotel,154,7,21,3,6,2,1,0,BB,Online TA,TA/TO,0,0,0,A,D,0,Non Refund,10,Transient,71.74,0,3,2026-07-21,1,9,3,0,1,1,0
+Guest_014,Checked-Out,Resort Hotel,343,5,11,2,7,2,0,0,SC,Direct,Direct,0,0,7,D,E,0,No Deposit,0,Contract,87.5,0,0,2026-05-11,1,9,2,0,1,0,1
+Guest_015,Expected,Resort Hotel,66,5,30,2,5,2,0,0,HB,Online TA,TA/TO,0,0,4,A,A,0,No Deposit,0,Transient,106.42,0,1,2026-05-30,0,7,2,0,1,1,0
+Guest_016,Checked-Out,Resort Hotel,74,5,13,0,2,2,0,0,BB,Online TA,TA/TO,0,0,6,A,A,1,No Deposit,0,Transient-Party,102.13,0,1,2026-05-13,0,2,2,0,1,1,1
+Guest_017,Expected,Resort Hotel,44,6,18,2,5,1,0,0,BB,Direct,Direct,0,0,0,A,A,0,No Deposit,0,Transient,168.94,0,0,2026-06-18,0,7,1,0,1,1,0
+Guest_018,Expected,Resort Hotel,259,6,5,1,6,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient,119.96,0,1,2026-06-05,0,7,2,0,1,0,0
+Guest_019,Expected,Resort Hotel,153,6,28,3,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,2,No Deposit,0,Transient,94.61,0,3,2026-06-28,0,8,2,0,0,1,0
+Guest_020,Expected,Resort Hotel,154,7,21,3,6,2,1,0,BB,Online TA,TA/TO,0,0,0,A,D,0,Non Refund,10,Transient,71.74,0,3,2026-07-21,1,9,3,0,1,1,0
 Guest_021,Expected,Resort Hotel,362,6,16,3,6,3,0,0,BB,Groups,TA/TO,0,0,0,E,E,0,No Deposit,0,Transient,110.67,0,0,2026-06-16,0,9,3,0,1,1,0
-Guest_022,Checked-Out,City Hotel,233,5,21,1,6,3,0,0,BB,Groups,TA/TO,0,0,0,A,A,2,Non Refund,0,Transient,63.72,0,0,2026-05-21,0,7,3,0,1,1,0
-Guest_023,Expected,City Hotel,50,6,17,2,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,C,0,No Deposit,0,Transient,107.19,0,0,2026-06-17,1,8,2,0,0,0,0
-Guest_024,Expected,City Hotel,305,6,15,2,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,E,E,0,No Deposit,10,Transient,119.5,0,3,2026-06-15,0,8,2,0,1,1,1
-Guest_025,Checked-Out,City Hotel,261,5,27,0,2,2,0,0,SC,Online TA,TA/TO,0,1,0,A,P,0,No Deposit,0,Transient,91.34,0,0,2026-05-27,1,2,2,0,1,1,0
+Guest_022,Checked-Out,Resort Hotel,233,5,21,1,6,3,0,0,BB,Groups,TA/TO,0,0,0,A,A,2,Non Refund,0,Transient,63.72,0,0,2026-05-21,0,7,3,0,1,1,0
+Guest_023,Expected,Resort Hotel,50,6,17,2,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,C,0,No Deposit,0,Transient,107.19,0,0,2026-06-17,1,8,2,0,0,0,0
+Guest_024,Expected,Resort Hotel,305,6,15,2,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,E,E,0,No Deposit,10,Transient,119.5,0,3,2026-06-15,0,8,2,0,1,1,1
+Guest_025,Checked-Out,Resort Hotel,261,5,27,0,2,2,0,0,SC,Online TA,TA/TO,0,1,0,A,P,0,No Deposit,0,Transient,91.34,0,0,2026-05-27,1,2,2,0,1,1,0
 Guest_026,Expected,Resort Hotel,314,7,25,2,6,3,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,74.79,0,2,2026-07-25,0,8,3,0,1,1,0
-Guest_027,Expected,City Hotel,124,6,4,0,2,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,12.59,1,0,2026-06-04,0,2,2,0,1,1,0
-Guest_028,Expected,City Hotel,244,7,29,1,6,2,0,0,BB,Online TA,TA/TO,0,0,3,A,A,0,No Deposit,0,Transient-Party,145.75,0,1,2026-07-29,0,7,2,0,1,1,0
-Guest_029,Expected,City Hotel,29,7,27,3,5,3,0,0,BB,Corporate,Corporate,0,0,2,G,B,0,No Deposit,0,Transient-Party,116.13,0,1,2026-07-27,1,8,3,0,0,0,1
-Guest_030,Expected,City Hotel,121,7,22,3,7,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,117.1,0,2,2026-07-22,0,10,2,0,1,1,0
+Guest_027,Expected,Resort Hotel,124,6,4,0,2,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,12.59,1,0,2026-06-04,0,2,2,0,1,1,0
+Guest_028,Expected,Resort Hotel,244,7,29,1,6,2,0,0,BB,Online TA,TA/TO,0,0,3,A,A,0,No Deposit,0,Transient-Party,145.75,0,1,2026-07-29,0,7,2,0,1,1,0
+Guest_029,Expected,Resort Hotel,29,7,27,3,5,3,0,0,BB,Corporate,Corporate,0,0,2,G,B,0,No Deposit,0,Transient-Party,116.13,0,1,2026-07-27,1,8,3,0,0,0,1
+Guest_030,Expected,Resort Hotel,121,7,22,3,7,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,117.1,0,2,2026-07-22,0,10,2,0,1,1,0
 Guest_031,Checked-Out,Resort Hotel,124,5,10,3,6,3,1,0,BB,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient-Party,37.55,0,0,2026-05-10,0,9,4,0,0,1,0
-Guest_032,Expected,City Hotel,36,7,17,2,3,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,2,No Deposit,0,Transient,155.19,0,1,2026-07-17,0,5,1,0,1,1,0
-Guest_033,Expected,City Hotel,169,7,21,0,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,81.39,0,0,2026-07-21,0,6,2,0,1,1,1
+Guest_032,Expected,Resort Hotel,36,7,17,2,3,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,2,No Deposit,0,Transient,155.19,0,1,2026-07-17,0,5,1,0,1,1,0
+Guest_033,Expected,Resort Hotel,169,7,21,0,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,81.39,0,0,2026-07-21,0,6,2,0,1,1,1
 Guest_034,Checked-Out,Resort Hotel,123,5,22,0,6,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,88.45,0,2,2026-05-22,0,6,2,0,1,1,0
 Guest_035,Expected,Resort Hotel,356,7,8,1,5,4,0,0,BB,Direct,Direct,0,0,0,A,A,0,No Deposit,0,Transient-Party,57.23,0,3,2026-07-08,0,6,4,0,1,1,0
 Guest_036,Expected,Resort Hotel,34,6,1,2,4,3,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,H,0,No Deposit,0,Transient,28.52,0,0,2026-06-01,1,6,3,0,1,0,0
-Guest_037,Checked-Out,City Hotel,86,5,21,1,5,2,0,0,HB,Online TA,TA/TO,0,0,0,D,D,2,No Deposit,0,Transient,146.29,0,3,2026-05-21,0,6,2,0,1,1,0
-Guest_038,Expected,City Hotel,133,6,29,0,3,2,0,0,BB,Groups,TA/TO,0,0,8,A,A,0,No Deposit,0,Transient,151.46,1,1,2026-06-29,0,3,2,0,1,1,0
+Guest_037,Checked-Out,Resort Hotel,86,5,21,1,5,2,0,0,HB,Online TA,TA/TO,0,0,0,D,D,2,No Deposit,0,Transient,146.29,0,3,2026-05-21,0,6,2,0,1,1,0
+Guest_038,Expected,Resort Hotel,133,6,29,0,3,2,0,0,BB,Groups,TA/TO,0,0,8,A,A,0,No Deposit,0,Transient,151.46,1,1,2026-06-29,0,3,2,0,1,1,0
 Guest_039,Expected,Resort Hotel,195,6,18,0,4,2,0,0,BB,Groups,TA/TO,0,0,8,F,F,0,No Deposit,0,Transient-Party,93.38,0,0,2026-06-18,0,4,2,0,1,1,1
-Guest_040,Expected,City Hotel,273,6,4,3,1,3,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,B,0,No Deposit,0,Transient,72.82,0,1,2026-06-04,1,4,3,0,1,1,1
-Guest_041,Expected,City Hotel,200,7,21,2,1,2,0,0,BB,Corporate,Corporate,0,0,0,D,D,1,No Deposit,5,Transient,84.92,2,0,2026-07-21,0,3,2,0,0,1,1
-Guest_042,Expected,City Hotel,284,7,28,0,3,2,0,0,BB,Groups,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient,86.02,0,2,2026-07-28,0,3,2,0,1,0,0
-Guest_043,Expected,City Hotel,76,7,11,3,5,1,0,0,BB,Groups,TA/TO,0,0,0,D,D,1,No Deposit,0,Transient,52.01,0,2,2026-07-11,0,8,1,0,1,1,0
+Guest_040,Expected,Resort Hotel,273,6,4,3,1,3,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,B,0,No Deposit,0,Transient,72.82,0,1,2026-06-04,1,4,3,0,1,1,1
+Guest_041,Expected,Resort Hotel,200,7,21,2,1,2,0,0,BB,Corporate,Corporate,0,0,0,D,D,1,No Deposit,5,Transient,84.92,2,0,2026-07-21,0,3,2,0,0,1,1
+Guest_042,Expected,Resort Hotel,284,7,28,0,3,2,0,0,BB,Groups,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient,86.02,0,2,2026-07-28,0,3,2,0,1,0,0
+Guest_043,Expected,Resort Hotel,76,7,11,3,5,1,0,0,BB,Groups,TA/TO,0,0,0,D,D,1,No Deposit,0,Transient,52.01,0,2,2026-07-11,0,8,1,0,1,1,0
 Guest_044,Expected,Resort Hotel,58,5,29,2,2,2,0,0,BB,Offline TA/TO,TA/TO,0,0,8,D,D,0,No Deposit,0,Transient,88.31,0,0,2026-05-29,0,4,2,0,0,1,0
-Guest_045,Expected,City Hotel,125,7,27,1,3,2,0,1,BB,Direct,Direct,0,0,0,D,D,1,Non Refund,0,Transient-Party,106.12,1,1,2026-07-27,0,4,3,0,1,1,1
+Guest_045,Expected,Resort Hotel,125,7,27,1,3,2,0,1,BB,Direct,Direct,0,0,0,D,D,1,Non Refund,0,Transient-Party,106.12,1,1,2026-07-27,0,4,3,0,1,1,1
 Guest_046,Expected,Resort Hotel,108,6,11,2,7,2,0,0,BB,Online TA,TA/TO,0,0,2,A,A,0,No Deposit,0,Transient,140.73,2,2,2026-06-11,0,9,2,0,1,1,0
-Guest_047,Checked-Out,City Hotel,223,5,8,2,4,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,100.57,0,3,2026-05-08,0,6,1,0,0,1,1
-Guest_048,Expected,City Hotel,277,5,30,0,4,3,0,0,BB,Online TA,TA/TO,0,1,9,A,A,0,No Deposit,0,Transient,36.95,0,1,2026-05-30,0,4,3,0,1,0,0
-Guest_049,Checked-Out,City Hotel,67,5,5,0,6,1,0,0,BB,Online TA,TA/TO,0,0,0,E,E,0,No Deposit,0,Transient-Party,114.14,0,4,2026-05-05,0,6,1,0,1,1,0
-Guest_050,Expected,City Hotel,68,6,10,2,1,2,0,0,BB,Offline TA/TO,TA/TO,0,0,3,A,A,2,No Deposit,0,Transient,89.76,0,1,2026-06-10,0,3,2,0,1,1,0
+Guest_047,Checked-Out,Resort Hotel,223,5,8,2,4,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,100.57,0,3,2026-05-08,0,6,1,0,0,1,1
+Guest_048,Expected,Resort Hotel,277,5,30,0,4,3,0,0,BB,Online TA,TA/TO,0,1,9,A,A,0,No Deposit,0,Transient,36.95,0,1,2026-05-30,0,4,3,0,1,0,0
+Guest_049,Checked-Out,Resort Hotel,67,5,5,0,6,1,0,0,BB,Online TA,TA/TO,0,0,0,E,E,0,No Deposit,0,Transient-Party,114.14,0,4,2026-05-05,0,6,1,0,1,1,0
+Guest_050,Expected,Resort Hotel,68,6,10,2,1,2,0,0,BB,Offline TA/TO,TA/TO,0,0,3,A,A,2,No Deposit,0,Transient,89.76,0,1,2026-06-10,0,3,2,0,1,1,0
 Guest_051,Expected,Resort Hotel,164,6,21,0,4,4,0,0,BB,Direct,Direct,0,0,0,D,D,1,Non Refund,0,Transient,154.82,0,1,2026-06-21,0,4,4,0,0,0,0
 Guest_052,Expected,Resort Hotel,304,6,4,0,3,2,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient-Party,157.18,1,2,2026-06-04,0,3,2,0,1,0,1
 Guest_053,Checked-Out,Resort Hotel,161,5,9,0,4,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient-Party,158.58,0,1,2026-05-09,0,4,1,0,1,1,1
 Guest_054,Expected,Resort Hotel,364,5,28,3,3,2,1,0,BB,Online TA,TA/TO,1,0,0,A,A,0,Non Refund,0,Transient-Party,77.54,0,1,2026-05-28,0,6,3,0,1,0,0
-Guest_055,Expected,City Hotel,341,7,12,3,2,3,1,0,BB,Offline TA/TO,TA/TO,0,0,8,A,A,1,No Deposit,0,Transient-Party,179.59,0,1,2026-07-12,0,5,4,0,1,1,0
+Guest_055,Expected,Resort Hotel,341,7,12,3,2,3,1,0,BB,Offline TA/TO,TA/TO,0,0,8,A,A,1,No Deposit,0,Transient-Party,179.59,0,1,2026-07-12,0,5,4,0,1,1,0
 Guest_056,Expected,Resort Hotel,308,6,10,2,6,2,0,0,BB,Direct,Direct,0,1,7,A,A,0,No Deposit,10,Transient,114.04,0,2,2026-06-10,0,8,2,0,1,0,1
-Guest_057,In-House,City Hotel,342,5,28,0,1,4,0,0,BB,Groups,TA/TO,0,3,6,A,A,0,No Deposit,5,Transient,165.06,0,2,2026-05-28,0,1,4,0,1,0,1
-Guest_058,Expected,City Hotel,41,7,23,3,4,1,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,79.9,0,1,2026-07-23,0,7,1,0,1,1,0
-Guest_059,Expected,City Hotel,353,7,3,2,3,2,0,0,SC,Online TA,TA/TO,0,0,4,A,A,0,No Deposit,0,Transient-Party,88.06,1,0,2026-07-03,0,5,2,0,1,1,0
-Guest_060,Expected,City Hotel,108,6,20,0,5,2,1,0,BB,Online TA,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient,110.96,1,1,2026-06-20,0,5,3,0,1,1,0
-Guest_061,Expected,City Hotel,50,7,22,1,1,3,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,106.08,0,1,2026-07-22,0,2,3,0,1,1,0
-Guest_062,Expected,City Hotel,249,6,28,0,2,1,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient,150.19,1,0,2026-06-28,0,2,1,0,1,1,0
+Guest_057,In-House,Resort Hotel,342,5,28,0,1,4,0,0,BB,Groups,TA/TO,0,3,6,A,A,0,No Deposit,5,Transient,165.06,0,2,2026-05-28,0,1,4,0,1,0,1
+Guest_058,Expected,Resort Hotel,41,7,23,3,4,1,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,79.9,0,1,2026-07-23,0,7,1,0,1,1,0
+Guest_059,Expected,Resort Hotel,353,7,3,2,3,2,0,0,SC,Online TA,TA/TO,0,0,4,A,A,0,No Deposit,0,Transient-Party,88.06,1,0,2026-07-03,0,5,2,0,1,1,0
+Guest_060,Expected,Resort Hotel,108,6,20,0,5,2,1,0,BB,Online TA,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient,110.96,1,1,2026-06-20,0,5,3,0,1,1,0
+Guest_061,Expected,Resort Hotel,50,7,22,1,1,3,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,106.08,0,1,2026-07-22,0,2,3,0,1,1,0
+Guest_062,Expected,Resort Hotel,249,6,28,0,2,1,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient,150.19,1,0,2026-06-28,0,2,1,0,1,1,0
 Guest_063,Checked-Out,Resort Hotel,340,5,19,0,3,3,1,0,BB,Online TA,TA/TO,0,0,0,A,A,3,No Deposit,0,Transient,90.71,0,2,2026-05-19,0,3,4,0,0,1,0
-Guest_064,Expected,City Hotel,20,6,3,3,7,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,146.58,0,1,2026-06-03,0,10,2,0,1,1,0
-Guest_065,Checked-Out,City Hotel,299,5,18,2,7,2,0,0,SC,Direct,Direct,0,0,0,A,A,0,No Deposit,1,Transient-Party,129.29,0,0,2026-05-18,0,9,2,0,1,1,0
-Guest_066,Expected,City Hotel,138,6,1,2,6,1,2,0,BB,Direct,Direct,0,0,0,A,B,0,No Deposit,0,Transient-Party,91.46,0,0,2026-06-01,1,8,3,0,1,0,0
-Guest_067,Expected,City Hotel,358,7,11,3,6,3,0,0,SC,Groups,TA/TO,0,0,4,A,A,1,No Deposit,0,Transient,126.19,1,0,2026-07-11,0,9,3,0,1,0,1
+Guest_064,Expected,Resort Hotel,20,6,3,3,7,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,146.58,0,1,2026-06-03,0,10,2,0,1,1,0
+Guest_065,Checked-Out,Resort Hotel,299,5,18,2,7,2,0,0,SC,Direct,Direct,0,0,0,A,A,0,No Deposit,1,Transient-Party,129.29,0,0,2026-05-18,0,9,2,0,1,1,0
+Guest_066,Expected,Resort Hotel,138,6,1,2,6,1,2,0,BB,Direct,Direct,0,0,0,A,B,0,No Deposit,0,Transient-Party,91.46,0,0,2026-06-01,1,8,3,0,1,0,0
+Guest_067,Expected,Resort Hotel,358,7,11,3,6,3,0,0,SC,Groups,TA/TO,0,0,4,A,A,1,No Deposit,0,Transient,126.19,1,0,2026-07-11,0,9,3,0,1,0,1
 Guest_068,Expected,Resort Hotel,323,7,8,0,2,1,0,0,SC,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,81.07,0,3,2026-07-08,0,2,1,0,1,1,1
-Guest_069,Expected,City Hotel,91,6,3,1,2,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,194.01,0,0,2026-06-03,0,3,2,0,1,1,0
+Guest_069,Expected,Resort Hotel,91,6,3,1,2,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,194.01,0,0,2026-06-03,0,3,2,0,1,1,0
 Guest_070,Expected,Resort Hotel,279,7,14,0,6,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,0.0,0,0,2026-07-14,0,6,2,1,0,0,1
 Guest_071,Expected,Resort Hotel,124,6,24,0,4,3,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient-Party,126.92,0,1,2026-06-24,0,4,3,0,1,0,1
-Guest_072,Expected,City Hotel,110,7,14,1,4,2,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient,29.42,0,0,2026-07-14,0,5,2,0,1,0,0
-Guest_073,Expected,City Hotel,353,6,21,3,3,2,2,0,BB,Direct,Direct,0,0,0,D,D,1,No Deposit,0,Transient,90.97,0,0,2026-06-21,0,6,4,0,1,1,0
+Guest_072,Expected,Resort Hotel,110,7,14,1,4,2,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient,29.42,0,0,2026-07-14,0,5,2,0,1,0,0
+Guest_073,Expected,Resort Hotel,353,6,21,3,3,2,2,0,BB,Direct,Direct,0,0,0,D,D,1,No Deposit,0,Transient,90.97,0,0,2026-06-21,0,6,4,0,1,1,0
 Guest_074,Expected,Resort Hotel,138,6,16,2,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,C,1,No Deposit,0,Transient-Party,96.58,0,0,2026-06-16,1,7,2,0,1,1,1
 Guest_075,Expected,Resort Hotel,272,5,29,3,3,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,160.31,0,1,2026-05-29,0,6,2,0,1,0,1
 Guest_076,Checked-Out,Resort Hotel,98,5,18,3,5,2,0,0,BB,Online TA,TA/TO,0,2,0,A,A,0,No Deposit,0,Transient,72.31,0,1,2026-05-18,0,8,2,0,1,1,1
 Guest_077,Expected,Resort Hotel,251,7,5,0,2,3,0,0,HB,Direct,Direct,0,0,4,A,A,2,No Deposit,0,Transient,152.32,0,1,2026-07-05,0,2,3,0,0,1,1
-Guest_078,Expected,City Hotel,337,7,3,2,1,3,0,0,BB,Offline TA/TO,TA/TO,0,1,0,G,G,0,No Deposit,0,Transient,52.85,0,1,2026-07-03,0,3,3,0,1,1,0
-Guest_079,Checked-Out,City Hotel,103,5,12,2,3,1,0,0,HB,Online TA,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,153.87,0,4,2026-05-12,0,5,1,0,1,0,0
-Guest_080,Checked-Out,City Hotel,213,5,7,3,3,2,0,0,BB,Online TA,TA/TO,0,0,4,A,A,0,No Deposit,0,Transient,81.03,0,1,2026-05-07,0,6,2,0,1,1,0
+Guest_078,Expected,Resort Hotel,337,7,3,2,1,3,0,0,BB,Offline TA/TO,TA/TO,0,1,0,G,G,0,No Deposit,0,Transient,52.85,0,1,2026-07-03,0,3,3,0,1,1,0
+Guest_079,Checked-Out,Resort Hotel,103,5,12,2,3,1,0,0,HB,Online TA,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,153.87,0,4,2026-05-12,0,5,1,0,1,0,0
+Guest_080,Checked-Out,Resort Hotel,213,5,7,3,3,2,0,0,BB,Online TA,TA/TO,0,0,4,A,A,0,No Deposit,0,Transient,81.03,0,1,2026-05-07,0,6,2,0,1,1,0
 Guest_081,Checked-Out,Resort Hotel,248,5,15,1,5,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,2,No Deposit,0,Transient,102.94,0,0,2026-05-15,0,6,1,0,1,1,0
 Guest_082,Checked-Out,Resort Hotel,151,5,20,3,2,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient-Party,86.54,0,0,2026-05-20,0,5,2,0,1,1,0
-Guest_083,Expected,City Hotel,249,7,20,1,2,2,0,0,BB,Groups,TA/TO,0,2,6,A,A,2,No Deposit,10,Transient,151.29,1,1,2026-07-20,0,3,2,0,1,0,0
-Guest_084,Checked-Out,City Hotel,274,5,21,2,7,2,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,143.51,0,2,2026-05-21,0,9,2,0,1,1,0
-Guest_085,Expected,City Hotel,164,7,27,3,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient,117.74,0,0,2026-07-27,0,8,2,0,1,1,1
-Guest_086,Expected,City Hotel,340,6,24,0,2,2,0,0,HB,Online TA,TA/TO,0,0,0,A,E,2,No Deposit,0,Transient,53.93,2,2,2026-06-24,1,2,2,0,1,1,0
+Guest_083,Expected,Resort Hotel,249,7,20,1,2,2,0,0,BB,Groups,TA/TO,0,2,6,A,A,2,No Deposit,10,Transient,151.29,1,1,2026-07-20,0,3,2,0,1,0,0
+Guest_084,Checked-Out,Resort Hotel,274,5,21,2,7,2,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,143.51,0,2,2026-05-21,0,9,2,0,1,1,0
+Guest_085,Expected,Resort Hotel,164,7,27,3,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient,117.74,0,0,2026-07-27,0,8,2,0,1,1,1
+Guest_086,Expected,Resort Hotel,340,6,24,0,2,2,0,0,HB,Online TA,TA/TO,0,0,0,A,E,2,No Deposit,0,Transient,53.93,2,2,2026-06-24,1,2,2,0,1,1,0
 Guest_087,Expected,Resort Hotel,7,7,16,3,6,2,0,0,BB,Online TA,TA/TO,0,0,0,A,E,0,No Deposit,2,Contract,71.4,0,0,2026-07-16,1,9,2,0,0,0,0
 Guest_088,Checked-Out,Resort Hotel,283,5,9,2,4,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,58.86,0,1,2026-05-09,0,6,2,0,1,1,0
 Guest_089,Expected,Resort Hotel,4,6,19,0,7,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,10.07,0,2,2026-06-19,0,7,2,0,1,0,0
-Guest_090,Expected,City Hotel,144,6,18,0,6,1,0,0,HB,Groups,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient-Party,150.45,1,0,2026-06-18,0,6,1,0,1,1,1
-Guest_091,Expected,City Hotel,100,7,16,1,1,2,0,0,Undefined,Offline TA/TO,TA/TO,0,0,0,A,A,2,No Deposit,0,Transient,86.89,1,1,2026-07-16,0,2,2,0,0,1,1
+Guest_090,Expected,Resort Hotel,144,6,18,0,6,1,0,0,HB,Groups,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient-Party,150.45,1,0,2026-06-18,0,6,1,0,1,1,1
+Guest_091,Expected,Resort Hotel,100,7,16,1,1,2,0,0,Undefined,Offline TA/TO,TA/TO,0,0,0,A,A,2,No Deposit,0,Transient,86.89,1,1,2026-07-16,0,2,2,0,0,1,1
 Guest_092,Expected,Resort Hotel,163,6,29,0,3,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,P,0,Non Refund,0,Transient,86.46,0,0,2026-06-29,1,3,2,0,1,1,1
 Guest_093,Expected,Resort Hotel,146,7,7,0,7,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient-Party,159.84,0,2,2026-07-07,0,7,2,0,1,1,0
-Guest_094,Expected,City Hotel,63,6,2,3,1,2,0,0,FB,Groups,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,80.96,0,0,2026-06-02,0,4,2,0,1,1,0
+Guest_094,Expected,Resort Hotel,63,6,2,3,1,2,0,0,FB,Groups,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,80.96,0,0,2026-06-02,0,4,2,0,1,1,0
 Guest_095,Expected,Resort Hotel,90,7,10,2,3,2,0,0,BB,Direct,Direct,0,0,0,D,D,0,No Deposit,1,Transient,66.38,1,3,2026-07-10,0,5,2,0,1,1,0
-Guest_096,Checked-Out,City Hotel,116,5,2,1,4,1,0,0,SC,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,91.01,1,0,2026-05-02,0,5,1,0,1,1,0
-Guest_097,Expected,City Hotel,353,7,27,3,2,2,0,0,HB,Groups,TA/TO,0,0,7,A,A,0,No Deposit,0,Transient,54.69,0,3,2026-07-27,0,5,2,0,1,0,1
-Guest_098,Checked-Out,City Hotel,266,5,15,0,6,3,0,0,BB,Online TA,TA/TO,0,0,0,A,B,0,No Deposit,0,Transient,113.77,0,1,2026-05-15,1,6,3,0,0,1,1
-Guest_099,Expected,City Hotel,309,7,27,0,5,2,0,0,BB,Direct,Direct,0,0,0,A,A,3,No Deposit,0,Transient,85.05,0,2,2026-07-27,0,5,2,0,1,1,1
-Guest_100,Expected,City Hotel,172,7,8,1,6,2,0,0,BB,Offline TA/TO,TA/TO,0,1,0,A,A,0,Non Refund,0,Transient,79.71,0,0,2026-07-08,0,7,2,0,1,1,0
-Guest_101,Expected,City Hotel,46,6,4,2,4,2,0,0,BB,Online TA,TA/TO,0,0,0,A,P,1,No Deposit,0,Transient,76.24,0,3,2026-06-04,1,6,2,0,1,1,1
+Guest_096,Checked-Out,Resort Hotel,116,5,2,1,4,1,0,0,SC,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,91.01,1,0,2026-05-02,0,5,1,0,1,1,0
+Guest_097,Expected,Resort Hotel,353,7,27,3,2,2,0,0,HB,Groups,TA/TO,0,0,7,A,A,0,No Deposit,0,Transient,54.69,0,3,2026-07-27,0,5,2,0,1,0,1
+Guest_098,Checked-Out,Resort Hotel,266,5,15,0,6,3,0,0,BB,Online TA,TA/TO,0,0,0,A,B,0,No Deposit,0,Transient,113.77,0,1,2026-05-15,1,6,3,0,0,1,1
+Guest_099,Expected,Resort Hotel,309,7,27,0,5,2,0,0,BB,Direct,Direct,0,0,0,A,A,3,No Deposit,0,Transient,85.05,0,2,2026-07-27,0,5,2,0,1,1,1
+Guest_100,Expected,Resort Hotel,172,7,8,1,6,2,0,0,BB,Offline TA/TO,TA/TO,0,1,0,A,A,0,Non Refund,0,Transient,79.71,0,0,2026-07-08,0,7,2,0,1,1,0
+Guest_101,Expected,Resort Hotel,46,6,4,2,4,2,0,0,BB,Online TA,TA/TO,0,0,0,A,P,1,No Deposit,0,Transient,76.24,0,3,2026-06-04,1,6,2,0,1,1,1
 Guest_102,Expected,Resort Hotel,139,7,22,1,1,1,0,0,SC,Corporate,Corporate,0,0,7,E,E,3,No Deposit,0,Contract,95.75,0,0,2026-07-22,0,2,1,0,1,1,0
-Guest_103,Expected,City Hotel,245,6,13,3,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,103.34,0,0,2026-06-13,0,8,2,0,1,1,1
-Guest_104,Checked-Out,City Hotel,148,5,15,1,2,2,0,0,HB,Direct,Direct,0,0,8,A,A,1,No Deposit,0,Group,79.2,0,1,2026-05-15,0,3,2,0,1,1,0
+Guest_103,Expected,Resort Hotel,245,6,13,3,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,103.34,0,0,2026-06-13,0,8,2,0,1,1,1
+Guest_104,Checked-Out,Resort Hotel,148,5,15,1,2,2,0,0,HB,Direct,Direct,0,0,8,A,A,1,No Deposit,0,Group,79.2,0,1,2026-05-15,0,3,2,0,1,1,0
 Guest_105,Expected,Resort Hotel,245,6,7,0,4,1,0,0,BB,Direct,Direct,0,0,0,A,A,0,No Deposit,0,Transient,85.65,2,0,2026-06-07,0,4,1,0,0,1,0
-Guest_106,Expected,City Hotel,4,6,25,3,5,2,1,0,HB,Online TA,TA/TO,0,1,2,D,E,1,No Deposit,0,Transient,96.74,0,0,2026-06-25,1,8,3,0,1,1,0
-Guest_107,Checked-Out,City Hotel,183,5,21,0,4,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient-Party,92.7,0,3,2026-05-21,0,4,2,0,1,1,1
+Guest_106,Expected,Resort Hotel,4,6,25,3,5,2,1,0,HB,Online TA,TA/TO,0,1,2,D,E,1,No Deposit,0,Transient,96.74,0,0,2026-06-25,1,8,3,0,1,1,0
+Guest_107,Checked-Out,Resort Hotel,183,5,21,0,4,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient-Party,92.7,0,3,2026-05-21,0,4,2,0,1,1,1
 Guest_108,Expected,Resort Hotel,19,6,28,2,4,2,1,0,BB,Online TA,TA/TO,0,0,6,D,P,2,No Deposit,0,Transient,101.24,0,4,2026-06-28,1,6,3,0,1,0,0
-Guest_109,Checked-Out,City Hotel,45,5,1,0,2,4,0,0,SC,Groups,TA/TO,0,0,0,A,A,0,No Deposit,2,Transient,72.93,2,1,2026-05-01,0,2,4,0,1,0,0
-Guest_110,Expected,City Hotel,11,6,3,0,7,1,0,0,BB,Online TA,TA/TO,0,0,0,D,H,0,No Deposit,1,Transient,140.18,0,3,2026-06-03,1,7,1,0,1,1,1
-Guest_111,Expected,City Hotel,69,7,4,1,3,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,Non Refund,0,Transient,103.87,0,1,2026-07-04,0,4,2,0,1,1,0
-Guest_112,Checked-Out,City Hotel,16,5,23,0,5,1,1,0,SC,Online TA,TA/TO,1,0,0,D,D,0,No Deposit,0,Transient-Party,79.85,0,0,2026-05-23,0,5,2,0,1,1,0
+Guest_109,Checked-Out,Resort Hotel,45,5,1,0,2,4,0,0,SC,Groups,TA/TO,0,0,0,A,A,0,No Deposit,2,Transient,72.93,2,1,2026-05-01,0,2,4,0,1,0,0
+Guest_110,Expected,Resort Hotel,11,6,3,0,7,1,0,0,BB,Online TA,TA/TO,0,0,0,D,H,0,No Deposit,1,Transient,140.18,0,3,2026-06-03,1,7,1,0,1,1,1
+Guest_111,Expected,Resort Hotel,69,7,4,1,3,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,Non Refund,0,Transient,103.87,0,1,2026-07-04,0,4,2,0,1,1,0
+Guest_112,Checked-Out,Resort Hotel,16,5,23,0,5,1,1,0,SC,Online TA,TA/TO,1,0,0,D,D,0,No Deposit,0,Transient-Party,79.85,0,0,2026-05-23,0,5,2,0,1,1,0
 Guest_113,Expected,Resort Hotel,146,7,4,3,2,4,0,0,SC,Offline TA/TO,TA/TO,0,0,7,A,A,0,No Deposit,0,Transient-Party,113.78,0,2,2026-07-04,0,5,4,0,1,1,0
 Guest_114,Checked-Out,Resort Hotel,153,5,14,3,4,1,0,0,BB,Offline TA/TO,TA/TO,0,0,0,D,E,0,No Deposit,0,Transient,97.03,0,2,2026-05-14,1,7,1,0,1,0,0
 Guest_115,Expected,Resort Hotel,303,7,20,2,2,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,30.65,0,5,2026-07-20,0,4,2,0,0,1,1
 Guest_116,Expected,Resort Hotel,107,6,8,3,7,2,0,0,BB,Online TA,TA/TO,0,0,2,A,A,0,No Deposit,0,Transient,113.64,1,0,2026-06-08,0,10,2,0,1,0,1
 Guest_117,Expected,Resort Hotel,235,7,21,1,3,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient-Party,59.22,0,2,2026-07-21,0,4,2,0,1,0,0
-Guest_118,Expected,City Hotel,307,7,4,2,6,2,0,0,BB,Online TA,TA/TO,0,0,8,B,B,0,No Deposit,0,Transient,137.38,0,0,2026-07-04,0,8,2,0,1,1,1
+Guest_118,Expected,Resort Hotel,307,7,4,2,6,2,0,0,BB,Online TA,TA/TO,0,0,8,B,B,0,No Deposit,0,Transient,137.38,0,0,2026-07-04,0,8,2,0,1,1,1
 Guest_119,Expected,Resort Hotel,351,7,17,3,5,2,0,0,BB,Direct,Direct,0,0,2,A,L,0,No Deposit,0,Transient,90.33,0,0,2026-07-17,1,8,2,0,1,0,0
-Guest_120,Checked-Out,City Hotel,69,5,26,1,3,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,131.2,0,0,2026-05-26,0,4,2,0,1,1,0
+Guest_120,Checked-Out,Resort Hotel,69,5,26,1,3,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,131.2,0,0,2026-05-26,0,4,2,0,1,1,0
 Guest_121,Checked-Out,Resort Hotel,182,5,20,3,1,2,0,1,HB,Online TA,TA/TO,0,0,6,A,A,0,No Deposit,0,Transient,74.79,0,5,2026-05-20,0,4,3,0,1,1,0
 Guest_122,Expected,Resort Hotel,249,6,17,3,5,1,0,0,HB,Groups,TA/TO,0,1,0,A,A,0,No Deposit,0,Contract,102.8,0,2,2026-06-17,0,8,1,0,1,1,0
-Guest_123,Checked-Out,City Hotel,227,5,21,0,3,2,0,0,BB,Direct,Direct,0,0,0,D,D,0,No Deposit,0,Transient,148.41,0,2,2026-05-21,0,3,2,0,1,0,0
-Guest_124,Expected,City Hotel,101,7,9,3,4,2,1,0,BB,Online TA,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient,89.24,0,1,2026-07-09,0,7,3,0,0,1,1
-Guest_125,Expected,City Hotel,74,7,7,3,5,2,0,0,BB,Online TA,TA/TO,1,0,0,F,F,1,No Deposit,0,Transient-Party,76.37,0,0,2026-07-07,0,8,2,0,1,0,1
-Guest_126,Checked-Out,City Hotel,215,5,1,1,5,2,0,0,BB,Online TA,TA/TO,0,0,2,A,A,0,No Deposit,0,Transient,126.2,0,0,2026-05-01,0,6,2,0,1,1,0
+Guest_123,Checked-Out,Resort Hotel,227,5,21,0,3,2,0,0,BB,Direct,Direct,0,0,0,D,D,0,No Deposit,0,Transient,148.41,0,2,2026-05-21,0,3,2,0,1,0,0
+Guest_124,Expected,Resort Hotel,101,7,9,3,4,2,1,0,BB,Online TA,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient,89.24,0,1,2026-07-09,0,7,3,0,0,1,1
+Guest_125,Expected,Resort Hotel,74,7,7,3,5,2,0,0,BB,Online TA,TA/TO,1,0,0,F,F,1,No Deposit,0,Transient-Party,76.37,0,0,2026-07-07,0,8,2,0,1,0,1
+Guest_126,Checked-Out,Resort Hotel,215,5,1,1,5,2,0,0,BB,Online TA,TA/TO,0,0,2,A,A,0,No Deposit,0,Transient,126.2,0,0,2026-05-01,0,6,2,0,1,1,0
 Guest_127,Expected,Resort Hotel,202,7,16,1,2,4,0,0,BB,Direct,Direct,0,0,7,A,A,0,No Deposit,0,Transient,125.43,0,0,2026-07-16,0,3,4,0,1,1,0
 Guest_128,Expected,Resort Hotel,191,6,11,0,4,2,0,0,HB,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient,78.05,2,1,2026-06-11,0,4,2,0,1,1,1
-Guest_129,Expected,City Hotel,248,7,2,3,1,1,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,20.58,0,2,2026-07-02,0,4,1,0,1,0,1
-Guest_130,Checked-Out,City Hotel,241,5,3,0,6,1,0,0,BB,Groups,TA/TO,0,0,8,A,A,1,No Deposit,0,Transient,75.6,0,1,2026-05-03,0,6,1,0,1,1,1
-Guest_131,Checked-Out,City Hotel,178,5,15,3,7,4,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,127.09,0,0,2026-05-15,0,10,4,0,1,1,0
-Guest_132,Expected,City Hotel,218,6,16,2,3,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,69.0,0,0,2026-06-16,0,5,2,0,1,0,1
-Guest_133,Expected,City Hotel,81,6,9,2,2,1,0,0,BB,Online TA,TA/TO,0,1,0,A,F,0,No Deposit,0,Transient,99.56,0,0,2026-06-09,1,4,1,0,1,1,0
-Guest_134,Expected,City Hotel,91,5,31,0,3,2,0,0,BB,Offline TA/TO,TA/TO,0,0,7,H,A,0,No Deposit,0,Transient,73.7,1,1,2026-05-31,1,3,2,0,1,1,0
+Guest_129,Expected,Resort Hotel,248,7,2,3,1,1,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,20.58,0,2,2026-07-02,0,4,1,0,1,0,1
+Guest_130,Checked-Out,Resort Hotel,241,5,3,0,6,1,0,0,BB,Groups,TA/TO,0,0,8,A,A,1,No Deposit,0,Transient,75.6,0,1,2026-05-03,0,6,1,0,1,1,1
+Guest_131,Checked-Out,Resort Hotel,178,5,15,3,7,4,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,127.09,0,0,2026-05-15,0,10,4,0,1,1,0
+Guest_132,Expected,Resort Hotel,218,6,16,2,3,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,69.0,0,0,2026-06-16,0,5,2,0,1,0,1
+Guest_133,Expected,Resort Hotel,81,6,9,2,2,1,0,0,BB,Online TA,TA/TO,0,1,0,A,F,0,No Deposit,0,Transient,99.56,0,0,2026-06-09,1,4,1,0,1,1,0
+Guest_134,Expected,Resort Hotel,91,5,31,0,3,2,0,0,BB,Offline TA/TO,TA/TO,0,0,7,H,A,0,No Deposit,0,Transient,73.7,1,1,2026-05-31,1,3,2,0,1,1,0
 Guest_135,Checked-Out,Resort Hotel,174,5,8,0,1,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,F,F,0,Non Refund,1,Transient,22.71,0,3,2026-05-08,0,1,2,0,1,0,0
-Guest_136,Expected,City Hotel,238,5,31,0,1,2,1,0,BB,Online TA,TA/TO,0,0,2,A,A,0,No Deposit,0,Transient-Party,72.98,0,1,2026-05-31,0,1,3,0,1,0,0
-Guest_137,Expected,City Hotel,259,7,12,1,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,4,A,D,0,No Deposit,0,Transient,126.93,0,2,2026-07-12,1,6,2,0,1,1,0
+Guest_136,Expected,Resort Hotel,238,5,31,0,1,2,1,0,BB,Online TA,TA/TO,0,0,2,A,A,0,No Deposit,0,Transient-Party,72.98,0,1,2026-05-31,0,1,3,0,1,0,0
+Guest_137,Expected,Resort Hotel,259,7,12,1,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,4,A,D,0,No Deposit,0,Transient,126.93,0,2,2026-07-12,1,6,2,0,1,1,0
 Guest_138,Checked-Out,Resort Hotel,364,5,11,1,7,1,0,0,HB,Online TA,TA/TO,0,1,0,A,A,3,No Deposit,0,Transient-Party,5.19,0,1,2026-05-11,0,8,1,0,1,0,0
-Guest_139,Checked-Out,City Hotel,162,5,11,1,1,4,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient,110.09,0,1,2026-05-11,0,2,4,0,1,0,0
+Guest_139,Checked-Out,Resort Hotel,162,5,11,1,1,4,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient,110.09,0,1,2026-05-11,0,2,4,0,1,0,0
 Guest_140,Expected,Resort Hotel,47,7,2,0,3,2,0,0,BB,Offline TA/TO,TA/TO,0,0,5,A,A,0,Non Refund,1,Transient,52.56,0,0,2026-07-02,0,3,2,0,1,1,1
 Guest_141,Checked-Out,Resort Hotel,328,5,9,3,4,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,2,No Deposit,0,Transient,124.34,0,3,2026-05-09,0,7,2,0,1,1,0
-Guest_142,Expected,City Hotel,327,7,8,2,4,2,0,0,SC,Groups,TA/TO,0,0,3,A,A,1,No Deposit,0,Transient,128.57,1,2,2026-07-08,0,6,2,0,1,1,0
-Guest_143,Checked-Out,City Hotel,115,5,17,0,5,2,0,0,BB,Online TA,TA/TO,0,0,8,D,D,0,No Deposit,0,Transient,93.12,0,0,2026-05-17,0,5,2,0,1,1,0
-Guest_144,Checked-Out,City Hotel,336,5,17,1,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,B,H,1,No Deposit,0,Transient,93.21,0,1,2026-05-17,1,7,2,0,1,1,1
-Guest_145,Expected,City Hotel,336,7,24,1,3,2,0,0,HB,Groups,TA/TO,0,0,2,D,G,1,No Deposit,0,Transient-Party,67.75,0,1,2026-07-24,1,4,2,0,0,0,0
-Guest_146,Expected,City Hotel,224,6,30,0,3,2,0,0,SC,Online TA,TA/TO,0,0,4,A,A,0,No Deposit,0,Transient,46.18,0,1,2026-06-30,0,3,2,0,1,1,0
+Guest_142,Expected,Resort Hotel,327,7,8,2,4,2,0,0,SC,Groups,TA/TO,0,0,3,A,A,1,No Deposit,0,Transient,128.57,1,2,2026-07-08,0,6,2,0,1,1,0
+Guest_143,Checked-Out,Resort Hotel,115,5,17,0,5,2,0,0,BB,Online TA,TA/TO,0,0,8,D,D,0,No Deposit,0,Transient,93.12,0,0,2026-05-17,0,5,2,0,1,1,0
+Guest_144,Checked-Out,Resort Hotel,336,5,17,1,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,B,H,1,No Deposit,0,Transient,93.21,0,1,2026-05-17,1,7,2,0,1,1,1
+Guest_145,Expected,Resort Hotel,336,7,24,1,3,2,0,0,HB,Groups,TA/TO,0,0,2,D,G,1,No Deposit,0,Transient-Party,67.75,0,1,2026-07-24,1,4,2,0,0,0,0
+Guest_146,Expected,Resort Hotel,224,6,30,0,3,2,0,0,SC,Online TA,TA/TO,0,0,4,A,A,0,No Deposit,0,Transient,46.18,0,1,2026-06-30,0,3,2,0,1,1,0
 Guest_147,Expected,Resort Hotel,351,7,10,0,1,3,0,0,SC,Offline TA/TO,TA/TO,0,0,5,A,A,0,No Deposit,0,Transient,167.92,0,3,2026-07-10,0,1,3,0,1,1,0
-Guest_148,Checked-Out,City Hotel,327,5,22,1,7,3,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,65.4,0,1,2026-05-22,0,8,3,0,1,0,1
-Guest_149,Expected,City Hotel,146,6,3,3,3,1,0,0,BB,Online TA,TA/TO,0,0,0,G,G,2,No Deposit,0,Transient,162.71,1,1,2026-06-03,0,6,1,0,1,1,1
-Guest_150,Expected,City Hotel,62,7,7,1,2,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,5,Transient,65.62,1,0,2026-07-07,0,3,1,0,1,1,0
+Guest_148,Checked-Out,Resort Hotel,327,5,22,1,7,3,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,65.4,0,1,2026-05-22,0,8,3,0,1,0,1
+Guest_149,Expected,Resort Hotel,146,6,3,3,3,1,0,0,BB,Online TA,TA/TO,0,0,0,G,G,2,No Deposit,0,Transient,162.71,1,1,2026-06-03,0,6,1,0,1,1,1
+Guest_150,Expected,Resort Hotel,62,7,7,1,2,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,5,Transient,65.62,1,0,2026-07-07,0,3,1,0,1,1,0
 Guest_151,Expected,Resort Hotel,293,7,17,1,6,3,0,0,FB,Direct,Direct,0,0,0,D,D,0,No Deposit,0,Transient,121.01,1,0,2026-07-17,0,7,3,0,1,0,0
-Guest_152,Expected,City Hotel,322,6,24,0,1,2,0,0,BB,Online TA,TA/TO,0,0,0,A,F,1,No Deposit,0,Transient,54.49,0,0,2026-06-24,1,1,2,0,1,0,1
-Guest_153,Expected,City Hotel,324,5,28,3,2,3,0,0,BB,Online TA,TA/TO,0,0,2,A,A,0,No Deposit,0,Transient,120.94,0,0,2026-05-28,0,5,3,0,0,1,0
-Guest_154,Expected,City Hotel,12,7,9,1,5,1,0,0,SC,Offline TA/TO,TA/TO,0,0,0,B,B,0,No Deposit,0,Transient,86.98,0,2,2026-07-09,0,6,1,0,1,1,0
+Guest_152,Expected,Resort Hotel,322,6,24,0,1,2,0,0,BB,Online TA,TA/TO,0,0,0,A,F,1,No Deposit,0,Transient,54.49,0,0,2026-06-24,1,1,2,0,1,0,1
+Guest_153,Expected,Resort Hotel,324,5,28,3,2,3,0,0,BB,Online TA,TA/TO,0,0,2,A,A,0,No Deposit,0,Transient,120.94,0,0,2026-05-28,0,5,3,0,0,1,0
+Guest_154,Expected,Resort Hotel,12,7,9,1,5,1,0,0,SC,Offline TA/TO,TA/TO,0,0,0,B,B,0,No Deposit,0,Transient,86.98,0,2,2026-07-09,0,6,1,0,1,1,0
 Guest_155,Expected,Resort Hotel,188,7,28,1,4,2,0,0,BB,Direct,Direct,0,0,0,A,D,0,No Deposit,0,Transient-Party,87.5,0,2,2026-07-28,1,5,2,0,1,1,0
-Guest_156,Checked-Out,City Hotel,286,5,26,2,5,2,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,Non Refund,0,Transient-Party,124.4,0,0,2026-05-26,0,7,2,0,1,1,0
+Guest_156,Checked-Out,Resort Hotel,286,5,26,2,5,2,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,Non Refund,0,Transient-Party,124.4,0,0,2026-05-26,0,7,2,0,1,1,0
 Guest_157,Expected,Resort Hotel,207,6,9,0,4,2,1,0,BB,Online TA,TA/TO,0,0,2,D,D,1,No Deposit,0,Transient,81.23,0,2,2026-06-09,0,4,3,0,1,0,0
 Guest_158,Expected,Resort Hotel,113,6,21,2,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,42.87,0,0,2026-06-21,0,7,2,0,1,0,0
-Guest_159,Expected,City Hotel,21,7,25,2,3,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,No Deposit,20,Transient,130.45,0,0,2026-07-25,0,5,1,0,1,0,1
+Guest_159,Expected,Resort Hotel,21,7,25,2,3,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,No Deposit,20,Transient,130.45,0,0,2026-07-25,0,5,1,0,1,0,1
 Guest_160,Expected,Resort Hotel,348,7,23,1,2,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,54.16,0,0,2026-07-23,0,3,2,0,1,0,1
-Guest_161,Expected,City Hotel,213,6,17,0,4,2,0,0,BB,Direct,Direct,0,0,2,E,E,0,No Deposit,0,Transient,120.66,0,1,2026-06-17,0,4,2,0,1,0,0
+Guest_161,Expected,Resort Hotel,213,6,17,0,4,2,0,0,BB,Direct,Direct,0,0,2,E,E,0,No Deposit,0,Transient,120.66,0,1,2026-06-17,0,4,2,0,1,0,0
 Guest_162,Expected,Resort Hotel,170,6,26,3,1,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,3,No Deposit,2,Transient,138.92,0,0,2026-06-26,0,4,2,0,0,1,1
 Guest_163,Expected,Resort Hotel,322,7,6,1,2,4,1,0,BB,Groups,TA/TO,0,0,0,A,E,0,Non Refund,0,Transient-Party,84.98,0,1,2026-07-06,1,3,5,0,1,1,0
-Guest_164,Expected,City Hotel,53,6,27,3,1,2,1,0,BB,Online TA,TA/TO,0,0,9,A,A,0,No Deposit,0,Transient,147.29,0,1,2026-06-27,0,4,3,0,0,1,0
-Guest_165,Checked-Out,City Hotel,297,5,16,3,2,3,0,0,SC,Corporate,Corporate,0,0,1,C,C,0,Non Refund,0,Transient,119.27,0,5,2026-05-16,0,5,3,0,1,0,0
+Guest_164,Expected,Resort Hotel,53,6,27,3,1,2,1,0,BB,Online TA,TA/TO,0,0,9,A,A,0,No Deposit,0,Transient,147.29,0,1,2026-06-27,0,4,3,0,0,1,0
+Guest_165,Checked-Out,Resort Hotel,297,5,16,3,2,3,0,0,SC,Corporate,Corporate,0,0,1,C,C,0,Non Refund,0,Transient,119.27,0,5,2026-05-16,0,5,3,0,1,0,0
 Guest_166,Expected,Resort Hotel,319,6,1,0,2,1,1,0,BB,Online TA,TA/TO,0,0,8,A,A,1,No Deposit,0,Transient,72.17,0,0,2026-06-01,0,2,2,0,1,1,1
-Guest_167,Expected,City Hotel,125,5,29,2,5,2,2,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,10,Transient,156.06,0,0,2026-05-29,0,7,4,0,1,1,1
-Guest_168,Checked-Out,City Hotel,276,5,9,0,4,4,0,0,HB,Online TA,TA/TO,0,0,0,E,E,0,Non Refund,10,Transient,54.33,0,0,2026-05-09,0,4,4,0,1,0,1
-Guest_169,Expected,City Hotel,203,6,13,3,4,1,0,0,BB,Offline TA/TO,TA/TO,0,0,6,A,A,0,No Deposit,0,Transient,84.93,0,1,2026-06-13,0,7,1,0,1,1,1
-Guest_170,Checked-Out,City Hotel,193,5,3,1,7,1,0,0,SC,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Contract,91.75,0,0,2026-05-03,0,8,1,0,1,1,1
+Guest_167,Expected,Resort Hotel,125,5,29,2,5,2,2,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,10,Transient,156.06,0,0,2026-05-29,0,7,4,0,1,1,1
+Guest_168,Checked-Out,Resort Hotel,276,5,9,0,4,4,0,0,HB,Online TA,TA/TO,0,0,0,E,E,0,Non Refund,10,Transient,54.33,0,0,2026-05-09,0,4,4,0,1,0,1
+Guest_169,Expected,Resort Hotel,203,6,13,3,4,1,0,0,BB,Offline TA/TO,TA/TO,0,0,6,A,A,0,No Deposit,0,Transient,84.93,0,1,2026-06-13,0,7,1,0,1,1,1
+Guest_170,Checked-Out,Resort Hotel,193,5,3,1,7,1,0,0,SC,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Contract,91.75,0,0,2026-05-03,0,8,1,0,1,1,1
 Guest_171,Expected,Resort Hotel,168,7,15,3,2,2,0,0,BB,Direct,Direct,0,0,1,F,F,1,No Deposit,0,Contract,124.21,0,2,2026-07-15,0,5,2,0,0,0,1
-Guest_172,Expected,City Hotel,151,7,10,1,3,1,0,0,SC,Online TA,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient-Party,144.62,0,1,2026-07-10,0,4,1,0,1,1,1
-Guest_173,Expected,City Hotel,34,5,30,1,3,2,0,0,BB,Direct,Direct,0,0,0,D,D,0,No Deposit,0,Transient,142.11,0,1,2026-05-30,0,4,2,0,1,0,1
-Guest_174,Expected,City Hotel,183,7,15,0,1,3,2,0,HB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,108.95,1,1,2026-07-15,0,1,5,0,1,1,0
+Guest_172,Expected,Resort Hotel,151,7,10,1,3,1,0,0,SC,Online TA,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient-Party,144.62,0,1,2026-07-10,0,4,1,0,1,1,1
+Guest_173,Expected,Resort Hotel,34,5,30,1,3,2,0,0,BB,Direct,Direct,0,0,0,D,D,0,No Deposit,0,Transient,142.11,0,1,2026-05-30,0,4,2,0,1,0,1
+Guest_174,Expected,Resort Hotel,183,7,15,0,1,3,2,0,HB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,108.95,1,1,2026-07-15,0,1,5,0,1,1,0
 Guest_175,Expected,Resort Hotel,285,5,29,3,1,2,0,0,BB,Online TA,TA/TO,0,2,0,A,G,0,No Deposit,10,Transient,88.79,0,0,2026-05-29,1,4,2,0,1,1,0
-Guest_176,Checked-Out,City Hotel,56,5,1,2,5,2,0,0,Undefined,Direct,Direct,0,0,0,D,D,2,No Deposit,2,Transient-Party,26.96,0,0,2026-05-01,0,7,2,0,1,1,0
+Guest_176,Checked-Out,Resort Hotel,56,5,1,2,5,2,0,0,Undefined,Direct,Direct,0,0,0,D,D,2,No Deposit,2,Transient-Party,26.96,0,0,2026-05-01,0,7,2,0,1,1,0
 Guest_177,Checked-Out,Resort Hotel,221,5,10,3,2,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,47.43,0,0,2026-05-10,0,5,2,0,1,0,0
-Guest_178,Expected,City Hotel,302,7,30,3,1,2,1,0,BB,Online TA,TA/TO,0,0,9,A,A,3,No Deposit,0,Transient,170.67,0,1,2026-07-30,0,4,3,0,1,1,0
+Guest_178,Expected,Resort Hotel,302,7,30,3,1,2,1,0,BB,Online TA,TA/TO,0,0,9,A,A,3,No Deposit,0,Transient,170.67,0,1,2026-07-30,0,4,3,0,1,1,0
 Guest_179,Expected,Resort Hotel,162,7,20,2,1,1,2,0,SC,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient-Party,26.56,0,0,2026-07-20,0,3,3,0,1,1,0
-Guest_180,Checked-Out,City Hotel,18,5,8,0,6,2,0,0,BB,Online TA,TA/TO,0,1,0,A,A,0,No Deposit,0,Transient-Party,68.62,0,0,2026-05-08,0,6,2,0,1,1,0
-Guest_181,Expected,City Hotel,263,5,30,3,2,2,0,0,BB,Online TA,TA/TO,0,0,5,A,A,1,No Deposit,0,Transient,145.78,2,4,2026-05-30,0,5,2,0,1,1,0
-Guest_182,Checked-Out,City Hotel,281,5,9,3,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient-Party,108.39,0,0,2026-05-09,0,8,2,0,1,1,0
+Guest_180,Checked-Out,Resort Hotel,18,5,8,0,6,2,0,0,BB,Online TA,TA/TO,0,1,0,A,A,0,No Deposit,0,Transient-Party,68.62,0,0,2026-05-08,0,6,2,0,1,1,0
+Guest_181,Expected,Resort Hotel,263,5,30,3,2,2,0,0,BB,Online TA,TA/TO,0,0,5,A,A,1,No Deposit,0,Transient,145.78,2,4,2026-05-30,0,5,2,0,1,1,0
+Guest_182,Checked-Out,Resort Hotel,281,5,9,3,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient-Party,108.39,0,0,2026-05-09,0,8,2,0,1,1,0
 Guest_183,Checked-Out,Resort Hotel,112,5,5,1,1,1,0,0,BB,Groups,TA/TO,0,0,0,F,F,1,No Deposit,0,Transient,137.12,0,2,2026-05-05,0,2,1,0,0,1,0
 Guest_184,Expected,Resort Hotel,326,6,12,3,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,1,A,A,3,No Deposit,0,Transient,121.71,0,2,2026-06-12,0,8,2,0,1,1,1
-Guest_185,Checked-Out,City Hotel,29,5,10,2,4,1,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,158.78,1,0,2026-05-10,0,6,1,0,1,1,0
+Guest_185,Checked-Out,Resort Hotel,29,5,10,2,4,1,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,158.78,1,0,2026-05-10,0,6,1,0,1,1,0
 Guest_186,Expected,Resort Hotel,134,7,5,1,5,1,0,1,SC,Online TA,TA/TO,0,0,1,A,A,0,No Deposit,2,Transient,111.82,0,0,2026-07-05,0,6,2,0,1,1,0
 Guest_187,Expected,Resort Hotel,66,5,31,0,3,3,0,0,BB,Online TA,TA/TO,0,2,3,D,B,1,Non Refund,0,Transient,126.54,0,0,2026-05-31,1,3,3,0,0,1,1
-Guest_188,Expected,City Hotel,64,6,5,1,3,2,0,0,BB,Offline TA/TO,TA/TO,0,0,9,A,A,0,No Deposit,0,Transient,71.03,0,2,2026-06-05,0,4,2,0,0,1,0
-Guest_189,Expected,City Hotel,291,7,25,2,5,1,0,0,SC,Offline TA/TO,TA/TO,0,0,0,F,F,0,No Deposit,0,Transient,123.45,0,1,2026-07-25,0,7,1,0,1,1,0
-Guest_190,Expected,City Hotel,24,7,2,2,3,1,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,84.15,0,2,2026-07-02,0,5,1,0,1,1,0
-Guest_191,Expected,City Hotel,36,5,28,1,4,1,0,0,BB,Direct,Direct,0,0,0,A,A,0,No Deposit,10,Transient,81.88,0,3,2026-05-28,0,5,1,0,0,1,0
+Guest_188,Expected,Resort Hotel,64,6,5,1,3,2,0,0,BB,Offline TA/TO,TA/TO,0,0,9,A,A,0,No Deposit,0,Transient,71.03,0,2,2026-06-05,0,4,2,0,0,1,0
+Guest_189,Expected,Resort Hotel,291,7,25,2,5,1,0,0,SC,Offline TA/TO,TA/TO,0,0,0,F,F,0,No Deposit,0,Transient,123.45,0,1,2026-07-25,0,7,1,0,1,1,0
+Guest_190,Expected,Resort Hotel,24,7,2,2,3,1,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,84.15,0,2,2026-07-02,0,5,1,0,1,1,0
+Guest_191,Expected,Resort Hotel,36,5,28,1,4,1,0,0,BB,Direct,Direct,0,0,0,A,A,0,No Deposit,10,Transient,81.88,0,3,2026-05-28,0,5,1,0,0,1,0
 Guest_192,Expected,Resort Hotel,0,7,9,0,2,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,135.79,0,2,2026-07-09,0,2,2,0,1,1,1
 Guest_193,Checked-Out,Resort Hotel,36,5,17,1,3,1,0,0,BB,Offline TA/TO,TA/TO,0,0,6,A,A,0,No Deposit,0,Transient,136.06,0,0,2026-05-17,0,4,1,0,1,0,0
 Guest_194,Expected,Resort Hotel,140,7,13,0,3,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,167.54,1,0,2026-07-13,0,3,1,0,1,1,0
-Guest_195,Expected,City Hotel,231,7,13,1,5,2,0,0,BB,Corporate,Corporate,0,0,0,A,A,0,No Deposit,0,Transient,164.93,0,2,2026-07-13,0,6,2,0,0,1,0
-Guest_196,Expected,City Hotel,135,6,30,2,4,2,0,0,BB,Online TA,TA/TO,0,0,4,D,D,0,No Deposit,0,Transient,136.69,1,0,2026-06-30,0,6,2,0,1,0,0
+Guest_195,Expected,Resort Hotel,231,7,13,1,5,2,0,0,BB,Corporate,Corporate,0,0,0,A,A,0,No Deposit,0,Transient,164.93,0,2,2026-07-13,0,6,2,0,0,1,0
+Guest_196,Expected,Resort Hotel,135,6,30,2,4,2,0,0,BB,Online TA,TA/TO,0,0,4,D,D,0,No Deposit,0,Transient,136.69,1,0,2026-06-30,0,6,2,0,1,0,0
 Guest_197,Expected,Resort Hotel,187,6,1,3,7,2,0,0,BB,Online TA,TA/TO,0,2,0,A,A,0,No Deposit,0,Transient-Party,31.18,0,0,2026-06-01,0,10,2,0,1,1,1
 Guest_198,Expected,Resort Hotel,127,6,30,3,7,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,173.11,0,2,2026-06-30,0,10,2,0,0,0,0
 Guest_199,Expected,Resort Hotel,200,6,22,0,7,1,0,0,SC,Online TA,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient,136.72,0,1,2026-06-22,0,7,1,0,1,0,0
 Guest_200,Checked-Out,Resort Hotel,126,5,25,0,7,4,1,0,SC,Online TA,TA/TO,0,0,5,A,A,1,No Deposit,0,Transient,69.37,0,3,2026-05-25,0,7,5,0,1,0,0
 Guest_201,Checked-Out,Resort Hotel,256,5,13,0,2,3,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,Non Refund,0,Transient,129.16,0,2,2026-05-13,0,2,3,0,1,1,0
-Guest_202,Checked-Out,City Hotel,163,5,13,2,5,3,0,0,BB,Direct,Direct,1,0,6,A,A,0,No Deposit,0,Transient,58.51,0,0,2026-05-13,0,7,3,0,1,1,0
-Guest_203,Expected,City Hotel,34,7,24,1,5,3,2,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient-Party,124.75,0,3,2026-07-24,0,6,5,0,0,1,1
+Guest_202,Checked-Out,Resort Hotel,163,5,13,2,5,3,0,0,BB,Direct,Direct,1,0,6,A,A,0,No Deposit,0,Transient,58.51,0,0,2026-05-13,0,7,3,0,1,1,0
+Guest_203,Expected,Resort Hotel,34,7,24,1,5,3,2,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient-Party,124.75,0,3,2026-07-24,0,6,5,0,0,1,1
 Guest_204,Expected,Resort Hotel,193,6,25,2,6,3,0,0,HB,Online TA,TA/TO,0,0,3,C,C,0,No Deposit,1,Transient,47.35,0,0,2026-06-25,0,8,3,0,0,1,1
 Guest_205,Expected,Resort Hotel,190,6,15,3,4,2,0,0,BB,Offline TA/TO,TA/TO,0,0,5,A,C,0,No Deposit,1,Transient,67.67,0,0,2026-06-15,1,7,2,0,1,1,1
-Guest_206,Expected,City Hotel,103,6,24,0,7,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,128.4,0,1,2026-06-24,0,7,1,0,1,1,1
-Guest_207,Expected,City Hotel,22,6,22,1,2,2,0,0,SC,Online TA,TA/TO,0,0,0,D,D,1,No Deposit,0,Transient,142.92,0,0,2026-06-22,0,3,2,0,1,1,1
+Guest_206,Expected,Resort Hotel,103,6,24,0,7,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,128.4,0,1,2026-06-24,0,7,1,0,1,1,1
+Guest_207,Expected,Resort Hotel,22,6,22,1,2,2,0,0,SC,Online TA,TA/TO,0,0,0,D,D,1,No Deposit,0,Transient,142.92,0,0,2026-06-22,0,3,2,0,1,1,1
 Guest_208,Expected,Resort Hotel,264,6,29,3,4,2,0,0,HB,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient,113.02,0,1,2026-06-29,0,7,2,0,1,1,0
-Guest_209,Checked-Out,City Hotel,289,5,7,3,7,2,0,0,SC,Offline TA/TO,TA/TO,0,0,1,A,A,0,No Deposit,0,Transient,88.55,1,0,2026-05-07,0,10,2,0,1,0,1
-Guest_210,Expected,City Hotel,259,7,26,3,2,2,1,0,BB,Direct,Direct,0,0,0,D,D,2,No Deposit,0,Transient,15.41,0,1,2026-07-26,0,5,3,0,1,0,1
-Guest_211,Expected,City Hotel,357,7,23,2,4,1,1,0,BB,Online TA,TA/TO,0,0,0,A,A,2,No Deposit,0,Contract,91.64,0,1,2026-07-23,0,6,2,0,1,1,1
+Guest_209,Checked-Out,Resort Hotel,289,5,7,3,7,2,0,0,SC,Offline TA/TO,TA/TO,0,0,1,A,A,0,No Deposit,0,Transient,88.55,1,0,2026-05-07,0,10,2,0,1,0,1
+Guest_210,Expected,Resort Hotel,259,7,26,3,2,2,1,0,BB,Direct,Direct,0,0,0,D,D,2,No Deposit,0,Transient,15.41,0,1,2026-07-26,0,5,3,0,1,0,1
+Guest_211,Expected,Resort Hotel,357,7,23,2,4,1,1,0,BB,Online TA,TA/TO,0,0,0,A,A,2,No Deposit,0,Contract,91.64,0,1,2026-07-23,0,6,2,0,1,1,1
 Guest_212,Expected,Resort Hotel,74,7,22,0,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,H,0,No Deposit,0,Transient,121.34,0,2,2026-07-22,1,5,2,0,1,1,0
 Guest_213,Checked-Out,Resort Hotel,354,5,13,3,5,3,0,0,SC,Direct,Direct,0,0,0,A,A,0,No Deposit,0,Transient-Party,87.33,0,2,2026-05-13,0,8,3,0,1,0,0
-Guest_214,Checked-Out,City Hotel,71,5,8,0,1,2,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,1,Transient,99.1,2,0,2026-05-08,0,1,2,0,1,0,1
+Guest_214,Checked-Out,Resort Hotel,71,5,8,0,1,2,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,1,Transient,99.1,2,0,2026-05-08,0,1,2,0,1,0,1
 Guest_215,Expected,Resort Hotel,258,6,21,2,3,2,2,0,BB,Online TA,TA/TO,0,3,0,A,C,2,No Deposit,0,Transient,92.58,0,1,2026-06-21,1,5,4,0,0,1,1
-Guest_216,Expected,City Hotel,187,6,13,3,7,2,2,0,BB,Offline TA/TO,TA/TO,0,0,0,E,E,0,Non Refund,0,Transient,87.13,0,1,2026-06-13,0,10,4,0,1,1,1
-Guest_217,Checked-Out,City Hotel,172,5,14,2,6,2,0,0,BB,Online TA,TA/TO,0,1,5,A,A,0,No Deposit,0,Transient,103.04,0,0,2026-05-14,0,8,2,0,1,1,0
+Guest_216,Expected,Resort Hotel,187,6,13,3,7,2,2,0,BB,Offline TA/TO,TA/TO,0,0,0,E,E,0,Non Refund,0,Transient,87.13,0,1,2026-06-13,0,10,4,0,1,1,1
+Guest_217,Checked-Out,Resort Hotel,172,5,14,2,6,2,0,0,BB,Online TA,TA/TO,0,1,5,A,A,0,No Deposit,0,Transient,103.04,0,0,2026-05-14,0,8,2,0,1,1,0
 Guest_218,Expected,Resort Hotel,289,6,1,2,4,3,0,0,HB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient-Party,89.09,0,2,2026-06-01,0,6,3,0,1,1,0
 Guest_219,Checked-Out,Resort Hotel,44,5,25,0,6,2,0,0,SC,Direct,Direct,0,0,0,A,A,0,Non Refund,2,Contract,157.73,1,2,2026-05-25,0,6,2,0,0,1,0
 Guest_220,Checked-Out,Resort Hotel,60,5,25,3,1,2,0,0,BB,Offline TA/TO,TA/TO,0,0,8,E,E,0,No Deposit,0,Transient,11.74,0,0,2026-05-25,0,4,2,0,1,1,1
 Guest_221,Expected,Resort Hotel,82,7,8,2,3,2,0,0,BB,Online TA,TA/TO,0,0,1,A,G,3,No Deposit,0,Transient-Party,78.17,0,1,2026-07-08,1,5,2,0,1,1,0
-Guest_222,Expected,City Hotel,122,6,27,3,4,2,0,0,BB,Complementary,TA/TO,0,0,7,A,A,0,No Deposit,0,Transient,65.19,0,0,2026-06-27,0,7,2,0,1,0,0
-Guest_223,Checked-Out,City Hotel,357,5,18,0,2,1,0,0,SC,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient-Party,108.76,0,1,2026-05-18,0,2,1,0,1,1,1
-Guest_224,Expected,City Hotel,15,6,24,2,7,2,0,0,HB,Offline TA/TO,TA/TO,0,1,0,A,A,0,No Deposit,0,Transient,103.09,0,0,2026-06-24,0,9,2,0,0,0,0
-Guest_225,Checked-Out,City Hotel,65,5,24,0,3,2,0,0,HB,Online TA,TA/TO,0,0,0,G,G,0,No Deposit,0,Transient,164.89,0,5,2026-05-24,0,3,2,0,1,0,1
-Guest_226,Expected,City Hotel,144,6,5,3,5,2,1,0,BB,Online TA,TA/TO,0,0,1,F,G,0,No Deposit,0,Transient,178.05,0,2,2026-06-05,1,8,3,0,1,1,0
+Guest_222,Expected,Resort Hotel,122,6,27,3,4,2,0,0,BB,Complementary,TA/TO,0,0,7,A,A,0,No Deposit,0,Transient,65.19,0,0,2026-06-27,0,7,2,0,1,0,0
+Guest_223,Checked-Out,Resort Hotel,357,5,18,0,2,1,0,0,SC,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient-Party,108.76,0,1,2026-05-18,0,2,1,0,1,1,1
+Guest_224,Expected,Resort Hotel,15,6,24,2,7,2,0,0,HB,Offline TA/TO,TA/TO,0,1,0,A,A,0,No Deposit,0,Transient,103.09,0,0,2026-06-24,0,9,2,0,0,0,0
+Guest_225,Checked-Out,Resort Hotel,65,5,24,0,3,2,0,0,HB,Online TA,TA/TO,0,0,0,G,G,0,No Deposit,0,Transient,164.89,0,5,2026-05-24,0,3,2,0,1,0,1
+Guest_226,Expected,Resort Hotel,144,6,5,3,5,2,1,0,BB,Online TA,TA/TO,0,0,1,F,G,0,No Deposit,0,Transient,178.05,0,2,2026-06-05,1,8,3,0,1,1,0
 Guest_227,Expected,Resort Hotel,161,6,29,3,1,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,69.08,1,1,2026-06-29,0,4,2,0,1,1,1
-Guest_228,Expected,City Hotel,233,6,1,0,3,3,0,0,BB,Offline TA/TO,TA/TO,0,0,0,E,E,0,Non Refund,0,Transient-Party,100.02,0,1,2026-06-01,0,3,3,0,1,1,0
+Guest_228,Expected,Resort Hotel,233,6,1,0,3,3,0,0,BB,Offline TA/TO,TA/TO,0,0,0,E,E,0,Non Refund,0,Transient-Party,100.02,0,1,2026-06-01,0,3,3,0,1,1,0
 Guest_229,Checked-Out,Resort Hotel,143,5,10,1,7,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,107.85,0,3,2026-05-10,0,8,1,0,1,0,1
 Guest_230,Expected,Resort Hotel,357,6,26,2,3,3,0,0,HB,Offline TA/TO,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient,68.09,0,1,2026-06-26,0,5,3,0,1,1,1
 Guest_231,Expected,Resort Hotel,187,7,10,3,7,2,0,0,HB,Groups,TA/TO,0,1,0,A,A,0,No Deposit,0,Transient,125.14,2,0,2026-07-10,0,10,2,0,1,1,0
-Guest_232,Checked-Out,City Hotel,321,5,13,3,5,2,0,0,Undefined,Offline TA/TO,TA/TO,0,0,0,A,A,2,No Deposit,0,Transient,90.42,0,1,2026-05-13,0,8,2,0,1,1,0
-Guest_233,Checked-Out,City Hotel,12,5,7,2,4,1,0,0,Undefined,Direct,Direct,0,0,0,A,A,2,No Deposit,0,Transient,57.29,0,2,2026-05-07,0,6,1,0,1,0,0
-Guest_234,Expected,City Hotel,183,7,23,0,2,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient-Party,88.82,0,1,2026-07-23,0,2,2,0,1,1,1
-Guest_235,Expected,City Hotel,110,7,9,0,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,9,A,A,0,No Deposit,0,Transient,60.09,0,2,2026-07-09,0,5,2,0,1,1,1
+Guest_232,Checked-Out,Resort Hotel,321,5,13,3,5,2,0,0,Undefined,Offline TA/TO,TA/TO,0,0,0,A,A,2,No Deposit,0,Transient,90.42,0,1,2026-05-13,0,8,2,0,1,1,0
+Guest_233,Checked-Out,Resort Hotel,12,5,7,2,4,1,0,0,Undefined,Direct,Direct,0,0,0,A,A,2,No Deposit,0,Transient,57.29,0,2,2026-05-07,0,6,1,0,1,0,0
+Guest_234,Expected,Resort Hotel,183,7,23,0,2,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient-Party,88.82,0,1,2026-07-23,0,2,2,0,1,1,1
+Guest_235,Expected,Resort Hotel,110,7,9,0,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,9,A,A,0,No Deposit,0,Transient,60.09,0,2,2026-07-09,0,5,2,0,1,1,1
 Guest_236,Checked-Out,Resort Hotel,289,5,2,0,2,1,0,0,SC,Offline TA/TO,TA/TO,1,0,1,A,A,2,Non Refund,0,Transient,141.47,0,3,2026-05-02,0,2,1,0,1,0,0
-Guest_237,Checked-Out,City Hotel,294,5,12,1,4,2,0,0,HB,Online TA,TA/TO,0,0,7,A,A,0,No Deposit,0,Transient,176.06,0,3,2026-05-12,0,5,2,0,0,1,0
-Guest_238,Expected,City Hotel,214,5,31,1,3,3,0,0,BB,Offline TA/TO,TA/TO,0,0,2,A,A,1,No Deposit,0,Transient,109.79,0,3,2026-05-31,0,4,3,0,1,1,0
+Guest_237,Checked-Out,Resort Hotel,294,5,12,1,4,2,0,0,HB,Online TA,TA/TO,0,0,7,A,A,0,No Deposit,0,Transient,176.06,0,3,2026-05-12,0,5,2,0,0,1,0
+Guest_238,Expected,Resort Hotel,214,5,31,1,3,3,0,0,BB,Offline TA/TO,TA/TO,0,0,2,A,A,1,No Deposit,0,Transient,109.79,0,3,2026-05-31,0,4,3,0,1,1,0
 Guest_239,Checked-Out,Resort Hotel,119,5,22,3,2,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,2,No Deposit,0,Transient,104.45,0,0,2026-05-22,0,5,1,0,0,0,1
-Guest_240,Expected,City Hotel,54,6,22,0,1,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,106.1,0,1,2026-06-22,0,1,2,0,1,0,1
+Guest_240,Expected,Resort Hotel,54,6,22,0,1,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,106.1,0,1,2026-06-22,0,1,2,0,1,0,1
 Guest_241,Expected,Resort Hotel,26,7,2,2,1,2,0,0,SC,Corporate,Corporate,0,3,0,F,F,0,No Deposit,0,Transient-Party,147.29,1,2,2026-07-02,0,3,2,0,1,0,0
 Guest_242,Expected,Resort Hotel,117,7,1,3,7,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,2,No Deposit,0,Transient,146.43,1,2,2026-07-01,0,10,2,0,1,1,0
 Guest_243,In-House,Resort Hotel,220,5,28,2,5,2,0,0,BB,Groups,TA/TO,1,0,0,A,A,0,No Deposit,0,Transient,95.37,0,1,2026-05-28,0,7,2,0,1,0,0
-Guest_244,Expected,City Hotel,230,6,21,3,4,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,110.1,0,0,2026-06-21,0,7,1,0,1,1,0
-Guest_245,Checked-Out,City Hotel,52,5,8,1,7,1,0,0,BB,Direct,Direct,0,0,0,D,F,0,No Deposit,0,Transient-Party,126.11,0,2,2026-05-08,1,8,1,0,1,1,0
+Guest_244,Expected,Resort Hotel,230,6,21,3,4,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,110.1,0,0,2026-06-21,0,7,1,0,1,1,0
+Guest_245,Checked-Out,Resort Hotel,52,5,8,1,7,1,0,0,BB,Direct,Direct,0,0,0,D,F,0,No Deposit,0,Transient-Party,126.11,0,2,2026-05-08,1,8,1,0,1,1,0
 Guest_246,Checked-Out,Resort Hotel,294,5,22,3,5,1,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,54.49,0,2,2026-05-22,0,8,1,0,1,1,0
-Guest_247,Expected,City Hotel,320,6,18,1,5,1,0,0,BB,Direct,Direct,0,0,0,A,A,0,No Deposit,0,Transient,148.5,0,0,2026-06-18,0,6,1,0,1,0,0
+Guest_247,Expected,Resort Hotel,320,6,18,1,5,1,0,0,BB,Direct,Direct,0,0,0,A,A,0,No Deposit,0,Transient,148.5,0,0,2026-06-18,0,6,1,0,1,0,0
 Guest_248,Checked-Out,Resort Hotel,232,5,1,3,7,2,2,0,BB,Online TA,TA/TO,0,0,0,D,D,1,No Deposit,0,Transient,169.39,0,1,2026-05-01,0,10,4,0,1,0,0
 Guest_249,Expected,Resort Hotel,157,6,19,0,6,3,0,0,BB,Offline TA/TO,TA/TO,0,0,4,E,E,3,No Deposit,0,Transient,146.6,0,0,2026-06-19,0,6,3,0,0,1,0
 Guest_250,Expected,Resort Hotel,268,6,3,2,5,3,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,50.18,0,0,2026-06-03,0,7,3,0,1,1,0
-Guest_251,Expected,City Hotel,20,6,28,0,6,2,0,0,BB,Direct,Direct,0,0,0,A,A,0,No Deposit,0,Transient,21.2,0,0,2026-06-28,0,6,2,0,1,1,0
-Guest_252,Expected,City Hotel,52,6,6,3,1,1,0,0,HB,Online TA,TA/TO,0,0,0,A,B,0,No Deposit,0,Transient,128.35,0,1,2026-06-06,1,4,1,0,1,0,1
+Guest_251,Expected,Resort Hotel,20,6,28,0,6,2,0,0,BB,Direct,Direct,0,0,0,A,A,0,No Deposit,0,Transient,21.2,0,0,2026-06-28,0,6,2,0,1,1,0
+Guest_252,Expected,Resort Hotel,52,6,6,3,1,1,0,0,HB,Online TA,TA/TO,0,0,0,A,B,0,No Deposit,0,Transient,128.35,0,1,2026-06-06,1,4,1,0,1,0,1
 Guest_253,Expected,Resort Hotel,274,6,24,3,1,2,0,0,BB,Groups,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient,69.59,0,1,2026-06-24,0,4,2,0,1,1,1
-Guest_254,Expected,City Hotel,312,7,29,3,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,L,0,No Deposit,0,Transient-Party,111.49,0,1,2026-07-29,1,8,2,0,1,1,0
-Guest_255,Expected,City Hotel,280,7,11,1,1,1,1,0,HB,Groups,TA/TO,0,0,0,A,A,3,Non Refund,1,Transient-Party,161.41,0,2,2026-07-11,0,2,2,0,1,0,0
-Guest_256,Expected,City Hotel,213,7,24,2,4,2,0,0,BB,Groups,TA/TO,0,0,0,E,E,1,No Deposit,5,Transient,73.72,0,2,2026-07-24,0,6,2,0,1,1,1
+Guest_254,Expected,Resort Hotel,312,7,29,3,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,L,0,No Deposit,0,Transient-Party,111.49,0,1,2026-07-29,1,8,2,0,1,1,0
+Guest_255,Expected,Resort Hotel,280,7,11,1,1,1,1,0,HB,Groups,TA/TO,0,0,0,A,A,3,Non Refund,1,Transient-Party,161.41,0,2,2026-07-11,0,2,2,0,1,0,0
+Guest_256,Expected,Resort Hotel,213,7,24,2,4,2,0,0,BB,Groups,TA/TO,0,0,0,E,E,1,No Deposit,5,Transient,73.72,0,2,2026-07-24,0,6,2,0,1,1,1
 Guest_257,Expected,Resort Hotel,30,7,2,2,6,2,0,0,BB,Corporate,Corporate,0,2,0,A,P,0,Non Refund,0,Transient,84.9,0,0,2026-07-02,1,8,2,0,1,1,1
 Guest_258,Checked-Out,Resort Hotel,336,5,20,3,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,7,A,A,0,No Deposit,0,Transient,111.07,0,0,2026-05-20,0,9,2,0,1,0,0
-Guest_259,Checked-Out,City Hotel,182,5,25,3,5,2,0,0,BB,Online TA,TA/TO,0,2,7,A,A,0,No Deposit,0,Transient,48.1,1,3,2026-05-25,0,8,2,0,1,1,0
-Guest_260,Expected,City Hotel,22,6,7,1,1,3,0,0,BB,Direct,Direct,1,0,0,A,A,0,No Deposit,0,Transient,69.69,0,0,2026-06-07,0,2,3,0,1,1,0
+Guest_259,Checked-Out,Resort Hotel,182,5,25,3,5,2,0,0,BB,Online TA,TA/TO,0,2,7,A,A,0,No Deposit,0,Transient,48.1,1,3,2026-05-25,0,8,2,0,1,1,0
+Guest_260,Expected,Resort Hotel,22,6,7,1,1,3,0,0,BB,Direct,Direct,1,0,0,A,A,0,No Deposit,0,Transient,69.69,0,0,2026-06-07,0,2,3,0,1,1,0
 Guest_261,Expected,Resort Hotel,31,5,28,0,2,2,0,1,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,100.99,0,4,2026-05-28,0,2,3,0,1,0,0
 Guest_262,Checked-Out,Resort Hotel,73,5,8,0,7,2,0,0,BB,Offline TA/TO,TA/TO,0,0,2,A,A,0,No Deposit,0,Transient,87.98,0,2,2026-05-08,0,7,2,0,1,1,0
-Guest_263,Expected,City Hotel,9,7,14,2,7,3,0,0,BB,Offline TA/TO,TA/TO,0,3,0,A,A,3,No Deposit,0,Transient-Party,124.34,1,1,2026-07-14,0,9,3,0,0,1,0
-Guest_264,Expected,City Hotel,53,7,9,1,6,4,1,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,210.64,1,5,2026-07-09,0,7,5,0,1,1,1
+Guest_263,Expected,Resort Hotel,9,7,14,2,7,3,0,0,BB,Offline TA/TO,TA/TO,0,3,0,A,A,3,No Deposit,0,Transient-Party,124.34,1,1,2026-07-14,0,9,3,0,0,1,0
+Guest_264,Expected,Resort Hotel,53,7,9,1,6,4,1,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,210.64,1,5,2026-07-09,0,7,5,0,1,1,1
 Guest_265,Checked-Out,Resort Hotel,51,5,8,3,5,2,1,0,BB,Offline TA/TO,TA/TO,0,0,0,H,H,0,No Deposit,0,Transient,103.97,0,0,2026-05-08,0,8,3,0,1,0,0
 Guest_266,Expected,Resort Hotel,147,6,10,2,5,2,0,0,BB,Online TA,TA/TO,0,0,7,A,A,1,No Deposit,0,Transient,66.33,1,0,2026-06-10,0,7,2,0,1,1,0
 Guest_267,Checked-Out,Resort Hotel,159,5,8,1,4,2,0,0,BB,Direct,Direct,0,0,0,F,F,0,No Deposit,0,Transient,156.73,0,1,2026-05-08,0,5,2,0,1,1,0
 Guest_268,Checked-Out,Resort Hotel,13,5,7,0,3,3,1,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,1,Transient,36.45,0,1,2026-05-07,0,3,4,0,1,1,0
-Guest_269,Expected,City Hotel,177,7,14,1,3,3,1,0,SC,Online TA,TA/TO,1,0,2,D,D,0,No Deposit,0,Transient,44.44,0,3,2026-07-14,0,4,4,0,1,0,0
-Guest_270,Expected,City Hotel,52,7,1,0,6,1,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient,76.2,0,0,2026-07-01,0,6,1,0,1,1,0
+Guest_269,Expected,Resort Hotel,177,7,14,1,3,3,1,0,SC,Online TA,TA/TO,1,0,2,D,D,0,No Deposit,0,Transient,44.44,0,3,2026-07-14,0,4,4,0,1,0,0
+Guest_270,Expected,Resort Hotel,52,7,1,0,6,1,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient,76.2,0,0,2026-07-01,0,6,1,0,1,1,0
 Guest_271,Expected,Resort Hotel,334,7,4,1,7,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,88.68,1,1,2026-07-04,0,8,2,0,1,1,1
 Guest_272,Expected,Resort Hotel,21,7,7,2,4,2,0,0,HB,Groups,TA/TO,0,0,9,C,C,0,No Deposit,5,Transient,75.24,0,1,2026-07-07,0,6,2,0,0,1,0
 Guest_273,Checked-Out,Resort Hotel,29,5,21,0,4,2,0,0,BB,Online TA,TA/TO,0,0,0,D,D,1,Non Refund,0,Transient,98.74,1,2,2026-05-21,0,4,2,0,1,1,1
 Guest_274,Checked-Out,Resort Hotel,190,5,8,2,4,1,2,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient-Party,110.99,0,0,2026-05-08,0,6,3,0,1,0,1
-Guest_275,Expected,City Hotel,259,7,5,2,6,3,0,1,HB,Corporate,Corporate,0,0,0,A,A,0,No Deposit,0,Transient-Party,142.76,0,1,2026-07-05,0,8,4,0,1,0,0
-Guest_276,Checked-Out,City Hotel,204,5,11,0,3,2,1,0,SC,Direct,Direct,0,0,0,A,A,1,No Deposit,0,Transient-Party,103.65,0,2,2026-05-11,0,3,3,0,1,1,0
+Guest_275,Expected,Resort Hotel,259,7,5,2,6,3,0,1,HB,Corporate,Corporate,0,0,0,A,A,0,No Deposit,0,Transient-Party,142.76,0,1,2026-07-05,0,8,4,0,1,0,0
+Guest_276,Checked-Out,Resort Hotel,204,5,11,0,3,2,1,0,SC,Direct,Direct,0,0,0,A,A,1,No Deposit,0,Transient-Party,103.65,0,2,2026-05-11,0,3,3,0,1,1,0
 Guest_277,Checked-Out,Resort Hotel,58,5,24,0,7,3,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient,77.52,0,0,2026-05-24,0,7,3,0,1,0,0
 Guest_278,Checked-Out,Resort Hotel,263,5,9,3,4,3,2,0,SC,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,0,Transient,140.59,0,2,2026-05-09,0,7,5,0,1,1,1
 Guest_279,Expected,Resort Hotel,11,7,16,3,7,2,0,0,BB,Corporate,Corporate,0,0,0,D,D,0,No Deposit,0,Transient-Party,67.29,0,1,2026-07-16,0,10,2,0,1,0,1
 Guest_280,Checked-Out,Resort Hotel,118,5,9,3,1,2,0,0,BB,Groups,TA/TO,0,0,5,A,A,0,No Deposit,2,Transient,34.7,1,2,2026-05-09,0,4,2,0,1,1,1
 Guest_281,Expected,Resort Hotel,289,7,26,2,5,2,0,0,BB,Groups,TA/TO,0,0,0,D,D,0,No Deposit,0,Contract,148.24,0,2,2026-07-26,0,7,2,0,1,1,0
-Guest_282,Expected,City Hotel,337,5,31,2,5,1,0,0,SC,Online TA,TA/TO,0,0,0,A,C,0,Non Refund,0,Transient,145.67,0,0,2026-05-31,1,7,1,0,1,1,1
-Guest_283,Expected,City Hotel,247,6,21,3,7,2,0,0,BB,Corporate,Corporate,0,0,0,A,H,0,No Deposit,0,Transient,68.31,0,1,2026-06-21,1,10,2,0,1,1,0
-Guest_284,Checked-Out,City Hotel,353,5,16,2,2,1,2,0,BB,Direct,Direct,0,0,3,A,A,0,No Deposit,0,Transient-Party,84.04,0,3,2026-05-16,0,4,3,0,1,0,0
-Guest_285,Expected,City Hotel,126,7,12,2,2,2,0,0,BB,Online TA,TA/TO,0,1,0,A,A,2,No Deposit,2,Transient,63.32,1,1,2026-07-12,0,4,2,0,1,1,0
-Guest_286,Expected,City Hotel,74,6,1,0,6,1,1,0,BB,Groups,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient,113.06,0,4,2026-06-01,0,6,2,0,1,0,0
-Guest_287,Expected,City Hotel,360,7,14,0,6,1,1,0,BB,Online TA,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,169.28,0,1,2026-07-14,0,6,2,0,1,1,1
-Guest_288,Expected,City Hotel,203,7,16,2,5,1,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,128.12,0,0,2026-07-16,0,7,1,0,1,1,0
-Guest_289,Checked-Out,City Hotel,48,5,6,3,1,1,0,0,BB,Direct,Direct,0,1,0,A,A,0,No Deposit,0,Transient-Party,141.43,0,1,2026-05-06,0,4,1,0,1,1,0
-Guest_290,Expected,City Hotel,78,7,19,1,3,2,0,0,BB,Groups,TA/TO,0,0,5,A,A,1,No Deposit,0,Transient,132.79,0,4,2026-07-19,0,4,2,0,1,1,0
-Guest_291,Checked-Out,City Hotel,240,5,11,3,3,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,100.0,0,0,2026-05-11,0,6,2,0,1,1,1
-Guest_292,Expected,City Hotel,348,6,23,1,6,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient-Party,143.33,0,3,2026-06-23,0,7,2,0,1,1,1
+Guest_282,Expected,Resort Hotel,337,5,31,2,5,1,0,0,SC,Online TA,TA/TO,0,0,0,A,C,0,Non Refund,0,Transient,145.67,0,0,2026-05-31,1,7,1,0,1,1,1
+Guest_283,Expected,Resort Hotel,247,6,21,3,7,2,0,0,BB,Corporate,Corporate,0,0,0,A,H,0,No Deposit,0,Transient,68.31,0,1,2026-06-21,1,10,2,0,1,1,0
+Guest_284,Checked-Out,Resort Hotel,353,5,16,2,2,1,2,0,BB,Direct,Direct,0,0,3,A,A,0,No Deposit,0,Transient-Party,84.04,0,3,2026-05-16,0,4,3,0,1,0,0
+Guest_285,Expected,Resort Hotel,126,7,12,2,2,2,0,0,BB,Online TA,TA/TO,0,1,0,A,A,2,No Deposit,2,Transient,63.32,1,1,2026-07-12,0,4,2,0,1,1,0
+Guest_286,Expected,Resort Hotel,74,6,1,0,6,1,1,0,BB,Groups,TA/TO,0,0,0,A,A,0,Non Refund,0,Transient,113.06,0,4,2026-06-01,0,6,2,0,1,0,0
+Guest_287,Expected,Resort Hotel,360,7,14,0,6,1,1,0,BB,Online TA,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,169.28,0,1,2026-07-14,0,6,2,0,1,1,1
+Guest_288,Expected,Resort Hotel,203,7,16,2,5,1,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,128.12,0,0,2026-07-16,0,7,1,0,1,1,0
+Guest_289,Checked-Out,Resort Hotel,48,5,6,3,1,1,0,0,BB,Direct,Direct,0,1,0,A,A,0,No Deposit,0,Transient-Party,141.43,0,1,2026-05-06,0,4,1,0,1,1,0
+Guest_290,Expected,Resort Hotel,78,7,19,1,3,2,0,0,BB,Groups,TA/TO,0,0,5,A,A,1,No Deposit,0,Transient,132.79,0,4,2026-07-19,0,4,2,0,1,1,0
+Guest_291,Checked-Out,Resort Hotel,240,5,11,3,3,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,100.0,0,0,2026-05-11,0,6,2,0,1,1,1
+Guest_292,Expected,Resort Hotel,348,6,23,1,6,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient-Party,143.33,0,3,2026-06-23,0,7,2,0,1,1,1
 Guest_293,Expected,Resort Hotel,153,7,24,3,1,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,129.8,0,3,2026-07-24,0,4,1,0,1,1,0
-Guest_294,Expected,City Hotel,273,7,14,0,6,1,0,0,BB,Offline TA/TO,TA/TO,0,0,5,A,A,0,No Deposit,0,Transient,157.58,0,1,2026-07-14,0,6,1,0,0,1,0
-Guest_295,Expected,City Hotel,95,7,12,2,3,1,0,0,HB,Online TA,TA/TO,0,0,0,A,C,0,No Deposit,0,Transient,81.62,0,0,2026-07-12,1,5,1,0,1,0,0
-Guest_296,Expected,City Hotel,213,7,6,2,7,1,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,10,Transient-Party,30.48,0,2,2026-07-06,0,9,1,0,1,1,1
+Guest_294,Expected,Resort Hotel,273,7,14,0,6,1,0,0,BB,Offline TA/TO,TA/TO,0,0,5,A,A,0,No Deposit,0,Transient,157.58,0,1,2026-07-14,0,6,1,0,0,1,0
+Guest_295,Expected,Resort Hotel,95,7,12,2,3,1,0,0,HB,Online TA,TA/TO,0,0,0,A,C,0,No Deposit,0,Transient,81.62,0,0,2026-07-12,1,5,1,0,1,0,0
+Guest_296,Expected,Resort Hotel,213,7,6,2,7,1,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,No Deposit,10,Transient-Party,30.48,0,2,2026-07-06,0,9,1,0,1,1,1
 Guest_297,Expected,Resort Hotel,293,6,10,0,6,3,0,0,BB,Groups,TA/TO,0,0,0,A,A,1,No Deposit,0,Transient,141.81,0,0,2026-06-10,0,6,3,0,1,1,0
-Guest_298,Expected,City Hotel,208,6,3,1,4,1,2,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,113.99,0,2,2026-06-03,0,5,3,0,1,0,0
+Guest_298,Expected,Resort Hotel,208,6,3,1,4,1,2,0,BB,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,0,Transient,113.99,0,2,2026-06-03,0,5,3,0,1,0,0
 Guest_299,Checked-Out,Resort Hotel,342,5,27,1,7,2,0,0,BB,Corporate,Corporate,0,0,0,A,A,2,No Deposit,0,Transient-Party,88.16,0,1,2026-05-27,0,8,2,0,0,0,0
-Guest_300,Expected,City Hotel,87,7,25,1,6,1,2,0,BB,Direct,Direct,0,1,0,D,D,2,No Deposit,0,Transient,90.39,1,1,2026-07-25,0,7,3,0,1,0,0
+Guest_300,Expected,Resort Hotel,87,7,25,1,6,1,2,0,BB,Direct,Direct,0,1,0,D,D,2,No Deposit,0,Transient,90.39,1,1,2026-07-25,0,7,3,0,1,0,0

@@ -37,6 +37,7 @@ def load_model():
 @st.cache_data
 def load_data():
     df = pd.read_csv('Dataset/hotel_bookings_300.csv')
+    df['arrival_date'] = pd.to_datetime(df['arrival_date'])
     return df
 
 model = load_model()
@@ -55,14 +56,15 @@ st.title("🚨 예약 취소 위험 예측")
 st.caption("취소 확률 70% 이상 고객은 경고로 표시됩니다")
 st.divider()
 
-# ── KPI ────────────────────────────────────────────────────────────────────
-total     = len(df)
-warn_cnt  = (df['취소확률'] >= 70).sum()
+# ── KPI (Checked-Out 제외) ─────────────────────────────────────────────────
+kpi_df    = df[df['status'] != 'Checked-Out']
+total     = len(kpi_df)
+warn_cnt  = (kpi_df['취소확률'] >= 70).sum()
 safe_cnt  = total - warn_cnt
-avg_proba = df['취소확률'].mean()
+avg_proba = kpi_df['취소확률'].mean()
 
 c1, c2, c3, c4 = st.columns(4)
-c1.metric("전체 예약", f"{total}건")
+c1.metric("전체 예약", f"{total}건", help="Checked-Out 제외")
 c2.metric("⚠️ 위험 고객", f"{warn_cnt}명", delta=f"{warn_cnt/total*100:.1f}%", delta_color="inverse")
 c3.metric("✅ 정상 고객", f"{safe_cnt}명")
 c4.metric("평균 취소확률", f"{avg_proba:.1f}%")
@@ -70,15 +72,28 @@ c4.metric("평균 취소확률", f"{avg_proba:.1f}%")
 st.divider()
 
 # ── 필터 ───────────────────────────────────────────────────────────────────
+# 월 목록 생성
+df['_ym'] = df['arrival_date'].dt.to_period('M')
+month_options = sorted(df['_ym'].unique(), reverse=False)
+month_labels  = [str(m) for m in month_options]
+
 col_f1, col_f2, col_f3 = st.columns(3)
 with col_f1:
     show_only_warn = st.toggle("⚠️ 위험 고객만 보기", value=False)
 with col_f2:
-    hotel_filter = st.multiselect("호텔", df['hotel'].unique(), default=list(df['hotel'].unique()))
+    default_status = [s for s in df['status'].unique() if s != 'Checked-Out']
+    status_filter = st.multiselect("상태", df['status'].unique(), default=default_status)
 with col_f3:
-    status_filter = st.multiselect("상태", df['status'].unique(), default=list(df['status'].unique()))
+    selected_months = st.multiselect(
+        "체크인 월",
+        options=month_labels,
+        default=month_labels
+    )
 
-filtered = df[df['hotel'].isin(hotel_filter) & df['status'].isin(status_filter)]
+filtered = df[
+    df['status'].isin(status_filter) &
+    df['_ym'].astype(str).isin(selected_months)
+]
 if show_only_warn:
     filtered = filtered[filtered['취소확률'] >= 70]
 
