@@ -12,7 +12,7 @@ def load_model():
 
 @st.cache_data
 def load_data():
-    return pd.read_csv('Dataset/hotel_bookings_300.csv')
+    return pd.read_csv('Dataset/mock_dataset.csv')
 
 def run():
     df = load_data()
@@ -27,8 +27,9 @@ def run():
     )
 
     selected_df = df[
-        df["arrival_date"].dt.date
-        == selected_date
+        (df["arrival_date"].dt.date == selected_date)
+        &
+        (df["status"] == "Expected")
     ].copy()
 
     if len(selected_df) == 0:
@@ -177,8 +178,8 @@ def run():
     for day in future_dates:
 
         day_df = df[
-            df["arrival_date"].dt.date
-            == day.date()
+            (df["arrival_date"].dt.date
+            == day.date()) & (df['status'] == 'Expected')
         ].copy()
 
         if len(day_df) == 0:
@@ -193,7 +194,7 @@ def run():
         X_day = day_df.drop(
             columns=[
                 "customer_name",
-                "status"
+                "status",
             ],
             errors="ignore"
         )

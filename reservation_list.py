@@ -8,7 +8,7 @@ def load_model():
  
 @st.cache_data
 def load_data():
-    df = pd.read_csv('Dataset/hotel_bookings_300.csv')
+    df = pd.read_csv('Dataset/mock_dataset.csv')
     df['arrival_date'] = pd.to_datetime(df['arrival_date'])
     return df
  
@@ -53,7 +53,7 @@ def run():
     # 테이블
     display_cols = ['customer_name', 'status', 'hotel', 'arrival_date',
                     'total_stay_nights', 'adults', 'market_segment',
-                    'deposit_type', 'adr', '취소확률', '위험등급']
+                    'adr', '취소확률', '위험등급']
  
     def highlight_warn(row):
         if row['취소확률'] >= 70:

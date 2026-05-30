@@ -1,0 +1,491 @@
+customer_name,status,hotel,lead_time,arrival_date_month,arrival_date_day_of_month,stays_in_weekend_nights,stays_in_week_nights,adults,children,babies,meal,market_segment,distribution_channel,is_repeated_guest,previous_cancellations,previous_bookings_not_canceled,reserved_room_type,assigned_room_type,booking_changes,days_in_waiting_list,customer_type,adr,required_car_parking_spaces,total_of_special_requests,arrival_date,room_assignment_changed,total_stay_nights,total_people,is_adr_0,Agent_check,foreigner,is_canceled
+Guest_0001,Expected,Resort Hotel,198,6,12,2,1,2,0,0,BB,Direct,Direct,0,0,0,A,B,0,0,Transient,123.24,0,1,2026-06-12,1,2,2,0,0,1,0
+Guest_0002,Expected,Resort Hotel,76,6,6,3,4,3,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,1,0,Transient,115.75,0,0,2026-06-06,0,1,3,0,1,1,0
+Guest_0003,Expected,Resort Hotel,158,6,9,2,3,3,0,0,HB,Direct,Direct,0,0,0,D,D,2,0,Transient-Party,126.11,1,0,2026-06-09,0,1,3,0,1,1,0
+Guest_0004,Expected,Resort Hotel,25,5,30,0,2,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,130.14,0,1,2026-05-30,0,3,1,0,1,1,0
+Guest_0005,Expected,Resort Hotel,108,6,6,0,5,3,0,0,HB,Corporate,Corporate,0,0,0,G,G,0,0,Transient,138.29,1,1,2026-06-06,0,4,3,0,1,0,0
+Guest_0006,In-House,Resort Hotel,29,5,29,1,6,2,0,0,BB,Online TA,TA/TO,0,0,2,A,G,0,0,Group,115.98,0,0,2026-05-29,1,4,2,0,1,1,0
+Guest_0007,Expected,Resort Hotel,192,6,1,1,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,2,A,A,0,0,Transient,67.04,0,3,2026-06-01,0,4,2,0,0,1,0
+Guest_0008,Expected,Resort Hotel,66,6,3,0,5,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,1,Transient-Party,90.79,0,1,2026-06-03,0,3,1,0,1,1,0
+Guest_0009,Expected,Resort Hotel,98,6,10,3,5,1,0,0,Undefined,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,41.66,0,2,2026-06-10,0,5,1,0,1,1,0
+Guest_0010,Expected,Resort Hotel,156,6,9,2,2,4,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient-Party,141.16,0,0,2026-06-09,0,6,4,0,1,1,1
+Guest_0011,Expected,Resort Hotel,164,5,30,1,4,2,0,0,BB,Online TA,TA/TO,0,0,0,A,G,2,0,Transient,100.5,0,2,2026-05-30,1,4,2,0,1,1,0
+Guest_0012,Expected,Resort Hotel,160,6,3,3,6,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,153.7,0,3,2026-06-03,0,4,2,0,1,1,0
+Guest_0013,Expected,Resort Hotel,106,6,7,2,4,3,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,159.07,0,0,2026-06-07,0,2,3,0,1,1,0
+Guest_0014,Expected,Resort Hotel,82,6,10,2,2,1,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,85.65,0,2,2026-06-10,0,7,1,0,1,1,0
+Guest_0015,Expected,Resort Hotel,29,6,11,1,4,2,0,0,SC,Groups,TA/TO,0,0,0,E,E,2,0,Transient,134.91,0,0,2026-06-11,0,1,2,0,1,1,1
+Guest_0016,Expected,Resort Hotel,151,6,3,3,1,3,0,0,BB,Online TA,TA/TO,0,0,0,E,P,0,1,Transient,78.33,0,0,2026-06-03,1,7,3,0,0,1,1
+Guest_0017,Expected,Resort Hotel,5,5,30,3,1,2,0,1,SC,Offline TA/TO,TA/TO,0,0,0,A,A,1,0,Transient,178.37,0,2,2026-05-30,0,6,3,0,1,0,0
+Guest_0018,Expected,Resort Hotel,80,6,12,3,2,2,0,0,BB,Corporate,Corporate,0,0,0,B,E,0,0,Transient,146.25,0,1,2026-06-12,1,5,2,0,1,0,0
+Guest_0019,Expected,Resort Hotel,65,6,2,0,6,3,2,0,BB,Groups,TA/TO,0,0,3,A,A,0,1,Transient-Party,142.98,0,1,2026-06-02,0,3,5,0,0,1,0
+Guest_0020,Expected,Resort Hotel,140,6,6,2,2,2,0,0,HB,Groups,TA/TO,0,0,0,D,D,1,0,Transient,174.01,1,1,2026-06-06,0,3,2,0,1,1,0
+Guest_0021,Expected,Resort Hotel,154,6,9,2,3,4,0,0,BB,Direct,Direct,0,0,0,A,A,0,0,Transient,88.73,0,2,2026-06-09,0,2,4,0,1,1,0
+Guest_0022,Expected,Resort Hotel,148,6,2,0,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,142.1,0,0,2026-06-02,0,1,2,0,1,0,0
+Guest_0023,Expected,Resort Hotel,195,5,31,3,3,2,0,0,BB,Groups,TA/TO,0,0,0,A,H,0,5,Transient,116.95,0,0,2026-05-31,1,3,2,0,1,0,1
+Guest_0024,Expected,Resort Hotel,88,6,12,2,6,3,0,0,HB,Online TA,TA/TO,0,0,0,D,F,1,1,Transient,168.57,0,3,2026-06-12,1,7,3,0,1,1,0
+Guest_0025,Expected,Resort Hotel,163,6,10,1,5,1,0,0,HB,Corporate,Corporate,0,0,3,A,A,0,1,Transient,126.35,0,0,2026-06-10,0,1,1,0,0,1,0
+Guest_0026,In-House,Resort Hotel,32,5,27,3,3,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Contract,80.23,0,1,2026-05-27,0,4,1,0,1,1,0
+Guest_0027,Expected,Resort Hotel,68,5,31,3,2,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,125.77,0,1,2026-05-31,0,2,2,0,1,1,0
+Guest_0028,In-House,Resort Hotel,176,5,25,1,1,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,2,0,Transient-Party,40.0,0,0,2026-05-25,0,6,2,0,1,0,0
+Guest_0029,Expected,Resort Hotel,126,6,7,3,2,2,0,0,BB,Online TA,TA/TO,0,0,0,E,E,1,0,Transient,145.42,0,2,2026-06-07,0,6,2,0,0,1,0
+Guest_0030,Expected,Resort Hotel,45,6,4,2,1,1,0,0,BB,Online TA,TA/TO,0,0,1,E,E,0,0,Transient-Party,99.05,0,1,2026-06-04,0,2,1,0,0,1,0
+Guest_0031,In-House,Resort Hotel,91,5,30,2,3,2,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,0,Transient,86.89,0,1,2026-05-30,0,5,2,0,1,1,0
+Guest_0032,Expected,Resort Hotel,50,6,1,0,2,2,0,1,BB,Groups,TA/TO,0,0,0,A,A,0,1,Transient,163.03,1,1,2026-06-01,0,4,3,0,0,1,0
+Guest_0033,Expected,Resort Hotel,183,5,30,0,6,3,0,0,BB,Corporate,Corporate,0,0,0,A,A,1,0,Transient,167.17,0,0,2026-05-30,0,7,3,0,1,1,0
+Guest_0034,Expected,Resort Hotel,100,6,11,3,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,D,0,0,Transient,86.78,0,1,2026-06-11,1,7,2,0,1,0,0
+Guest_0035,Expected,Resort Hotel,55,6,9,3,6,2,0,0,BB,Online TA,TA/TO,0,1,0,A,A,0,0,Transient-Party,99.8,0,1,2026-06-09,0,1,2,0,1,1,0
+Guest_0036,Expected,Resort Hotel,99,6,4,1,2,2,0,0,BB,Online TA,TA/TO,0,0,3,A,A,0,5,Transient,100.46,0,1,2026-06-04,0,4,2,0,1,1,0
+Guest_0037,Expected,Resort Hotel,42,6,9,0,3,2,0,0,HB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient-Party,55.04,0,3,2026-06-09,0,7,2,0,1,1,0
+Guest_0038,Expected,Resort Hotel,129,6,3,3,2,3,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,88.1,0,2,2026-06-03,0,3,3,0,1,1,0
+Guest_0039,Expected,Resort Hotel,190,6,6,1,6,2,0,0,BB,Groups,TA/TO,0,0,4,F,P,0,0,Transient,75.91,0,0,2026-06-06,1,2,2,0,1,0,0
+Guest_0040,Expected,Resort Hotel,30,5,31,2,1,1,0,0,SC,Online TA,TA/TO,0,0,0,A,A,0,0,Transient-Party,87.91,0,3,2026-05-31,0,4,1,0,1,0,0
+Guest_0041,Expected,Resort Hotel,79,6,10,0,2,3,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,126.73,0,0,2026-06-10,0,3,3,0,1,0,0
+Guest_0042,Expected,Resort Hotel,192,6,2,2,2,2,0,0,BB,Direct,Direct,0,0,5,A,F,1,0,Transient,56.46,0,3,2026-06-02,1,4,2,0,1,1,0
+Guest_0043,Expected,Resort Hotel,44,6,10,0,6,2,1,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,1,0,Transient,72.22,0,0,2026-06-10,0,3,3,0,1,1,0
+Guest_0044,Expected,Resort Hotel,106,6,6,3,1,2,0,0,BB,Online TA,TA/TO,0,0,5,A,A,0,0,Transient-Party,112.44,0,0,2026-06-06,0,7,2,0,1,1,0
+Guest_0045,Expected,Resort Hotel,86,6,8,3,5,1,0,0,HB,Online TA,TA/TO,0,0,0,C,C,0,0,Transient,40.0,1,1,2026-06-08,0,2,1,0,1,0,0
+Guest_0046,Expected,Resort Hotel,93,6,8,0,6,2,0,0,HB,Offline TA/TO,TA/TO,0,0,6,A,L,0,0,Transient,94.1,0,0,2026-06-08,1,7,2,0,1,1,0
+Guest_0047,Expected,Resort Hotel,106,6,12,2,5,2,2,0,BB,Online TA,TA/TO,0,0,1,D,D,0,0,Transient,152.4,0,0,2026-06-12,0,4,4,0,1,0,0
+Guest_0048,Expected,Resort Hotel,136,6,9,0,4,1,0,0,SC,Offline TA/TO,TA/TO,0,0,0,G,G,0,0,Transient,90.11,0,1,2026-06-09,0,5,1,0,1,1,1
+Guest_0049,Expected,Resort Hotel,65,5,31,0,6,2,0,0,BB,Groups,TA/TO,0,1,0,A,A,0,0,Transient,69.47,1,0,2026-05-31,0,3,2,0,0,1,0
+Guest_0050,Expected,Resort Hotel,1,6,11,0,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,111.78,0,0,2026-06-11,0,5,2,0,1,1,0
+Guest_0051,Expected,Resort Hotel,39,6,3,0,1,2,0,0,BB,Direct,Direct,0,0,0,A,A,0,1,Transient,86.32,0,2,2026-06-03,0,2,2,0,1,1,0
+Guest_0052,Expected,Resort Hotel,5,6,12,0,2,1,0,0,BB,Online TA,TA/TO,0,0,1,A,A,1,0,Transient-Party,57.14,0,1,2026-06-12,0,1,1,0,1,1,1
+Guest_0053,Expected,Resort Hotel,74,6,12,3,1,2,1,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,77.52,1,1,2026-06-12,0,6,3,0,1,0,0
+Guest_0054,Expected,Resort Hotel,88,5,31,1,6,1,0,0,SC,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,129.5,0,0,2026-05-31,0,6,1,0,1,0,0
+Guest_0055,Expected,Resort Hotel,9,6,4,0,2,4,0,0,SC,Offline TA/TO,TA/TO,0,0,0,E,E,1,0,Transient,147.64,0,1,2026-06-04,0,6,4,0,0,0,0
+Guest_0056,Expected,Resort Hotel,48,6,7,0,2,2,0,0,HB,Offline TA/TO,TA/TO,0,0,2,D,D,1,0,Transient,52.39,1,0,2026-06-07,0,3,2,0,1,1,0
+Guest_0057,Expected,Resort Hotel,67,6,9,0,3,3,0,0,BB,Online TA,TA/TO,0,2,1,A,A,0,0,Transient-Party,96.87,0,1,2026-06-09,0,5,3,0,1,0,0
+Guest_0058,Expected,Resort Hotel,114,6,11,3,6,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,105.48,0,0,2026-06-11,0,2,2,0,1,0,0
+Guest_0059,Expected,Resort Hotel,167,6,10,2,5,1,0,0,HB,Groups,TA/TO,0,0,0,P,P,1,0,Transient,99.49,0,2,2026-06-10,0,7,1,0,1,0,0
+Guest_0060,In-House,Resort Hotel,191,5,30,2,6,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,112.21,0,1,2026-05-30,0,2,2,0,1,1,0
+Guest_0061,Expected,Resort Hotel,105,6,6,0,5,2,0,0,BB,Groups,TA/TO,0,0,0,D,D,1,1,Transient,113.24,0,1,2026-06-06,0,1,2,0,1,1,0
+Guest_0062,Expected,Resort Hotel,107,6,1,1,3,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,66.28,0,0,2026-06-01,0,2,2,0,0,1,0
+Guest_0063,Expected,Resort Hotel,153,6,9,3,4,2,0,0,SC,Groups,TA/TO,0,0,0,E,B,0,0,Transient,144.89,0,1,2026-06-09,1,2,2,0,1,0,0
+Guest_0064,Expected,Resort Hotel,29,6,7,2,5,1,1,0,BB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient-Party,78.84,0,2,2026-06-07,0,6,2,0,1,1,0
+Guest_0065,Expected,Resort Hotel,29,6,11,2,2,1,0,0,BB,Online TA,TA/TO,0,0,2,A,A,0,5,Transient,123.48,0,1,2026-06-11,0,7,1,0,1,0,0
+Guest_0066,Expected,Resort Hotel,119,6,6,3,2,2,0,0,BB,Online TA,TA/TO,0,0,6,D,H,1,0,Transient-Party,172.93,0,2,2026-06-06,1,3,2,0,1,1,1
+Guest_0067,Expected,Resort Hotel,140,6,11,2,1,2,0,0,BB,Online TA,TA/TO,0,1,0,A,A,1,0,Transient,132.31,0,0,2026-06-11,0,5,2,0,1,1,0
+Guest_0068,Expected,Resort Hotel,76,6,5,2,1,1,0,0,BB,Online TA,TA/TO,0,0,4,A,A,1,0,Transient,133.71,0,3,2026-06-05,0,4,1,0,1,1,0
+Guest_0069,Expected,Resort Hotel,11,6,7,3,6,2,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,0,Transient,121.31,0,0,2026-06-07,0,7,2,0,1,1,0
+Guest_0070,Expected,Resort Hotel,76,6,4,2,2,3,0,0,BB,Online TA,TA/TO,0,0,7,A,A,1,0,Transient,113.16,0,3,2026-06-04,0,4,3,0,1,1,0
+Guest_0071,Expected,Resort Hotel,124,6,2,1,5,1,1,0,SC,Groups,TA/TO,0,2,3,A,A,0,0,Transient,145.69,0,1,2026-06-02,0,4,2,0,0,1,0
+Guest_0072,Expected,Resort Hotel,49,6,4,1,6,2,0,0,BB,Direct,Direct,0,0,0,A,A,0,0,Transient,81.43,0,0,2026-06-04,0,2,2,0,1,1,0
+Guest_0073,Expected,Resort Hotel,59,6,3,3,2,2,0,0,BB,Online TA,TA/TO,0,0,0,F,H,1,0,Transient-Party,57.04,0,2,2026-06-03,1,7,2,0,1,0,0
+Guest_0074,Expected,Resort Hotel,115,6,11,0,1,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient-Party,75.25,0,0,2026-06-11,0,6,2,0,1,0,0
+Guest_0075,Expected,Resort Hotel,73,6,12,3,5,2,0,0,HB,Groups,TA/TO,0,0,0,D,D,0,0,Transient,86.86,0,1,2026-06-12,0,2,2,0,1,0,1
+Guest_0076,Expected,Resort Hotel,125,6,12,2,3,2,0,0,BB,Groups,TA/TO,0,0,0,E,F,0,0,Transient-Party,46.02,0,1,2026-06-12,1,2,2,0,1,1,0
+Guest_0077,Expected,Resort Hotel,11,6,2,2,6,4,0,0,HB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,90.26,0,1,2026-06-02,0,2,4,0,1,1,0
+Guest_0078,Expected,Resort Hotel,105,6,10,2,6,1,0,0,SC,Corporate,Corporate,0,0,0,A,F,0,0,Transient,142.7,0,2,2026-06-10,1,4,1,0,1,1,0
+Guest_0079,Expected,Resort Hotel,127,6,4,3,1,1,0,0,BB,Offline TA/TO,TA/TO,0,0,0,D,D,0,0,Transient-Party,63.28,0,1,2026-06-04,0,7,1,0,1,0,0
+Guest_0080,Expected,Resort Hotel,159,6,11,1,1,2,0,0,BB,Complementary,TA/TO,0,0,0,A,A,1,0,Transient,148.13,0,2,2026-06-11,0,1,2,0,1,0,0
+Guest_0081,Expected,Resort Hotel,111,6,12,2,2,1,1,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,112.48,1,0,2026-06-12,0,6,2,0,0,1,0
+Guest_0082,Expected,Resort Hotel,168,6,11,0,4,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient-Party,76.29,0,1,2026-06-11,0,6,2,0,1,1,0
+Guest_0083,Expected,Resort Hotel,18,5,30,0,1,2,1,0,BB,Groups,TA/TO,0,0,3,A,A,0,0,Transient-Party,114.6,0,1,2026-05-30,0,3,3,0,1,1,1
+Guest_0084,In-House,Resort Hotel,73,5,29,2,6,2,0,0,HB,Groups,TA/TO,0,0,7,A,A,1,0,Transient,107.68,0,2,2026-05-29,0,3,2,0,1,0,0
+Guest_0085,Expected,Resort Hotel,116,6,12,1,6,3,0,0,BB,Offline TA/TO,TA/TO,0,0,2,A,A,0,0,Transient,112.96,0,0,2026-06-12,0,1,3,0,1,1,0
+Guest_0086,Expected,Resort Hotel,81,6,8,2,3,3,0,0,BB,Online TA,TA/TO,0,2,3,A,A,0,0,Group,55.25,0,2,2026-06-08,0,1,3,0,1,1,0
+Guest_0087,Expected,Resort Hotel,105,6,5,0,2,1,1,0,BB,Groups,TA/TO,0,1,0,A,L,0,0,Transient,117.75,0,1,2026-06-05,1,2,2,0,1,0,1
+Guest_0088,Expected,Resort Hotel,96,6,8,0,5,1,1,0,BB,Offline TA/TO,TA/TO,0,0,0,D,D,0,0,Transient-Party,116.17,0,0,2026-06-08,0,6,2,0,1,1,0
+Guest_0089,In-House,Resort Hotel,63,5,29,3,5,1,1,0,HB,Corporate,Corporate,0,1,0,A,A,0,0,Transient,132.16,0,3,2026-05-29,0,6,2,0,1,1,0
+Guest_0090,Expected,Resort Hotel,51,6,7,3,4,3,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,65.98,0,1,2026-06-07,0,1,3,0,1,1,1
+Guest_0091,Expected,Resort Hotel,137,6,5,3,2,1,0,0,BB,Direct,Direct,0,1,0,A,A,0,0,Transient-Party,57.27,1,0,2026-06-05,0,4,1,0,1,1,0
+Guest_0092,Expected,Resort Hotel,110,6,5,0,4,2,0,0,BB,Offline TA/TO,TA/TO,0,0,7,D,A,0,1,Transient,67.35,0,0,2026-06-05,1,3,2,0,1,1,0
+Guest_0093,Expected,Resort Hotel,25,6,2,3,5,1,1,0,BB,Direct,Direct,0,0,0,F,F,0,0,Transient-Party,40.0,0,1,2026-06-02,0,2,2,0,1,0,0
+Guest_0094,Expected,Resort Hotel,77,5,30,3,6,4,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,143.37,0,0,2026-05-30,0,3,4,0,1,1,0
+Guest_0095,Expected,Resort Hotel,68,6,10,3,2,2,0,0,BB,Corporate,Corporate,0,0,0,A,P,0,0,Transient,105.06,0,0,2026-06-10,1,1,2,0,1,1,0
+Guest_0096,Expected,Resort Hotel,189,6,10,0,5,2,0,0,BB,Online TA,TA/TO,0,0,0,E,E,1,0,Transient,158.73,0,1,2026-06-10,0,3,2,0,1,1,0
+Guest_0097,In-House,Resort Hotel,191,5,29,0,3,2,1,0,BB,Direct,Direct,0,0,0,A,A,1,5,Transient,132.51,0,2,2026-05-29,0,7,3,0,0,1,0
+Guest_0098,Expected,Resort Hotel,99,5,31,2,4,2,2,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,91.79,0,0,2026-05-31,0,3,4,0,1,1,0
+Guest_0099,Expected,Resort Hotel,14,6,4,1,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,D,0,0,Transient-Party,41.46,0,1,2026-06-04,1,7,2,0,1,0,1
+Guest_0100,Expected,Resort Hotel,126,6,9,0,2,2,0,0,BB,Groups,TA/TO,0,0,0,D,D,0,0,Transient-Party,131.91,0,3,2026-06-09,0,7,2,0,1,0,0
+Guest_0101,Expected,Resort Hotel,131,6,11,1,2,3,0,0,BB,Online TA,TA/TO,0,0,5,A,A,1,0,Transient-Party,133.56,0,1,2026-06-11,0,5,3,0,0,0,1
+Guest_0102,Expected,Resort Hotel,68,6,4,0,5,2,1,0,HB,Offline TA/TO,TA/TO,0,1,0,A,A,0,0,Transient,120.59,1,3,2026-06-04,0,5,3,0,1,1,0
+Guest_0103,In-House,Resort Hotel,187,5,29,2,1,3,0,0,BB,Direct,Direct,0,0,0,A,A,0,0,Transient,132.74,0,2,2026-05-29,0,4,3,0,1,0,0
+Guest_0104,Expected,Resort Hotel,93,6,8,2,5,1,2,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient-Party,174.0,0,1,2026-06-08,0,4,3,0,1,1,0
+Guest_0105,Expected,Resort Hotel,199,6,7,3,2,2,0,0,Undefined,Offline TA/TO,TA/TO,0,0,2,A,A,0,1,Transient,150.26,0,2,2026-06-07,0,7,2,0,0,0,0
+Guest_0106,Expected,Resort Hotel,13,6,10,2,1,1,0,0,BB,Online TA,TA/TO,0,1,7,A,B,2,0,Transient,82.12,0,1,2026-06-10,1,5,1,0,1,1,0
+Guest_0107,Expected,Resort Hotel,183,6,8,2,4,2,0,0,BB,Direct,Direct,0,0,0,A,A,2,0,Transient-Party,150.87,0,1,2026-06-08,0,5,2,0,1,1,1
+Guest_0108,Expected,Resort Hotel,82,6,1,0,3,3,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,81.05,0,0,2026-06-01,0,6,3,0,1,1,0
+Guest_0109,Expected,Resort Hotel,10,5,30,1,1,2,2,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,2,0,Transient,88.57,0,1,2026-05-30,0,6,4,0,1,0,0
+Guest_0110,In-House,Resort Hotel,155,5,27,0,4,1,0,0,HB,Online TA,TA/TO,0,0,0,A,F,0,1,Transient-Party,103.98,0,0,2026-05-27,1,6,1,0,1,0,0
+Guest_0111,Expected,Resort Hotel,195,6,9,2,6,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient-Party,158.28,0,1,2026-06-09,0,6,1,0,0,1,0
+Guest_0112,Expected,Resort Hotel,24,6,8,0,4,2,0,0,BB,Online TA,TA/TO,0,0,4,A,A,0,0,Transient,126.0,0,1,2026-06-08,0,4,2,0,0,1,0
+Guest_0113,Expected,Resort Hotel,142,6,3,1,2,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient-Party,93.68,0,0,2026-06-03,0,2,2,0,1,1,0
+Guest_0114,Expected,Resort Hotel,67,6,7,0,1,4,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,1,Transient,182.14,0,0,2026-06-07,0,7,4,0,1,1,0
+Guest_0115,Expected,Resort Hotel,12,6,2,3,5,2,0,0,BB,Online TA,TA/TO,0,0,3,A,A,0,0,Transient,139.82,0,1,2026-06-02,0,6,2,0,1,1,0
+Guest_0116,Expected,Resort Hotel,20,6,10,3,1,2,0,0,BB,Online TA,TA/TO,0,1,0,D,D,1,0,Transient,100.33,1,0,2026-06-10,0,1,2,0,1,1,0
+Guest_0117,Expected,Resort Hotel,60,6,12,3,2,1,0,0,BB,Online TA,TA/TO,0,2,0,A,A,0,0,Transient,140.6,0,1,2026-06-12,0,2,1,0,1,0,1
+Guest_0118,Expected,Resort Hotel,49,6,2,2,5,2,0,1,SC,Online TA,TA/TO,0,0,4,A,A,0,0,Transient,121.37,1,0,2026-06-02,0,7,3,0,1,1,1
+Guest_0119,Expected,Resort Hotel,118,6,12,3,5,2,0,0,BB,Corporate,Corporate,0,0,1,A,A,1,0,Transient,111.76,0,1,2026-06-12,0,6,2,0,1,1,1
+Guest_0120,Expected,Resort Hotel,10,6,6,2,3,2,2,0,BB,Direct,Direct,0,0,1,A,A,0,0,Transient-Party,83.97,0,2,2026-06-06,0,6,4,0,1,0,0
+Guest_0121,Expected,Resort Hotel,120,6,6,3,2,2,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,128.75,0,0,2026-06-06,0,3,2,0,1,0,0
+Guest_0122,Expected,Resort Hotel,126,6,8,2,1,1,0,0,BB,Groups,TA/TO,0,0,6,A,E,1,0,Transient,133.82,0,2,2026-06-08,1,7,1,0,1,1,1
+Guest_0123,Expected,Resort Hotel,63,6,2,2,6,3,1,1,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,178.79,0,0,2026-06-02,0,5,5,0,1,1,0
+Guest_0124,In-House,Resort Hotel,13,5,29,3,2,3,0,0,BB,Offline TA/TO,TA/TO,0,1,0,A,A,0,1,Transient,70.43,0,1,2026-05-29,0,6,3,0,1,1,0
+Guest_0125,Expected,Resort Hotel,109,6,1,0,4,3,0,0,FB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient-Party,115.64,0,1,2026-06-01,0,3,3,0,1,1,0
+Guest_0126,Expected,Resort Hotel,102,5,30,2,4,2,2,0,BB,Online TA,TA/TO,0,2,0,A,A,2,0,Transient-Party,145.81,0,1,2026-05-30,0,2,4,0,1,1,0
+Guest_0127,Expected,Resort Hotel,16,6,7,0,4,2,1,0,BB,Groups,TA/TO,0,0,7,B,B,0,0,Transient,142.63,0,0,2026-06-07,0,1,3,0,1,1,0
+Guest_0128,Expected,Resort Hotel,4,6,2,2,6,2,2,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient-Party,67.89,0,1,2026-06-02,0,5,4,0,1,1,1
+Guest_0129,Expected,Resort Hotel,128,6,9,0,6,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,111.88,0,3,2026-06-09,0,7,2,0,1,1,0
+Guest_0130,In-House,Resort Hotel,170,5,25,2,5,3,2,0,BB,Online TA,TA/TO,1,0,0,E,E,0,0,Transient,145.15,1,3,2026-05-25,0,5,5,0,1,0,0
+Guest_0131,Expected,Resort Hotel,180,6,5,0,1,3,0,0,BB,Corporate,Corporate,0,0,0,A,A,0,0,Transient-Party,114.84,0,3,2026-06-05,0,7,3,0,1,1,0
+Guest_0132,Expected,Resort Hotel,70,5,30,2,1,3,0,0,BB,Offline TA/TO,TA/TO,0,0,7,A,A,0,0,Transient,169.58,0,1,2026-05-30,0,4,3,0,1,1,0
+Guest_0133,Expected,Resort Hotel,98,6,7,2,4,2,0,0,BB,Online TA,TA/TO,0,0,1,A,A,0,0,Transient,81.45,0,1,2026-06-07,0,5,2,0,0,1,1
+Guest_0134,Expected,Resort Hotel,189,5,30,2,3,1,0,0,BB,Groups,TA/TO,0,0,0,A,D,0,0,Transient,78.25,1,1,2026-05-30,1,4,1,0,1,1,0
+Guest_0135,Expected,Resort Hotel,186,6,10,1,4,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,138.47,1,1,2026-06-10,0,3,2,0,1,1,0
+Guest_0136,Expected,Resort Hotel,83,6,4,3,2,3,0,0,BB,Online TA,TA/TO,0,0,0,A,B,0,0,Transient-Party,132.97,0,1,2026-06-04,1,3,3,0,1,1,0
+Guest_0137,Expected,Resort Hotel,181,6,8,0,1,1,0,0,BB,Online TA,TA/TO,0,0,4,A,A,1,0,Transient,112.02,0,2,2026-06-08,0,7,1,0,1,0,0
+Guest_0138,Expected,Resort Hotel,170,5,30,0,2,1,0,0,SC,Online TA,TA/TO,0,0,0,A,A,0,5,Transient,130.78,0,0,2026-05-30,0,2,1,0,1,0,0
+Guest_0139,Expected,Resort Hotel,134,5,30,2,2,2,0,0,BB,Online TA,TA/TO,0,1,5,A,D,1,0,Transient,99.51,0,0,2026-05-30,1,4,2,0,1,1,0
+Guest_0140,Expected,Resort Hotel,100,6,5,3,4,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,121.46,0,1,2026-06-05,0,6,2,0,1,0,0
+Guest_0141,Expected,Resort Hotel,136,6,1,3,1,1,1,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,55.84,0,2,2026-06-01,0,6,2,0,0,1,0
+Guest_0142,Expected,Resort Hotel,48,6,5,1,1,3,0,0,HB,Online TA,TA/TO,0,0,6,D,D,0,0,Transient,163.74,0,2,2026-06-05,0,5,3,0,0,1,0
+Guest_0143,Expected,Resort Hotel,39,6,8,2,3,2,0,0,HB,Corporate,Corporate,0,0,0,A,A,1,5,Transient-Party,71.17,0,1,2026-06-08,0,3,2,0,1,1,0
+Guest_0144,Expected,Resort Hotel,27,6,4,3,5,3,0,0,BB,Direct,Direct,0,1,0,A,A,0,0,Contract,128.01,1,0,2026-06-04,0,5,3,0,1,1,0
+Guest_0145,Expected,Resort Hotel,62,6,4,0,2,2,2,0,SC,Online TA,TA/TO,0,0,0,C,C,0,0,Transient-Party,97.41,1,1,2026-06-04,0,3,4,0,1,1,0
+Guest_0146,Expected,Resort Hotel,179,6,8,0,3,1,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,2,0,Transient,106.27,0,0,2026-06-08,0,1,1,0,1,1,0
+Guest_0147,Expected,Resort Hotel,124,6,11,2,1,4,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient-Party,178.09,0,1,2026-06-11,0,7,4,0,1,0,0
+Guest_0148,In-House,Resort Hotel,156,5,30,2,2,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,188.37,0,1,2026-05-30,0,4,2,0,1,1,0
+Guest_0149,Expected,Resort Hotel,1,6,10,0,5,2,0,0,BB,Groups,TA/TO,0,0,0,A,P,1,0,Transient,91.38,0,2,2026-06-10,1,3,2,0,1,0,0
+Guest_0150,Expected,Resort Hotel,169,6,6,3,1,2,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,101.19,0,0,2026-06-06,0,5,2,0,0,0,0
+Guest_0151,Expected,Resort Hotel,93,6,8,3,2,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,153.13,0,0,2026-06-08,0,7,1,0,1,1,0
+Guest_0152,Expected,Resort Hotel,177,6,4,3,3,2,0,0,BB,Corporate,Corporate,0,0,5,A,A,0,0,Transient-Party,82.96,0,0,2026-06-04,0,1,2,0,1,0,0
+Guest_0153,In-House,Resort Hotel,148,5,29,0,2,1,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,40.0,0,2,2026-05-29,0,2,1,0,1,1,0
+Guest_0154,Expected,Resort Hotel,44,6,3,1,6,2,0,0,SC,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,84.35,0,0,2026-06-03,0,3,2,0,1,1,0
+Guest_0155,Expected,Resort Hotel,96,6,11,2,5,2,0,0,BB,Online TA,TA/TO,0,0,0,E,E,1,1,Transient,86.76,0,1,2026-06-11,0,4,2,0,1,1,0
+Guest_0156,Expected,Resort Hotel,8,6,1,3,6,2,0,0,HB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,183.06,0,0,2026-06-01,0,7,2,0,1,0,0
+Guest_0157,Expected,Resort Hotel,145,6,8,2,4,4,0,0,SC,Groups,TA/TO,0,1,1,A,A,0,0,Transient,68.19,0,1,2026-06-08,0,5,4,0,1,1,0
+Guest_0158,Expected,Resort Hotel,127,5,31,3,3,3,0,0,BB,Groups,TA/TO,0,0,0,A,E,0,0,Transient,144.48,0,0,2026-05-31,1,3,3,0,1,0,0
+Guest_0159,Expected,Resort Hotel,174,6,10,3,1,1,0,0,BB,Online TA,TA/TO,0,0,6,D,D,0,0,Transient,97.16,0,1,2026-06-10,0,1,1,0,1,1,0
+Guest_0160,Expected,Resort Hotel,23,6,4,3,5,2,0,0,BB,Groups,TA/TO,1,0,0,A,F,0,0,Transient,181.88,0,1,2026-06-04,1,7,2,0,0,0,1
+Guest_0161,Expected,Resort Hotel,51,6,9,2,5,2,0,0,BB,Online TA,TA/TO,1,0,0,A,A,2,0,Transient-Party,158.48,1,0,2026-06-09,0,1,2,0,1,1,0
+Guest_0162,Expected,Resort Hotel,194,6,2,3,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,154.04,1,1,2026-06-02,0,6,2,0,1,1,0
+Guest_0163,Expected,Resort Hotel,155,6,5,0,2,2,0,0,BB,Groups,TA/TO,0,0,0,D,F,0,0,Transient,125.88,0,0,2026-06-05,1,4,2,0,1,1,0
+Guest_0164,Expected,Resort Hotel,163,6,8,1,3,2,0,0,BB,Online TA,TA/TO,0,0,0,G,G,0,0,Transient,91.51,0,0,2026-06-08,0,5,2,0,1,1,1
+Guest_0165,Expected,Resort Hotel,12,6,1,2,1,1,0,0,BB,Online TA,TA/TO,0,0,0,E,E,1,0,Transient,40.0,0,0,2026-06-01,0,6,1,0,1,1,0
+Guest_0166,Expected,Resort Hotel,42,5,30,3,1,1,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,141.95,0,1,2026-05-30,0,6,1,0,1,1,0
+Guest_0167,Expected,Resort Hotel,3,6,9,0,4,1,0,0,BB,Online TA,TA/TO,0,2,3,A,G,0,0,Transient,124.55,0,1,2026-06-09,1,4,1,0,1,1,0
+Guest_0168,In-House,Resort Hotel,133,5,29,0,5,1,0,0,SC,Groups,TA/TO,0,0,2,A,A,2,0,Transient-Party,138.53,0,0,2026-05-29,0,6,1,0,1,0,0
+Guest_0169,Expected,Resort Hotel,86,6,2,3,1,1,0,0,BB,Online TA,TA/TO,0,2,0,A,A,1,0,Transient,172.32,0,0,2026-06-02,0,7,1,0,1,1,0
+Guest_0170,Expected,Resort Hotel,48,6,2,0,1,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Contract,86.29,0,0,2026-06-02,0,3,1,0,1,0,0
+Guest_0171,Expected,Resort Hotel,67,5,30,3,3,2,0,0,BB,Online TA,TA/TO,0,0,0,E,E,0,0,Transient,122.32,0,0,2026-05-30,0,3,2,0,1,0,0
+Guest_0172,Expected,Resort Hotel,82,6,10,0,4,2,0,0,BB,Offline TA/TO,TA/TO,0,0,3,A,H,0,0,Transient,96.75,0,1,2026-06-10,1,3,2,0,1,1,0
+Guest_0173,Expected,Resort Hotel,192,6,8,2,4,2,0,0,BB,Offline TA/TO,TA/TO,0,0,6,A,A,1,1,Transient-Party,112.56,0,0,2026-06-08,0,3,2,0,1,1,0
+Guest_0174,Expected,Resort Hotel,113,5,31,0,2,1,1,0,BB,Corporate,Corporate,0,0,0,E,E,1,0,Transient,125.1,0,0,2026-05-31,0,7,2,0,0,1,0
+Guest_0175,Expected,Resort Hotel,162,6,4,1,2,2,0,0,BB,Online TA,TA/TO,0,1,0,A,A,1,0,Transient-Party,75.56,0,0,2026-06-04,0,6,2,0,1,1,1
+Guest_0176,Expected,Resort Hotel,111,6,10,0,3,3,0,0,BB,Direct,Direct,0,0,0,A,A,1,0,Contract,104.49,0,0,2026-06-10,0,5,3,0,1,1,0
+Guest_0177,Expected,Resort Hotel,45,6,9,1,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,4,A,A,0,0,Transient,84.09,0,2,2026-06-09,0,2,2,0,1,1,0
+Guest_0178,Expected,Resort Hotel,129,6,6,1,4,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,2,0,Transient,113.19,0,0,2026-06-06,0,4,2,0,1,1,0
+Guest_0179,Expected,Resort Hotel,75,5,31,0,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Contract,163.77,0,1,2026-05-31,0,4,2,0,0,0,0
+Guest_0180,Expected,Resort Hotel,62,6,11,3,2,2,2,1,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,81.91,0,0,2026-06-11,0,7,5,0,1,1,0
+Guest_0181,Expected,Resort Hotel,61,6,12,2,5,1,1,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,129.26,0,1,2026-06-12,0,5,2,0,0,1,0
+Guest_0182,Expected,Resort Hotel,107,6,4,0,5,2,1,0,SC,Direct,Direct,0,0,0,D,G,0,0,Transient,160.7,0,1,2026-06-04,1,5,3,0,0,1,0
+Guest_0183,In-House,Resort Hotel,130,5,27,0,6,2,0,0,BB,Online TA,TA/TO,0,0,2,D,D,1,0,Transient,116.95,0,0,2026-05-27,0,2,2,0,1,1,0
+Guest_0184,Expected,Resort Hotel,156,6,8,1,1,2,0,0,BB,Direct,Direct,0,1,0,A,A,0,0,Transient,55.89,0,3,2026-06-08,0,7,2,0,1,0,0
+Guest_0185,Expected,Resort Hotel,152,5,30,0,3,2,0,0,HB,Online TA,TA/TO,0,0,1,A,A,0,0,Transient,120.74,0,1,2026-05-30,0,3,2,0,1,1,0
+Guest_0186,Expected,Resort Hotel,198,6,9,2,6,1,0,0,BB,Online TA,TA/TO,0,1,0,A,A,0,0,Transient-Party,103.18,0,1,2026-06-09,0,7,1,0,1,1,0
+Guest_0187,Expected,Resort Hotel,34,6,6,1,3,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,40.0,0,0,2026-06-06,0,7,2,0,0,1,0
+Guest_0188,Expected,Resort Hotel,152,6,5,2,3,2,0,0,BB,Direct,Direct,0,0,0,A,A,1,0,Transient,109.45,0,1,2026-06-05,0,1,2,0,0,0,1
+Guest_0189,Expected,Resort Hotel,64,6,4,3,4,1,0,0,SC,Groups,TA/TO,0,2,0,A,A,1,0,Transient,118.87,0,2,2026-06-04,0,2,1,0,1,1,0
+Guest_0190,Expected,Resort Hotel,141,6,10,1,6,2,0,0,BB,Online TA,TA/TO,1,0,4,A,A,2,0,Transient,118.98,0,1,2026-06-10,0,7,2,0,1,0,1
+Guest_0191,Expected,Resort Hotel,101,6,6,3,2,2,0,0,BB,Groups,TA/TO,0,0,0,A,H,0,0,Transient,111.62,0,0,2026-06-06,1,2,2,0,1,1,0
+Guest_0192,Expected,Resort Hotel,186,6,7,3,2,1,0,0,BB,Groups,TA/TO,0,0,0,A,A,1,1,Transient,83.47,0,0,2026-06-07,0,1,1,0,1,1,0
+Guest_0193,In-House,Resort Hotel,26,5,26,3,5,2,0,0,HB,Online TA,TA/TO,0,0,0,A,D,1,0,Transient,145.12,0,1,2026-05-26,1,5,2,0,0,1,0
+Guest_0194,Expected,Resort Hotel,7,5,30,1,3,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient-Party,96.93,0,1,2026-05-30,0,1,2,0,1,0,0
+Guest_0195,Expected,Resort Hotel,74,6,9,0,5,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,132.78,0,1,2026-06-09,0,4,2,0,1,0,0
+Guest_0196,Expected,Resort Hotel,161,6,6,1,2,1,0,0,HB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,117.52,0,1,2026-06-06,0,1,1,0,1,1,0
+Guest_0197,Expected,Resort Hotel,11,6,3,1,2,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,79.6,0,2,2026-06-03,0,1,2,0,1,1,0
+Guest_0198,Expected,Resort Hotel,127,6,11,1,1,1,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,0,Transient-Party,157.34,1,1,2026-06-11,0,5,1,0,1,0,0
+Guest_0199,In-House,Resort Hotel,175,5,28,1,5,1,0,0,BB,Offline TA/TO,TA/TO,0,0,3,A,A,0,0,Transient,157.74,0,1,2026-05-28,0,3,1,0,1,1,0
+Guest_0200,Expected,Resort Hotel,192,6,3,2,2,1,0,0,BB,Online TA,TA/TO,0,1,0,A,F,0,1,Transient,120.63,0,0,2026-06-03,1,7,1,0,1,0,0
+Guest_0201,Expected,Resort Hotel,29,5,30,0,3,2,0,0,BB,Direct,Direct,0,0,5,A,A,0,0,Transient,176.63,0,1,2026-05-30,0,7,2,0,1,1,0
+Guest_0202,In-House,Resort Hotel,186,5,28,1,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,G,0,0,Transient,179.45,0,3,2026-05-28,1,5,2,0,0,1,0
+Guest_0203,Expected,Resort Hotel,197,6,3,1,5,1,0,0,HB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,119.53,0,0,2026-06-03,0,5,1,0,1,1,1
+Guest_0204,Expected,Resort Hotel,72,6,3,1,5,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient-Party,120.14,0,0,2026-06-03,0,1,1,0,1,1,0
+Guest_0205,Expected,Resort Hotel,83,6,5,3,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,F,F,0,0,Transient-Party,120.14,0,2,2026-06-05,0,5,2,0,1,1,0
+Guest_0206,In-House,Resort Hotel,11,5,29,1,1,3,0,0,SC,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,104.25,0,1,2026-05-29,0,6,3,0,1,1,0
+Guest_0207,Expected,Resort Hotel,123,6,3,1,5,2,2,0,HB,Direct,Direct,0,0,0,E,E,0,0,Transient-Party,102.98,0,1,2026-06-03,0,3,4,0,1,0,0
+Guest_0208,In-House,Resort Hotel,160,5,29,0,3,3,0,0,SC,Online TA,TA/TO,0,0,0,A,D,0,0,Transient,177.86,0,1,2026-05-29,1,6,3,0,1,0,0
+Guest_0209,Expected,Resort Hotel,12,6,7,2,1,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,1,Transient,73.94,0,0,2026-06-07,0,2,2,0,1,1,0
+Guest_0210,Expected,Resort Hotel,93,6,3,3,6,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,107.75,0,1,2026-06-03,0,1,2,0,1,1,0
+Guest_0211,In-House,Resort Hotel,166,5,28,1,5,2,0,0,BB,Online TA,TA/TO,0,0,0,E,E,2,0,Transient,103.69,0,3,2026-05-28,0,6,2,0,0,1,0
+Guest_0212,Expected,Resort Hotel,27,6,7,2,3,3,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,68.84,0,1,2026-06-07,0,6,3,0,1,1,0
+Guest_0213,In-House,Resort Hotel,80,5,29,2,2,2,0,0,BB,Direct,Direct,0,1,0,A,A,0,0,Transient,79.53,0,1,2026-05-29,0,3,2,0,1,0,0
+Guest_0214,In-House,Resort Hotel,28,5,27,1,3,1,0,0,SC,Online TA,TA/TO,0,0,0,A,A,0,0,Contract,144.27,0,0,2026-05-27,0,2,1,0,1,1,0
+Guest_0215,Expected,Resort Hotel,1,6,12,3,6,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,122.67,0,0,2026-06-12,0,1,2,0,1,0,1
+Guest_0216,Expected,Resort Hotel,59,6,12,1,5,2,1,0,BB,Online TA,TA/TO,0,0,0,D,D,0,0,Transient,85.65,0,3,2026-06-12,0,1,3,0,1,1,0
+Guest_0217,Expected,Resort Hotel,76,5,31,0,2,1,0,0,SC,Online TA,TA/TO,0,0,0,D,D,1,5,Transient,103.45,0,3,2026-05-31,0,7,1,0,1,1,0
+Guest_0218,Expected,Resort Hotel,121,6,2,1,1,1,0,0,BB,Groups,TA/TO,0,1,0,A,A,0,0,Transient,136.4,0,2,2026-06-02,0,7,1,0,1,0,0
+Guest_0219,Expected,Resort Hotel,31,6,3,0,2,3,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,173.15,1,2,2026-06-03,0,7,3,0,1,1,0
+Guest_0220,Expected,Resort Hotel,60,6,2,0,3,2,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,78.15,1,0,2026-06-02,0,2,2,0,1,1,0
+Guest_0221,Expected,Resort Hotel,46,5,30,3,1,4,0,0,BB,Online TA,TA/TO,0,0,0,D,D,1,0,Group,61.21,0,2,2026-05-30,0,7,4,0,1,1,0
+Guest_0222,Expected,Resort Hotel,130,6,8,2,5,4,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,145.15,0,1,2026-06-08,0,3,4,0,1,1,0
+Guest_0223,Expected,Resort Hotel,35,6,6,2,4,1,0,0,BB,Corporate,Corporate,0,0,0,A,A,0,0,Transient,88.33,1,1,2026-06-06,0,6,1,0,1,0,1
+Guest_0224,Expected,Resort Hotel,22,6,12,0,4,2,1,0,SC,Offline TA/TO,TA/TO,0,0,0,A,A,2,0,Transient-Party,142.83,0,2,2026-06-12,0,2,3,0,1,0,0
+Guest_0225,Expected,Resort Hotel,119,6,5,1,4,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient-Party,75.74,0,0,2026-06-05,0,4,2,0,1,1,0
+Guest_0226,Expected,Resort Hotel,155,6,5,0,4,2,1,0,BB,Online TA,TA/TO,0,0,0,A,A,1,1,Transient,66.72,0,1,2026-06-05,0,4,3,0,1,1,1
+Guest_0227,Expected,Resort Hotel,197,6,1,0,5,1,0,0,HB,Groups,TA/TO,0,0,7,A,A,0,0,Transient,83.07,0,0,2026-06-01,0,6,1,0,1,0,0
+Guest_0228,Expected,Resort Hotel,121,6,4,2,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,157.65,1,0,2026-06-04,0,4,2,0,1,1,0
+Guest_0229,In-House,Resort Hotel,162,5,25,2,1,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,2,0,Transient,174.54,0,0,2026-05-25,0,6,2,0,1,1,0
+Guest_0230,Expected,Resort Hotel,122,6,1,1,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,125.32,0,0,2026-06-01,0,5,2,0,1,0,0
+Guest_0231,Expected,Resort Hotel,182,6,1,3,5,3,2,0,BB,Online TA,TA/TO,0,0,0,A,B,0,0,Contract,89.01,0,0,2026-06-01,1,7,5,0,0,1,0
+Guest_0232,Expected,Resort Hotel,92,6,5,0,3,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient-Party,129.1,0,1,2026-06-05,0,3,2,0,1,0,1
+Guest_0233,Expected,Resort Hotel,27,6,7,1,5,1,0,0,BB,Groups,TA/TO,1,0,0,A,A,0,0,Transient,146.99,0,2,2026-06-07,0,6,1,0,1,1,1
+Guest_0234,Expected,Resort Hotel,25,6,8,1,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,97.52,0,2,2026-06-08,0,7,2,0,1,1,0
+Guest_0235,Expected,Resort Hotel,140,6,4,1,3,3,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,110.66,1,0,2026-06-04,0,4,3,0,1,0,0
+Guest_0236,Expected,Resort Hotel,151,6,3,3,2,2,0,0,SC,Online TA,TA/TO,0,0,5,A,D,0,0,Transient-Party,137.33,0,2,2026-06-03,1,5,2,0,1,1,0
+Guest_0237,Expected,Resort Hotel,184,6,10,1,2,2,0,0,BB,Online TA,TA/TO,0,0,5,A,P,0,0,Transient,132.25,0,2,2026-06-10,1,2,2,0,1,1,1
+Guest_0238,Expected,Resort Hotel,118,6,11,3,4,3,0,0,BB,Groups,TA/TO,0,2,7,A,L,0,0,Transient,109.06,0,0,2026-06-11,1,4,3,0,1,0,0
+Guest_0239,Expected,Resort Hotel,63,6,12,0,5,2,1,0,SC,Online TA,TA/TO,0,0,6,A,A,0,0,Transient,153.62,0,2,2026-06-12,0,4,3,0,1,0,0
+Guest_0240,In-House,Resort Hotel,9,5,26,0,4,4,0,0,HB,Online TA,TA/TO,0,1,7,A,A,1,0,Transient,106.12,0,2,2026-05-26,0,5,4,0,0,1,0
+Guest_0241,In-House,Resort Hotel,168,5,27,3,6,3,0,0,HB,Groups,TA/TO,0,1,0,D,D,0,0,Transient,107.67,0,1,2026-05-27,0,2,3,0,1,1,0
+Guest_0242,Expected,Resort Hotel,37,6,9,0,3,3,0,0,BB,Online TA,TA/TO,0,1,5,A,A,0,0,Transient-Party,191.7,1,0,2026-06-09,0,2,3,0,1,1,0
+Guest_0243,Expected,Resort Hotel,155,5,31,2,2,2,2,0,BB,Online TA,TA/TO,0,0,1,A,A,0,0,Contract,117.41,0,3,2026-05-31,0,5,4,0,1,1,0
+Guest_0244,In-House,Resort Hotel,98,5,27,2,6,3,0,0,SC,Online TA,TA/TO,0,0,3,E,L,1,0,Transient-Party,125.61,0,2,2026-05-27,1,4,3,0,1,1,0
+Guest_0245,Expected,Resort Hotel,72,6,9,0,2,2,0,0,BB,Online TA,TA/TO,0,0,0,E,E,0,0,Transient-Party,115.46,0,1,2026-06-09,0,4,2,0,1,1,0
+Guest_0246,Expected,Resort Hotel,120,6,5,1,1,3,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,183.42,0,3,2026-06-05,0,5,3,0,1,1,0
+Guest_0247,Expected,Resort Hotel,54,6,5,3,2,2,0,0,BB,Groups,TA/TO,0,0,0,D,D,1,0,Transient,70.69,1,0,2026-06-05,0,3,2,0,1,1,0
+Guest_0248,In-House,Resort Hotel,24,5,29,0,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,E,E,0,0,Transient,137.84,0,0,2026-05-29,0,7,2,0,1,1,0
+Guest_0249,Expected,Resort Hotel,150,5,31,0,6,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,129.18,0,1,2026-05-31,0,4,1,0,1,1,1
+Guest_0250,Expected,Resort Hotel,90,6,11,2,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,G,G,0,0,Transient,60.5,0,0,2026-06-11,0,3,2,0,1,1,0
+Guest_0251,Expected,Resort Hotel,174,6,9,2,5,2,2,0,BB,Offline TA/TO,TA/TO,0,0,4,E,E,0,0,Transient,87.5,0,1,2026-06-09,0,5,4,0,1,1,1
+Guest_0252,Expected,Resort Hotel,80,6,5,1,1,3,2,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient-Party,105.71,0,1,2026-06-05,0,7,5,0,0,0,0
+Guest_0253,Expected,Resort Hotel,1,6,7,3,2,2,0,0,SC,Direct,Direct,0,0,6,A,A,1,1,Transient,99.66,0,2,2026-06-07,0,4,2,0,1,1,0
+Guest_0254,Expected,Resort Hotel,73,6,6,3,4,1,0,0,SC,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,91.7,1,0,2026-06-06,0,6,1,0,1,0,1
+Guest_0255,Expected,Resort Hotel,58,6,12,3,4,1,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,96.75,0,1,2026-06-12,0,2,1,0,1,1,0
+Guest_0256,Expected,Resort Hotel,71,6,6,0,5,2,0,0,BB,Direct,Direct,0,0,0,F,F,0,1,Transient,200.77,0,1,2026-06-06,0,1,2,0,1,1,0
+Guest_0257,Expected,Resort Hotel,28,6,4,0,6,1,0,0,HB,Groups,TA/TO,0,0,7,A,A,0,0,Transient,109.27,0,1,2026-06-04,0,4,1,0,1,1,0
+Guest_0258,Expected,Resort Hotel,124,6,1,0,1,1,0,0,BB,Direct,Direct,0,0,0,A,F,0,0,Transient-Party,101.58,0,0,2026-06-01,1,3,1,0,0,0,0
+Guest_0259,In-House,Resort Hotel,172,5,30,0,5,2,0,0,BB,Online TA,TA/TO,0,0,0,F,F,0,0,Transient,87.56,0,1,2026-05-30,0,6,2,0,1,0,0
+Guest_0260,Expected,Resort Hotel,10,6,3,0,6,2,2,0,HB,Groups,TA/TO,1,0,0,A,A,1,0,Transient-Party,51.67,0,2,2026-06-03,0,5,4,0,1,1,0
+Guest_0261,Expected,Resort Hotel,91,6,4,2,4,4,0,0,BB,Direct,Direct,0,1,5,A,A,0,0,Transient,147.46,0,1,2026-06-04,0,7,4,0,1,1,0
+Guest_0262,Expected,Resort Hotel,42,6,7,1,1,2,0,0,BB,Groups,TA/TO,0,0,0,D,D,1,0,Transient,130.98,0,0,2026-06-07,0,2,2,0,1,1,1
+Guest_0263,In-House,Resort Hotel,109,5,30,2,6,2,0,0,BB,Online TA,TA/TO,0,0,0,F,F,0,0,Transient,79.37,0,3,2026-05-30,0,2,2,0,1,0,0
+Guest_0264,Expected,Resort Hotel,173,6,8,1,3,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,96.51,0,2,2026-06-08,0,2,1,0,1,1,0
+Guest_0265,In-House,Resort Hotel,73,5,30,2,3,2,0,0,BB,Online TA,TA/TO,0,0,0,A,L,0,0,Transient,61.33,0,0,2026-05-30,1,4,2,0,1,1,0
+Guest_0266,Expected,Resort Hotel,193,6,1,0,1,2,0,0,BB,Online TA,TA/TO,0,0,6,A,G,0,0,Transient,65.21,1,2,2026-06-01,1,5,2,0,1,1,0
+Guest_0267,Expected,Resort Hotel,182,6,10,1,6,3,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Contract,64.99,0,1,2026-06-10,0,3,3,0,1,1,0
+Guest_0268,Expected,Resort Hotel,36,6,11,3,5,2,0,0,BB,Online TA,TA/TO,0,0,4,C,C,2,0,Transient-Party,141.77,0,0,2026-06-11,0,3,2,0,1,1,1
+Guest_0269,Expected,Resort Hotel,198,6,1,2,4,1,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,D,0,0,Contract,56.42,0,0,2026-06-01,1,2,1,0,1,0,1
+Guest_0270,Expected,Resort Hotel,176,6,5,3,1,2,0,0,SC,Online TA,TA/TO,0,0,0,G,G,0,0,Transient,113.23,0,2,2026-06-05,0,5,2,0,1,1,0
+Guest_0271,Expected,Resort Hotel,195,6,10,0,5,3,0,0,HB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,71.88,0,1,2026-06-10,0,1,3,0,1,1,1
+Guest_0272,Expected,Resort Hotel,132,6,7,3,3,2,0,0,BB,Groups,TA/TO,0,0,3,D,D,0,0,Transient,41.71,0,1,2026-06-07,0,5,2,0,1,1,0
+Guest_0273,Expected,Resort Hotel,152,6,10,3,1,1,1,0,SC,Offline TA/TO,TA/TO,0,0,6,A,A,0,0,Transient,136.41,0,2,2026-06-10,0,2,2,0,1,1,0
+Guest_0274,Expected,Resort Hotel,198,6,3,0,5,3,0,0,BB,Groups,TA/TO,0,0,6,A,A,0,0,Transient,144.17,0,2,2026-06-03,0,5,3,0,1,0,0
+Guest_0275,Expected,Resort Hotel,43,6,3,2,3,1,0,0,BB,Online TA,TA/TO,0,0,1,A,G,0,0,Transient,163.28,0,0,2026-06-03,1,1,1,0,1,1,1
+Guest_0276,Expected,Resort Hotel,168,6,10,1,2,1,0,0,BB,Offline TA/TO,TA/TO,0,0,3,A,A,0,0,Transient-Party,97.16,0,1,2026-06-10,0,3,1,0,0,0,0
+Guest_0277,Expected,Resort Hotel,183,6,1,2,6,2,0,0,BB,Online TA,TA/TO,0,0,5,A,D,0,0,Transient,85.26,0,1,2026-06-01,1,2,2,0,1,1,0
+Guest_0278,In-House,Resort Hotel,116,5,26,0,6,1,0,0,BB,Direct,Direct,0,0,0,A,A,2,0,Transient,120.4,0,3,2026-05-26,0,7,1,0,1,1,0
+Guest_0279,Expected,Resort Hotel,26,6,3,0,3,1,2,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,115.48,1,2,2026-06-03,0,7,3,0,1,1,1
+Guest_0280,Expected,Resort Hotel,46,6,9,0,4,2,1,0,FB,Offline TA/TO,TA/TO,0,0,0,A,A,1,1,Transient,167.76,0,1,2026-06-09,0,1,3,0,1,1,0
+Guest_0281,Expected,Resort Hotel,89,6,6,3,2,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,132.02,0,3,2026-06-06,0,5,2,0,1,1,0
+Guest_0282,In-House,Resort Hotel,18,5,27,2,4,2,2,0,Undefined,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,59.72,0,3,2026-05-27,0,5,4,0,1,0,0
+Guest_0283,Expected,Resort Hotel,148,5,30,1,1,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,146.27,0,0,2026-05-30,0,6,2,0,1,0,0
+Guest_0284,Expected,Resort Hotel,9,6,7,3,6,2,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,144.07,0,0,2026-06-07,0,6,2,0,1,1,0
+Guest_0285,Expected,Resort Hotel,194,6,4,1,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient-Party,109.89,0,2,2026-06-04,0,3,2,0,1,1,0
+Guest_0286,In-House,Resort Hotel,153,5,26,2,2,1,0,0,BB,Online TA,TA/TO,0,0,2,A,A,0,0,Transient,118.59,0,0,2026-05-26,0,7,1,0,1,1,0
+Guest_0287,Expected,Resort Hotel,198,6,9,0,3,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,2,0,Transient-Party,170.21,0,0,2026-06-09,0,7,2,0,1,1,0
+Guest_0288,Expected,Resort Hotel,60,5,31,3,6,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,2,0,Contract,166.22,0,0,2026-05-31,0,6,2,0,1,1,1
+Guest_0289,Expected,Resort Hotel,82,5,31,3,3,1,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,1,Transient,65.83,0,0,2026-05-31,0,7,1,0,1,0,0
+Guest_0290,Expected,Resort Hotel,84,6,7,2,5,2,0,0,BB,Groups,TA/TO,0,0,4,A,A,0,0,Transient,187.75,0,1,2026-06-07,0,1,2,0,1,0,0
+Guest_0291,Expected,Resort Hotel,110,6,7,1,6,2,0,0,HB,Online TA,TA/TO,0,0,0,D,D,0,0,Transient,112.83,0,0,2026-06-07,0,3,2,0,1,0,0
+Guest_0292,Expected,Resort Hotel,116,6,6,3,4,2,0,1,BB,Offline TA/TO,TA/TO,0,0,0,A,A,1,0,Transient,99.1,0,0,2026-06-06,0,3,3,0,0,1,0
+Guest_0293,Expected,Resort Hotel,165,6,10,3,2,2,0,0,BB,Groups,TA/TO,0,0,0,D,D,2,0,Transient-Party,141.07,0,0,2026-06-10,0,1,2,0,1,1,0
+Guest_0294,Expected,Resort Hotel,78,6,8,2,5,3,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,100.88,0,1,2026-06-08,0,2,3,0,1,1,0
+Guest_0295,Expected,Resort Hotel,27,5,30,3,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient-Party,91.6,0,0,2026-05-30,0,6,2,0,1,1,1
+Guest_0296,Expected,Resort Hotel,106,6,3,0,5,2,1,0,BB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient-Party,121.58,0,1,2026-06-03,0,6,3,0,1,0,0
+Guest_0297,In-House,Resort Hotel,5,5,28,1,6,1,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,0,Transient,109.9,0,1,2026-05-28,0,2,1,0,1,1,0
+Guest_0298,In-House,Resort Hotel,4,5,30,2,6,2,2,0,BB,Offline TA/TO,TA/TO,0,0,0,A,B,0,0,Transient-Party,166.66,0,1,2026-05-30,1,5,4,0,0,0,0
+Guest_0299,Expected,Resort Hotel,1,6,6,3,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,1,5,Transient,109.47,0,0,2026-06-06,0,1,2,0,1,1,0
+Guest_0300,In-House,Resort Hotel,2,5,29,3,3,3,1,0,BB,Online TA,TA/TO,0,0,0,D,D,0,0,Transient,158.78,0,3,2026-05-29,0,4,4,0,1,0,0
+Guest_0301,In-House,Resort Hotel,102,5,27,1,4,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,128.35,0,1,2026-05-27,0,7,2,0,1,0,0
+Guest_0302,In-House,Resort Hotel,16,5,28,1,5,3,0,0,SC,Groups,TA/TO,0,0,0,E,E,0,0,Transient,42.02,0,0,2026-05-28,0,3,3,0,0,0,0
+Guest_0303,Expected,Resort Hotel,32,6,2,1,3,2,0,0,BB,Direct,Direct,0,0,0,A,A,1,0,Transient,111.9,0,0,2026-06-02,0,6,2,0,1,1,0
+Guest_0304,Expected,Resort Hotel,29,6,5,3,2,2,1,0,HB,Groups,TA/TO,0,0,0,A,A,0,0,Transient-Party,40.0,0,1,2026-06-05,0,2,3,0,1,0,0
+Guest_0305,Expected,Resort Hotel,124,6,4,1,3,2,0,0,BB,Online TA,TA/TO,0,2,0,A,A,0,0,Transient-Party,104.07,1,1,2026-06-04,0,4,2,0,0,1,0
+Guest_0306,Expected,Resort Hotel,13,6,1,3,4,3,0,0,BB,Direct,Direct,0,0,0,A,A,0,1,Transient,135.59,0,1,2026-06-01,0,4,3,0,0,0,0
+Guest_0307,Expected,Resort Hotel,181,6,6,3,4,2,0,0,SC,Online TA,TA/TO,0,0,1,A,A,1,1,Transient,128.55,1,1,2026-06-06,0,2,2,0,1,0,0
+Guest_0308,In-House,Resort Hotel,193,5,25,1,1,1,0,0,BB,Online TA,TA/TO,0,0,5,A,A,0,0,Transient-Party,120.62,0,0,2026-05-25,0,3,1,0,1,1,0
+Guest_0309,Expected,Resort Hotel,128,6,12,3,6,3,0,0,BB,Direct,Direct,0,0,0,D,D,1,0,Transient,152.8,0,2,2026-06-12,0,7,3,0,1,1,1
+Guest_0310,Expected,Resort Hotel,17,6,3,0,1,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient-Party,108.67,0,1,2026-06-03,0,7,1,0,1,1,0
+Guest_0311,Expected,Resort Hotel,150,6,1,1,5,1,0,0,SC,Groups,TA/TO,1,0,0,A,A,0,0,Transient,136.75,0,0,2026-06-01,0,3,1,0,1,1,0
+Guest_0312,In-House,Resort Hotel,131,5,29,1,2,2,0,0,BB,Online TA,TA/TO,0,0,0,D,P,0,0,Transient,87.81,0,2,2026-05-29,1,6,2,0,1,1,0
+Guest_0313,Expected,Resort Hotel,82,6,5,0,3,1,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,1,Contract,112.83,0,0,2026-06-05,0,1,1,0,0,1,0
+Guest_0314,Expected,Resort Hotel,100,6,6,0,2,2,2,1,BB,Online TA,TA/TO,0,0,2,E,H,0,0,Transient,110.71,1,0,2026-06-06,1,1,5,0,1,1,0
+Guest_0315,Expected,Resort Hotel,20,6,11,2,4,2,0,0,BB,Online TA,TA/TO,0,0,6,A,A,0,0,Transient,95.74,0,1,2026-06-11,0,6,2,0,1,1,0
+Guest_0316,Expected,Resort Hotel,107,6,5,3,6,2,2,0,BB,Online TA,TA/TO,0,0,0,D,P,0,0,Transient,139.5,0,1,2026-06-05,1,2,4,0,1,1,0
+Guest_0317,Expected,Resort Hotel,181,6,2,2,6,2,0,0,BB,Direct,Direct,0,0,0,A,D,0,0,Transient,91.12,0,1,2026-06-02,1,6,2,0,1,1,0
+Guest_0318,Expected,Resort Hotel,64,6,3,1,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,106.49,0,0,2026-06-03,0,4,2,0,1,1,1
+Guest_0319,Expected,Resort Hotel,50,6,11,2,3,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,1,0,Transient,146.57,0,1,2026-06-11,0,2,2,0,1,1,0
+Guest_0320,Expected,Resort Hotel,4,6,10,0,5,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,1,0,Transient,68.68,0,0,2026-06-10,0,6,2,0,1,1,0
+Guest_0321,Expected,Resort Hotel,11,6,1,0,6,2,0,0,BB,Online TA,TA/TO,0,0,5,A,A,0,0,Transient,76.04,0,0,2026-06-01,0,2,2,0,0,1,0
+Guest_0322,Expected,Resort Hotel,100,6,9,3,3,3,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,5,Transient,106.85,0,0,2026-06-09,0,7,3,0,1,0,0
+Guest_0323,In-House,Resort Hotel,199,5,29,1,3,2,0,0,BB,Online TA,TA/TO,0,0,7,A,A,0,0,Transient-Party,188.18,0,1,2026-05-29,0,4,2,0,1,0,0
+Guest_0324,Expected,Resort Hotel,109,6,3,3,4,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,190.3,0,1,2026-06-03,0,4,2,0,1,1,0
+Guest_0325,Expected,Resort Hotel,0,6,11,3,2,2,0,0,HB,Groups,TA/TO,0,0,0,A,A,0,1,Transient,94.38,0,1,2026-06-11,0,1,2,0,1,1,0
+Guest_0326,Expected,Resort Hotel,81,6,8,1,1,1,1,0,BB,Online TA,TA/TO,0,0,2,D,D,1,0,Transient,89.72,1,2,2026-06-08,0,2,2,0,1,1,0
+Guest_0327,Expected,Resort Hotel,96,6,6,3,4,2,0,0,BB,Groups,TA/TO,0,0,0,E,E,2,0,Transient,75.44,0,0,2026-06-06,0,4,2,0,0,1,0
+Guest_0328,In-House,Resort Hotel,44,5,30,0,4,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,1,1,Transient,146.19,0,2,2026-05-30,0,6,2,0,1,1,0
+Guest_0329,Expected,Resort Hotel,191,6,5,1,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,6,A,A,1,5,Transient-Party,111.99,0,0,2026-06-05,0,2,2,0,1,1,0
+Guest_0330,Expected,Resort Hotel,3,6,4,2,4,2,2,0,HB,Online TA,TA/TO,0,0,0,A,L,1,0,Transient,107.09,0,2,2026-06-04,1,2,4,0,1,1,0
+Guest_0331,Expected,Resort Hotel,180,6,4,2,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,3,A,A,2,0,Transient,43.28,0,0,2026-06-04,0,3,2,0,1,1,0
+Guest_0332,Expected,Resort Hotel,198,6,10,1,3,2,0,0,BB,Online TA,TA/TO,0,1,0,A,A,1,0,Transient,95.26,0,1,2026-06-10,0,5,2,0,1,1,0
+Guest_0333,Expected,Resort Hotel,103,6,11,2,6,2,1,0,BB,Online TA,TA/TO,0,0,4,A,A,0,0,Transient,120.43,0,1,2026-06-11,0,4,3,0,1,1,0
+Guest_0334,Expected,Resort Hotel,84,6,7,0,4,2,0,0,SC,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,172.41,0,0,2026-06-07,0,3,2,0,1,1,1
+Guest_0335,Expected,Resort Hotel,162,6,7,0,5,3,1,0,HB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient-Party,149.2,0,1,2026-06-07,0,2,4,0,1,0,0
+Guest_0336,Expected,Resort Hotel,162,6,1,3,2,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,139.22,0,1,2026-06-01,0,6,2,0,1,1,0
+Guest_0337,Expected,Resort Hotel,128,6,1,3,1,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,C,C,1,0,Transient-Party,96.73,0,1,2026-06-01,0,5,2,0,1,1,0
+Guest_0338,In-House,Resort Hotel,124,5,25,3,2,2,0,0,BB,Groups,TA/TO,0,0,5,D,D,0,0,Transient-Party,151.78,0,1,2026-05-25,0,7,2,0,1,0,0
+Guest_0339,Expected,Resort Hotel,37,6,8,1,6,1,0,0,FB,Online TA,TA/TO,0,0,0,G,G,1,0,Transient,148.9,0,0,2026-06-08,0,2,1,0,1,1,0
+Guest_0340,Expected,Resort Hotel,76,6,2,2,2,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Contract,122.77,0,0,2026-06-02,0,7,2,0,1,1,0
+Guest_0341,Expected,Resort Hotel,34,6,1,3,2,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,187.7,0,1,2026-06-01,0,6,2,0,1,1,0
+Guest_0342,Expected,Resort Hotel,38,5,31,3,1,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,144.35,0,0,2026-05-31,0,1,2,0,1,1,1
+Guest_0343,In-House,Resort Hotel,91,5,28,1,4,1,0,0,BB,Online TA,TA/TO,0,0,0,A,E,0,0,Transient,140.65,1,1,2026-05-28,1,2,1,0,1,1,0
+Guest_0344,In-House,Resort Hotel,104,5,27,2,4,3,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,87.64,0,1,2026-05-27,0,6,3,0,1,0,0
+Guest_0345,Expected,Resort Hotel,127,5,31,1,5,1,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,1,Transient,115.3,0,1,2026-05-31,0,5,1,0,1,1,0
+Guest_0346,Expected,Resort Hotel,154,6,9,1,5,2,0,0,SC,Online TA,TA/TO,0,0,0,E,E,0,5,Transient,106.81,0,1,2026-06-09,0,7,2,0,1,1,0
+Guest_0347,Expected,Resort Hotel,167,6,1,2,2,1,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,1,Transient,75.34,0,0,2026-06-01,0,7,1,0,1,1,0
+Guest_0348,In-House,Resort Hotel,6,5,27,2,6,2,0,0,BB,Direct,Direct,0,0,0,A,A,0,0,Transient,115.51,0,1,2026-05-27,0,3,2,0,1,1,0
+Guest_0349,Expected,Resort Hotel,24,6,9,2,2,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,71.97,0,0,2026-06-09,0,4,2,0,1,1,0
+Guest_0350,Expected,Resort Hotel,178,6,2,2,1,2,2,0,BB,Online TA,TA/TO,0,0,6,A,A,1,0,Transient,139.03,0,0,2026-06-02,0,6,4,0,1,0,0
+Guest_0351,Expected,Resort Hotel,113,6,1,0,6,2,0,0,SC,Online TA,TA/TO,0,0,0,A,A,0,1,Transient-Party,109.52,0,0,2026-06-01,0,3,2,0,0,1,0
+Guest_0352,Expected,Resort Hotel,18,6,8,3,1,3,0,0,BB,Online TA,TA/TO,0,0,6,D,D,0,0,Transient,94.44,0,1,2026-06-08,0,7,3,0,0,0,1
+Guest_0353,Expected,Resort Hotel,12,6,6,0,3,2,2,0,HB,Corporate,Corporate,0,0,0,D,D,1,0,Transient-Party,40.0,0,0,2026-06-06,0,3,4,0,1,1,1
+Guest_0354,Expected,Resort Hotel,86,6,9,1,1,2,0,0,BB,Online TA,TA/TO,0,0,4,A,A,0,0,Transient-Party,91.24,0,1,2026-06-09,0,2,2,0,1,1,0
+Guest_0355,Expected,Resort Hotel,113,6,6,2,6,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,123.7,0,1,2026-06-06,0,5,2,0,1,1,0
+Guest_0356,Expected,Resort Hotel,153,6,3,0,2,2,2,0,BB,Corporate,Corporate,0,0,0,A,P,0,0,Transient,82.3,0,0,2026-06-03,1,1,4,0,1,0,0
+Guest_0357,Expected,Resort Hotel,178,6,5,3,4,2,0,0,BB,Online TA,TA/TO,0,0,0,A,C,0,0,Transient,85.49,0,0,2026-06-05,1,3,2,0,1,1,0
+Guest_0358,Expected,Resort Hotel,195,6,12,2,2,1,0,0,BB,Corporate,Corporate,0,0,0,A,A,0,0,Transient,138.83,1,1,2026-06-12,0,3,1,0,1,1,0
+Guest_0359,Expected,Resort Hotel,44,6,8,3,2,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,109.64,0,0,2026-06-08,0,6,2,0,1,1,1
+Guest_0360,In-House,Resort Hotel,153,5,28,1,4,2,0,0,BB,Offline TA/TO,TA/TO,0,0,6,A,A,0,0,Transient,99.77,0,0,2026-05-28,0,6,2,0,1,0,0
+Guest_0361,Expected,Resort Hotel,27,6,10,0,2,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,1,0,Transient,52.32,0,1,2026-06-10,0,4,2,0,1,1,0
+Guest_0362,Expected,Resort Hotel,149,6,7,3,1,1,0,0,Undefined,Online TA,TA/TO,0,1,5,A,A,0,0,Transient,132.44,0,1,2026-06-07,0,6,1,0,0,0,0
+Guest_0363,Expected,Resort Hotel,65,6,10,1,6,2,1,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,152.39,0,1,2026-06-10,0,3,3,0,1,1,1
+Guest_0364,Expected,Resort Hotel,172,6,12,0,2,3,0,0,BB,Groups,TA/TO,0,0,0,D,D,0,0,Transient,128.27,0,1,2026-06-12,0,1,3,0,1,1,0
+Guest_0365,In-House,Resort Hotel,21,5,27,2,2,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,H,0,0,Transient,40.0,0,1,2026-05-27,1,5,2,0,1,0,0
+Guest_0366,Expected,Resort Hotel,191,6,7,0,6,1,0,0,BB,Online TA,TA/TO,0,0,3,A,A,0,0,Transient-Party,109.84,0,3,2026-06-07,0,3,1,0,0,0,0
+Guest_0367,In-House,Resort Hotel,50,5,30,0,3,2,1,0,BB,Online TA,TA/TO,0,0,0,A,G,0,0,Contract,108.16,0,0,2026-05-30,1,3,3,0,1,1,0
+Guest_0368,Expected,Resort Hotel,32,6,11,0,4,2,0,0,BB,Online TA,TA/TO,0,0,2,A,A,0,0,Transient,136.1,0,0,2026-06-11,0,2,2,0,1,1,1
+Guest_0369,Expected,Resort Hotel,5,6,7,0,2,2,0,0,SC,Online TA,TA/TO,0,0,0,D,D,0,0,Transient-Party,129.86,0,2,2026-06-07,0,4,2,0,1,0,0
+Guest_0370,Expected,Resort Hotel,68,6,2,3,2,2,2,0,BB,Online TA,TA/TO,0,0,0,A,A,1,1,Transient,101.41,0,1,2026-06-02,0,1,4,0,1,1,0
+Guest_0371,Expected,Resort Hotel,185,5,31,3,4,2,0,0,BB,Complementary,TA/TO,0,0,0,E,E,0,0,Transient,124.48,0,0,2026-05-31,0,4,2,0,1,1,0
+Guest_0372,Expected,Resort Hotel,31,5,31,3,2,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,103.5,0,0,2026-05-31,0,4,2,0,1,1,0
+Guest_0373,Expected,Resort Hotel,37,5,30,0,6,2,1,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,100.23,0,2,2026-05-30,0,7,3,0,1,1,1
+Guest_0374,In-House,Resort Hotel,70,5,29,2,2,4,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,84.21,0,1,2026-05-29,0,3,4,0,1,0,0
+Guest_0375,In-House,Resort Hotel,64,5,26,1,4,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,141.32,0,1,2026-05-26,0,6,2,0,1,1,0
+Guest_0376,Expected,Resort Hotel,64,6,11,0,5,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,80.23,1,1,2026-06-11,0,7,2,0,1,0,0
+Guest_0377,Expected,Resort Hotel,45,5,30,0,6,1,1,0,BB,Direct,Direct,0,0,0,A,H,0,0,Contract,83.66,1,3,2026-05-30,1,5,2,0,1,0,0
+Guest_0378,Expected,Resort Hotel,160,6,5,0,2,2,0,0,BB,Groups,TA/TO,0,0,6,A,A,0,0,Transient-Party,140.15,1,0,2026-06-05,0,3,2,0,1,0,0
+Guest_0379,Expected,Resort Hotel,114,5,31,0,3,2,0,0,HB,Direct,Direct,0,0,0,A,A,2,0,Transient,135.2,0,0,2026-05-31,0,2,2,0,1,1,1
+Guest_0380,Expected,Resort Hotel,108,6,3,0,4,2,1,0,SC,Offline TA/TO,TA/TO,0,0,7,A,A,1,0,Transient,88.32,0,0,2026-06-03,0,6,3,0,1,1,0
+Guest_0381,Expected,Resort Hotel,166,6,2,0,1,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient-Party,88.45,1,1,2026-06-02,0,6,2,0,1,1,0
+Guest_0382,Expected,Resort Hotel,110,6,2,3,4,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,137.5,0,1,2026-06-02,0,6,2,0,1,0,1
+Guest_0383,In-House,Resort Hotel,156,5,27,2,4,3,1,0,BB,Offline TA/TO,TA/TO,0,0,0,D,D,0,0,Transient-Party,124.72,0,0,2026-05-27,0,3,4,0,1,1,0
+Guest_0384,Expected,Resort Hotel,21,6,3,1,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,3,A,A,0,0,Transient,167.09,0,0,2026-06-03,0,6,2,0,1,1,1
+Guest_0385,In-House,Resort Hotel,184,5,30,2,6,2,1,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,159.98,0,0,2026-05-30,0,3,3,0,1,1,0
+Guest_0386,Expected,Resort Hotel,149,6,7,2,1,1,0,0,BB,Offline TA/TO,TA/TO,0,1,0,A,A,0,0,Transient,48.9,0,0,2026-06-07,0,7,1,0,1,1,0
+Guest_0387,Expected,Resort Hotel,46,6,9,3,1,2,2,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,61.35,1,1,2026-06-09,0,2,4,0,1,1,0
+Guest_0388,Expected,Resort Hotel,84,5,31,2,2,1,0,0,BB,Offline TA/TO,TA/TO,0,0,6,D,D,0,0,Transient,63.85,0,0,2026-05-31,0,3,1,0,1,0,0
+Guest_0389,Expected,Resort Hotel,36,6,2,0,4,4,0,0,FB,Online TA,TA/TO,0,0,7,A,P,1,0,Transient,147.52,0,2,2026-06-02,1,5,4,0,0,1,0
+Guest_0390,In-House,Resort Hotel,60,5,27,2,4,2,0,0,BB,Online TA,TA/TO,0,1,1,A,G,0,0,Transient-Party,188.33,0,1,2026-05-27,1,7,2,0,1,0,0
+Guest_0391,In-House,Resort Hotel,63,5,27,0,6,2,0,0,BB,Groups,TA/TO,0,0,6,D,D,0,0,Transient,40.0,0,0,2026-05-27,0,2,2,0,1,0,0
+Guest_0392,Expected,Resort Hotel,104,6,4,0,5,3,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,110.02,0,1,2026-06-04,0,7,3,0,1,1,0
+Guest_0393,Expected,Resort Hotel,180,5,31,3,3,3,0,0,BB,Online TA,TA/TO,0,0,0,E,E,0,0,Transient,74.82,0,0,2026-05-31,0,2,3,0,1,1,1
+Guest_0394,Expected,Resort Hotel,71,6,1,2,4,1,0,0,BB,Online TA,TA/TO,0,0,0,A,G,0,5,Transient,142.76,0,1,2026-06-01,1,2,1,0,0,1,0
+Guest_0395,Expected,Resort Hotel,94,6,10,0,2,2,0,0,BB,Groups,TA/TO,0,0,0,D,D,1,0,Transient,77.36,0,0,2026-06-10,0,3,2,0,1,0,1
+Guest_0396,Expected,Resort Hotel,36,6,1,1,6,4,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,178.69,0,2,2026-06-01,0,6,4,0,1,1,0
+Guest_0397,Expected,Resort Hotel,172,6,8,3,4,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Contract,94.84,1,0,2026-06-08,0,5,2,0,1,0,0
+Guest_0398,Expected,Resort Hotel,95,5,30,1,2,2,0,0,BB,Online TA,TA/TO,0,1,0,A,E,0,0,Transient,137.76,0,2,2026-05-30,1,7,2,0,1,1,0
+Guest_0399,Expected,Resort Hotel,112,6,3,2,4,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,5,Transient,100.44,0,3,2026-06-03,0,6,2,0,1,1,0
+Guest_0400,Expected,Resort Hotel,109,6,2,3,6,2,0,1,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,42.96,0,2,2026-06-02,0,1,3,0,1,0,0
+Guest_0401,Expected,Resort Hotel,131,6,12,3,5,1,0,0,Undefined,Online TA,TA/TO,0,0,6,D,D,1,0,Transient,132.43,0,0,2026-06-12,0,3,1,0,1,1,0
+Guest_0402,In-House,Resort Hotel,171,5,29,1,3,1,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,80.48,0,1,2026-05-29,0,3,1,0,1,1,0
+Guest_0403,Expected,Resort Hotel,139,6,2,0,1,3,0,0,HB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,148.47,0,1,2026-06-02,0,5,3,0,1,0,0
+Guest_0404,Expected,Resort Hotel,88,6,9,2,5,2,1,0,HB,Offline TA/TO,TA/TO,0,0,0,A,A,0,1,Transient-Party,40.0,0,0,2026-06-09,0,6,3,0,1,1,1
+Guest_0405,Expected,Resort Hotel,155,5,31,0,2,2,0,0,BB,Direct,Direct,0,0,0,A,A,1,0,Transient,149.74,0,1,2026-05-31,0,3,2,0,1,1,0
+Guest_0406,Expected,Resort Hotel,178,6,1,1,4,2,0,0,BB,Online TA,TA/TO,0,0,7,A,A,0,0,Transient,94.8,0,2,2026-06-01,0,3,2,0,1,0,0
+Guest_0407,Expected,Resort Hotel,57,6,5,0,6,1,0,0,BB,Online TA,TA/TO,0,0,0,A,C,0,0,Transient-Party,90.27,0,0,2026-06-05,1,4,1,0,1,1,0
+Guest_0408,Expected,Resort Hotel,107,6,6,3,4,2,0,0,BB,Aviation,Direct,0,0,0,A,A,0,0,Transient,89.73,0,1,2026-06-06,0,5,2,0,1,1,0
+Guest_0409,In-House,Resort Hotel,31,5,25,1,1,2,0,0,HB,Offline TA/TO,TA/TO,0,0,7,A,A,0,0,Transient-Party,40.63,0,0,2026-05-25,0,5,2,0,1,1,0
+Guest_0410,Expected,Resort Hotel,157,6,1,2,1,2,1,0,BB,Online TA,TA/TO,0,0,4,A,A,0,0,Contract,114.94,0,0,2026-06-01,0,6,3,0,1,1,1
+Guest_0411,Expected,Resort Hotel,45,6,8,0,2,4,0,0,BB,Online TA,TA/TO,0,0,0,E,E,1,5,Transient,163.74,0,2,2026-06-08,0,5,4,0,1,1,1
+Guest_0412,Expected,Resort Hotel,76,6,1,2,5,4,0,0,BB,Online TA,TA/TO,0,2,0,D,D,1,0,Transient,125.62,0,1,2026-06-01,0,6,4,0,1,1,0
+Guest_0413,Expected,Resort Hotel,159,5,30,3,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,147.6,0,1,2026-05-30,0,6,2,0,0,1,0
+Guest_0414,Expected,Resort Hotel,163,6,1,2,2,2,0,0,HB,Direct,Direct,0,0,0,D,B,0,0,Transient,80.48,0,0,2026-06-01,1,1,2,0,1,1,0
+Guest_0415,Expected,Resort Hotel,105,6,7,0,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,2,0,Transient,114.04,0,0,2026-06-07,0,2,2,0,1,1,1
+Guest_0416,In-House,Resort Hotel,153,5,26,3,1,1,2,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient-Party,110.64,0,1,2026-05-26,0,2,3,0,1,0,0
+Guest_0417,Expected,Resort Hotel,196,5,30,3,4,2,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,0,Transient,119.38,1,0,2026-05-30,0,7,2,0,1,1,0
+Guest_0418,Expected,Resort Hotel,92,6,2,2,4,2,0,0,BB,Corporate,Corporate,0,0,0,A,A,0,0,Transient,170.3,0,3,2026-06-02,0,3,2,0,1,0,0
+Guest_0419,In-House,Resort Hotel,133,5,29,0,3,3,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,100.45,0,0,2026-05-29,0,7,3,0,0,0,0
+Guest_0420,Expected,Resort Hotel,182,6,12,3,6,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,1,Transient-Party,85.7,0,2,2026-06-12,0,4,2,0,0,1,0
+Guest_0421,In-House,Resort Hotel,89,5,25,1,6,2,0,0,BB,Corporate,Corporate,0,1,0,A,A,1,0,Transient,161.51,0,0,2026-05-25,0,2,2,0,1,0,0
+Guest_0422,In-House,Resort Hotel,190,5,27,0,5,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient-Party,150.83,0,2,2026-05-27,0,7,2,0,1,0,0
+Guest_0423,Expected,Resort Hotel,199,6,7,1,5,1,2,0,BB,Online TA,TA/TO,0,2,0,A,E,0,0,Transient,129.32,0,3,2026-06-07,1,6,3,0,1,1,0
+Guest_0424,Expected,Resort Hotel,6,6,10,3,6,2,2,0,SC,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,109.52,0,3,2026-06-10,0,4,4,0,1,1,0
+Guest_0425,In-House,Resort Hotel,107,5,29,3,2,1,2,0,BB,Groups,TA/TO,0,2,0,A,A,0,0,Transient,103.24,0,0,2026-05-29,0,4,3,0,1,1,0
+Guest_0426,Expected,Resort Hotel,175,5,30,1,3,1,0,0,HB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,125.03,0,0,2026-05-30,0,1,1,0,1,1,0
+Guest_0427,Expected,Resort Hotel,79,6,5,2,2,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,84.53,0,0,2026-06-05,0,2,2,0,1,1,0
+Guest_0428,Expected,Resort Hotel,4,6,2,2,6,4,0,0,BB,Direct,Direct,0,0,2,A,A,0,0,Transient,76.88,0,3,2026-06-02,0,7,4,0,1,0,0
+Guest_0429,Expected,Resort Hotel,28,6,6,0,5,2,1,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,133.94,0,1,2026-06-06,0,5,3,0,1,0,1
+Guest_0430,Expected,Resort Hotel,118,6,9,0,5,1,0,0,BB,Online TA,TA/TO,0,0,0,E,D,0,0,Transient,113.37,0,1,2026-06-09,1,7,1,0,0,1,1
+Guest_0431,Expected,Resort Hotel,140,6,2,1,2,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,140.6,0,0,2026-06-02,0,7,2,0,1,1,0
+Guest_0432,Expected,Resort Hotel,42,5,31,0,2,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,99.61,0,0,2026-05-31,0,3,1,0,1,1,0
+Guest_0433,Expected,Resort Hotel,41,6,11,0,6,3,0,0,HB,Offline TA/TO,TA/TO,0,0,6,G,G,0,0,Transient,89.01,0,1,2026-06-11,0,6,3,0,1,1,0
+Guest_0434,Expected,Resort Hotel,161,6,12,3,6,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,40.06,0,2,2026-06-12,0,4,2,0,1,1,1
+Guest_0435,Expected,Resort Hotel,70,6,6,2,6,3,0,0,SC,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,136.77,0,0,2026-06-06,0,6,3,0,1,1,0
+Guest_0436,Expected,Resort Hotel,24,6,11,1,5,2,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,108.93,0,0,2026-06-11,0,2,2,0,1,0,0
+Guest_0437,Expected,Resort Hotel,43,6,3,0,4,1,0,0,BB,Offline TA/TO,TA/TO,0,0,0,D,D,0,1,Transient,139.58,0,2,2026-06-03,0,6,1,0,1,1,0
+Guest_0438,Expected,Resort Hotel,125,6,3,3,4,2,1,0,BB,Groups,TA/TO,0,1,0,A,H,0,0,Transient-Party,85.1,0,1,2026-06-03,1,5,3,0,1,0,0
+Guest_0439,Expected,Resort Hotel,151,6,8,1,4,2,0,0,BB,Online TA,TA/TO,0,0,0,A,D,0,0,Transient,104.63,0,1,2026-06-08,1,2,2,0,0,0,0
+Guest_0440,Expected,Resort Hotel,125,6,11,2,2,2,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,0,Transient,59.85,0,1,2026-06-11,0,2,2,0,1,1,1
+Guest_0441,Expected,Resort Hotel,146,5,31,0,6,2,0,0,BB,Online TA,TA/TO,0,0,7,A,E,0,0,Transient,136.43,0,2,2026-05-31,1,1,2,0,1,1,0
+Guest_0442,Expected,Resort Hotel,155,6,5,3,4,2,0,0,Undefined,Online TA,TA/TO,0,1,3,H,H,1,0,Transient,121.89,0,0,2026-06-05,0,1,2,0,1,1,1
+Guest_0443,Expected,Resort Hotel,12,5,31,0,5,2,0,0,SC,Online TA,TA/TO,0,0,6,A,A,0,0,Transient,163.64,0,0,2026-05-31,0,4,2,0,1,0,0
+Guest_0444,Expected,Resort Hotel,71,5,31,3,1,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,95.71,0,0,2026-05-31,0,7,1,0,0,1,0
+Guest_0445,In-House,Resort Hotel,121,5,27,3,4,3,0,0,BB,Online TA,TA/TO,0,0,0,A,H,0,0,Transient-Party,134.34,0,2,2026-05-27,1,7,3,0,1,1,0
+Guest_0446,Expected,Resort Hotel,99,6,5,0,6,1,0,0,HB,Online TA,TA/TO,0,2,0,A,A,1,0,Transient,104.19,0,0,2026-06-05,0,1,1,0,1,1,0
+Guest_0447,Expected,Resort Hotel,182,6,11,0,5,2,0,0,BB,Online TA,TA/TO,0,1,0,A,A,0,0,Contract,126.41,0,0,2026-06-11,0,4,2,0,1,0,1
+Guest_0448,Expected,Resort Hotel,45,6,11,0,2,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,69.12,1,0,2026-06-11,0,7,2,0,1,1,0
+Guest_0449,Expected,Resort Hotel,103,6,5,2,3,2,0,0,BB,Online TA,TA/TO,0,1,0,A,E,0,0,Transient-Party,178.14,0,1,2026-06-05,1,6,2,0,1,0,0
+Guest_0450,Expected,Resort Hotel,122,6,12,1,1,1,0,0,BB,Online TA,TA/TO,0,0,0,A,G,0,0,Transient,71.6,0,1,2026-06-12,1,7,1,0,1,1,1
+Guest_0451,Expected,Resort Hotel,67,6,8,3,3,2,0,0,SC,Online TA,TA/TO,0,0,0,E,E,0,0,Transient,151.64,0,0,2026-06-08,0,1,2,0,1,1,0
+Guest_0452,Expected,Resort Hotel,196,6,5,0,6,2,0,0,BB,Online TA,TA/TO,0,0,4,A,A,1,0,Transient,103.31,0,2,2026-06-05,0,6,2,0,1,1,0
+Guest_0453,Expected,Resort Hotel,63,6,7,1,5,2,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,91.87,0,3,2026-06-07,0,5,2,0,1,1,0
+Guest_0454,Expected,Resort Hotel,162,5,30,1,2,2,0,0,HB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,150.57,1,0,2026-05-30,0,4,2,0,0,1,0
+Guest_0455,Expected,Resort Hotel,53,6,1,0,5,2,0,0,BB,Online TA,TA/TO,0,0,0,E,E,0,0,Transient,106.93,0,1,2026-06-01,0,7,2,0,1,1,0
+Guest_0456,Expected,Resort Hotel,97,6,8,0,3,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,C,0,0,Transient,83.09,1,0,2026-06-08,1,3,2,0,1,1,1
+Guest_0457,Expected,Resort Hotel,133,6,11,3,6,3,0,0,BB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient-Party,162.08,0,0,2026-06-11,0,6,3,0,1,1,0
+Guest_0458,Expected,Resort Hotel,169,6,12,3,3,1,0,0,BB,Offline TA/TO,TA/TO,0,1,0,A,A,0,0,Transient,175.56,0,1,2026-06-12,0,3,1,0,1,1,0
+Guest_0459,Expected,Resort Hotel,175,5,31,0,4,1,0,0,SC,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,178.85,0,0,2026-05-31,0,4,1,0,1,0,0
+Guest_0460,Expected,Resort Hotel,145,6,9,3,1,2,0,0,BB,Direct,Direct,0,0,1,D,D,0,5,Transient-Party,118.81,1,1,2026-06-09,0,6,2,0,0,1,0
+Guest_0461,Expected,Resort Hotel,5,6,4,2,4,1,1,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,127.09,1,1,2026-06-04,0,7,2,0,0,1,0
+Guest_0462,In-House,Resort Hotel,134,5,28,3,6,3,0,1,BB,Online TA,TA/TO,0,0,0,A,D,0,1,Transient,203.43,0,2,2026-05-28,1,3,4,0,0,0,0
+Guest_0463,Expected,Resort Hotel,91,5,30,2,5,2,0,0,BB,Online TA,TA/TO,0,0,0,D,D,0,0,Transient,40.0,0,0,2026-05-30,0,2,2,0,1,0,0
+Guest_0464,Expected,Resort Hotel,87,6,10,0,3,2,0,0,HB,Online TA,TA/TO,0,0,1,A,A,0,0,Transient,164.04,1,0,2026-06-10,0,2,2,0,1,1,0
+Guest_0465,Expected,Resort Hotel,45,6,12,2,3,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,C,C,0,0,Transient,165.72,0,1,2026-06-12,0,2,2,0,1,1,0
+Guest_0466,Expected,Resort Hotel,143,5,31,1,1,2,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient,131.86,0,3,2026-05-31,0,7,2,0,1,0,0
+Guest_0467,Expected,Resort Hotel,43,6,12,2,4,1,0,0,BB,Direct,Direct,0,0,0,A,B,0,0,Transient,83.97,0,2,2026-06-12,1,5,1,0,1,1,0
+Guest_0468,Expected,Resort Hotel,150,6,4,2,4,2,2,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,136.22,0,1,2026-06-04,0,6,4,0,0,1,0
+Guest_0469,In-House,Resort Hotel,133,5,30,0,4,2,0,0,HB,Direct,Direct,1,1,7,E,E,0,0,Transient-Party,144.51,0,0,2026-05-30,0,3,2,0,1,0,0
+Guest_0470,Expected,Resort Hotel,45,6,11,0,1,2,0,0,BB,Online TA,TA/TO,0,0,4,A,B,0,0,Transient,120.08,0,1,2026-06-11,1,3,2,0,1,0,1
+Guest_0471,Expected,Resort Hotel,18,6,8,3,2,1,0,0,BB,Groups,TA/TO,0,0,5,A,C,1,0,Transient,145.75,0,3,2026-06-08,1,6,1,0,0,0,0
+Guest_0472,Expected,Resort Hotel,173,5,31,3,1,1,1,0,BB,Online TA,TA/TO,0,0,0,D,L,0,0,Transient,112.53,0,0,2026-05-31,1,6,2,0,0,0,0
+Guest_0473,Expected,Resort Hotel,36,6,4,3,2,3,1,0,SC,Offline TA/TO,TA/TO,0,2,0,A,A,1,0,Transient,115.6,0,1,2026-06-04,0,5,4,0,1,1,0
+Guest_0474,Expected,Resort Hotel,126,6,6,3,3,2,0,0,BB,Complementary,TA/TO,0,0,0,D,H,0,0,Transient,66.38,0,1,2026-06-06,1,2,2,0,1,1,0
+Guest_0475,Expected,Resort Hotel,13,6,9,2,4,2,0,0,BB,Online TA,TA/TO,0,0,0,E,E,0,0,Transient-Party,114.32,0,1,2026-06-09,0,6,2,0,1,0,0
+Guest_0476,Expected,Resort Hotel,85,6,12,2,1,3,0,0,BB,Complementary,TA/TO,0,0,1,A,A,0,0,Transient,57.49,0,0,2026-06-12,0,1,3,0,1,1,0
+Guest_0477,Expected,Resort Hotel,39,5,30,3,4,3,0,0,BB,Groups,TA/TO,0,0,0,A,E,0,1,Transient,127.72,0,1,2026-05-30,1,1,3,0,1,1,0
+Guest_0478,Expected,Resort Hotel,108,6,5,1,4,1,0,0,BB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,116.38,0,0,2026-06-05,0,7,1,0,0,1,1
+Guest_0479,Expected,Resort Hotel,154,6,2,1,2,1,0,0,BB,Aviation,Direct,0,0,0,A,A,2,0,Transient,116.0,0,0,2026-06-02,0,4,1,0,0,0,0
+Guest_0480,In-House,Resort Hotel,48,5,25,1,1,1,2,0,BB,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,75.85,0,0,2026-05-25,0,3,3,0,0,0,0
+Guest_0481,Expected,Resort Hotel,52,6,7,3,1,2,0,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient-Party,132.84,0,0,2026-06-07,0,2,2,0,0,1,0
+Guest_0482,Expected,Resort Hotel,122,6,12,0,1,2,0,0,HB,Online TA,TA/TO,0,0,0,D,D,0,0,Contract,151.63,0,0,2026-06-12,0,5,2,0,0,0,1
+Guest_0483,Expected,Resort Hotel,16,6,4,2,2,1,0,0,BB,Offline TA/TO,TA/TO,0,0,0,A,A,0,0,Transient-Party,68.25,0,0,2026-06-04,0,6,1,0,1,1,0
+Guest_0484,In-House,Resort Hotel,20,5,26,0,5,2,0,0,SC,Online TA,TA/TO,0,0,0,D,D,0,0,Transient,96.68,0,1,2026-05-26,0,2,2,0,1,1,0
+Guest_0485,Expected,Resort Hotel,8,6,4,2,3,4,0,0,SC,Online TA,TA/TO,0,0,0,A,A,1,0,Transient,99.4,0,1,2026-06-04,0,6,4,0,1,1,1
+Guest_0486,Expected,Resort Hotel,50,6,2,1,3,2,0,0,SC,Groups,TA/TO,0,0,0,D,D,0,1,Contract,119.3,0,0,2026-06-02,0,4,2,0,1,1,0
+Guest_0487,Expected,Resort Hotel,30,5,31,0,4,3,0,0,HB,Online TA,TA/TO,0,0,0,A,A,0,0,Transient,85.38,0,1,2026-05-31,0,6,3,0,1,1,1
+Guest_0488,Expected,Resort Hotel,62,6,6,2,6,2,1,0,BB,Groups,TA/TO,0,0,0,A,A,0,0,Transient,91.78,0,1,2026-06-06,0,5,3,0,1,1,0
+Guest_0489,Expected,Resort Hotel,43,5,30,2,1,2,0,0,HB,Direct,Direct,0,0,3,D,D,0,0,Contract,125.69,0,1,2026-05-30,0,7,2,0,1,1,0
+Guest_0490,In-House,Resort Hotel,98,5,27,2,5,1,0,0,BB,Online TA,TA/TO,0,0,0,D,D,1,0,Transient,91.44,0,2,2026-05-27,0,7,1,0,1,1,0

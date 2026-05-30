@@ -13,7 +13,7 @@ def load_model():
 
 @st.cache_data
 def load_data():
-    return pd.read_csv('Dataset/hotel_bookings_300.csv')
+    return pd.read_csv('Dataset/mock_dataset.csv')
 
 
 def run():
@@ -81,14 +81,13 @@ def run():
         st.info("오늘 체크인 예정인 고객이 없습니다.")
     else:
         view = checkin_today[['customer_name', 'status', 'total_stay_nights',
-                               'adults', 'meal', 'deposit_type', '취소확률']].copy()
+                               'adults', 'meal', '취소확률']].copy()
         view = view.rename(columns={
             'customer_name':    '고객명',
             'status':           '상태',
             'total_stay_nights':'투숙일',
             'adults':           '인원',
             'meal':             '식사',
-            'deposit_type':     'Deposit',
         })
         view = view.sort_values('취소확률', ascending=False).reset_index(drop=True)
 
