@@ -22,7 +22,7 @@ def load_model():
 #   원본 변형을 막기 위해 호출부에서 .copy()를 추가로 호출하는 것이 권장됨.
 @st.cache_data
 def load_data():
-    df = pd.read_csv('Dataset/mock_dataset.csv')
+    df = pd.read_csv('Dataset/demo_data.csv')
     # arrival_date를 문자열 → datetime으로 변환: 날짜 필터링·정렬·포맷팅에 필요
     df['arrival_date'] = pd.to_datetime(df['arrival_date'])
     return df
