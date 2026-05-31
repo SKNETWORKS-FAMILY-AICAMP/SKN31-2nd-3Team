@@ -28,7 +28,7 @@ elif page == "📈 오버부킹 추천":
     overbooking_recommend.run()
  
 elif page == "🔔 알림 / 액션":
-    # import alert_action
-    # alert_action.run()
-    st.title("🔔 알림 / 액션")
-    st.info("🚧 페이지 준비 중입니다.")
+    import alert_action
+    alert_action.run()
+    # st.title("🔔 알림 / 액션")
+    # st.info("🚧 페이지 준비 중입니다.")
