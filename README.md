@@ -4,8 +4,12 @@
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.x-FF4B4B?logo=streamlit&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-ML%20Model-F7931E?logo=scikit-learn&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-Pipeline-F7931E?logo=scikit-learn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-Classifier-AA0000?logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-Data%20Processing-150458?logo=pandas&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-Visualization-3F4F75?logo=plotly&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-Training-F9AB00?logo=googlecolab&logoColor=white)
 
 <br>
 
@@ -13,6 +17,7 @@
 
 - [프로젝트 소개](#-프로젝트-소개)
 - [주요 기능](#-주요-기능)
+- [기술 스택](#-기술-스택)
 - [시스템 아키텍처](#-시스템-아키텍처)
 - [파일 구조](#-파일-구조)
 - [설치 및 실행](#-설치-및-실행)
@@ -40,6 +45,64 @@ Resort Overbooking Manager는 호텔 예약 취소 확률을 머신러닝 모델
 | 📋 **예약 리스트** | 상태 필터(전체/In-House/Expected/위험만), 고객명 검색, 취소확률 배지 및 바 차트 |
 | 📈 **오버부킹 추천** | 날짜별 추천 오버부킹 수 계산, 향후 7일 예측 차트, 취소 예측 중요 변수 TOP 5 |
 | 🔔 **알림 / 액션** | 고위험 고객 카드 목록, 안내 발송 버튼, 조치 완료 체크 관리 |
+
+<br>
+
+## 🛠 기술 스택
+
+### Frontend / UI
+
+| 기술 | 버전 | 사용 목적 |
+|------|------|-----------|
+| **Streamlit** | 1.x | 웹 대시보드 UI 프레임워크. 사이드바 네비게이션, 멀티페이지 라우팅, 위젯(date_input, selectbox, checkbox, metric 등) 전반에 사용 |
+| **Plotly Express** | latest | 오버부킹 추천 페이지의 향후 7일 막대 차트 및 Feature Importance 파이 차트 렌더링 |
+| **pandas Styler** | - | 예약 리스트 테이블의 행 배경색, 배지 스타일, 취소확률 바 차트 등 조건부 서식 적용 |
+
+### Data Processing
+
+| 기술 | 버전 | 사용 목적 |
+|------|------|-----------|
+| **pandas** | latest | CSV 로드, 파생 컬럼 생성(`checkout_date`, `status`, `arrival_date_month_num`), 필터링·정렬·집계 전반 |
+| **NumPy** | latest | 수치 연산 및 모델 학습 시 배열 처리 |
+
+### Machine Learning
+
+| 기술 | 버전 | 사용 목적 |
+|------|------|-----------|
+| **scikit-learn Pipeline** | latest | 전처리기(`ColumnTransformer`)와 분류기를 하나의 `Pipeline`으로 묶어 학습·추론 일관성 보장 |
+| **ColumnTransformer** | - | 수치형 컬럼(중앙값 대치 → `StandardScaler`)과 범주형 컬럼(최빈값 대치 → `OneHotEncoder`) 병렬 전처리 |
+| **XGBoostClassifier** | latest | 최종 선택 분류 모델. 5개 후보 모델(Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, XGBoost) 비교 후 AUC 기준 최고 성능으로 채택 |
+| **GridSearchCV** | - | XGBoost 하이퍼파라미터 튜닝 (`n_estimators`, `max_depth`, `learning_rate`). `scoring='roc_auc'`, `cv=3` |
+| **joblib** | latest | 학습 완료 Pipeline을 `best_model.pkl`로 직렬화(저장) 및 역직렬화(로드) |
+
+**모델 평가 지표**
+
+| 지표 | 설명 |
+|------|------|
+| Accuracy | 전체 예측 정확도 |
+| Precision | 취소 예측 정밀도 (False Positive 최소화) |
+| Recall | 실제 취소 탐지율 (False Negative 최소화) |
+| **AUC (ROC)** | 최종 모델 선택 기준 지표 |
+
+**피처 엔지니어링** (학습 시 생성한 주요 파생 피처)
+
+```python
+room_assignment_changed  # 예약 객실 ≠ 배정 객실 여부 (0/1)
+total_stay_nights        # 주말 박수 + 주중 박수
+total_people             # 성인 + 어린이 + 유아 합산 인원
+is_adr_0                 # 객실 단가 0원 여부 (프로모션 등)
+Agent_check              # 에이전트 예약 여부 (0/1)
+foreigner                # 비포르투갈인 여부 (0/1)
+arrival_weekday          # 체크인 요일
+```
+
+### Development Environment
+
+| 기술 | 사용 목적 |
+|------|-----------|
+| **Google Colab** | 모델 학습 및 전처리 노트북 실행 환경 (`Preprocessing_hotel_dataset.ipynb`) |
+| **Jupyter Notebook** | 데이터 탐색, 피처 엔지니어링, 모델 비교 실험 |
+| **Google Drive** | 학습 데이터 및 모델 파일(`best_model.pkl`) 저장소 |
 
 <br>
 
