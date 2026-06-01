@@ -3,15 +3,11 @@ import pandas as pd
 import joblib
 import plotly.express as px
 import plotly.graph_objects as go
-from utils import load_data, DEMO_TODAY
-
-@st.cache_resource
-def load_model():
-    return joblib.load('model&preprocessing/best_model.pkl')
+from utils import DEMO_TODAY, get_predictions
 
 def run():
-    df = load_data()
-    model = load_model()
+    # 캐싱된 예측 결과 포함된 df 가져오기
+    df = get_predictions(return_df=True)
 
     st.title("📈 오버부킹 추천 시스템")
     st.caption(f"기준일: {DEMO_TODAY.strftime('%Y년 %m월 %d일')}")
@@ -23,7 +19,7 @@ def run():
 
     for day in future_dates:
         day_df = df[
-            (df["arrival_date"].dt.date == day.date()) &
+            (df["arrival_dt"].dt.date == day.date()) &
             (df["status"] == "Expected")
         ].copy()
 
@@ -38,21 +34,21 @@ def run():
             })
             continue
 
-        X_day      = day_df.drop(columns=["customer_name", "status", "is_canceled", "checkout_date"], errors="ignore")
-        proba      = model.predict_proba(X_day)[:, 1]
-        exp_cancel = proba.sum()
+        # cancel_proba 컬럼을 그대로 활용
+        exp_cancel = (day_df['cancel_proba'] / 100).sum()
         exp_stay   = len(day_df) - exp_cancel
 
         future_result.append({
             "date":     day.strftime("%m/%d"),
             "full_date": day,
             "예약수":   len(day_df),
-            "예측취소": round(exp_cancel,1),
+            "예측취소": round(exp_cancel, 1),
             "추천추가": int(round(exp_cancel)),
             "예상투숙": round(exp_stay, 1),
         })
 
     future_df = pd.DataFrame(future_result)
+
 
     # ── 날짜 필터 ────────────────────────────────────────────────────────────
     col_filter, col_info = st.columns([2, 3])

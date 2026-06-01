@@ -1,118 +1,62 @@
 import datetime
-import joblib
 import pandas as pd
 import streamlit as st
-from utils import load_data
+from utils import get_predictions   # util에서 가져오기
 
 st.set_page_config(page_title="알림 / 액션", page_icon="🔔", layout="wide")
 
-# ── 모델 / 데이터 로드 ────────────────────────────────
-
-@st.cache_resource
-def load_model():
-    return joblib.load('model&preprocessing/best_model.pkl')
-
-# 메인 화면 실행 함수
 def run():
-    # 1. 안전하게 데이터를 받아오기 위해 빈 변수 준비
-    model = None
-    df = None
-
-    # 2. 에러 방지 안전장치 작동
     try:
-        model = load_model()
-        df = load_data().copy() # 복사본 사용
-        
+        # 캐싱된 예측 결과 포함된 df 가져오기
+        df = get_predictions(return_df=True)
     except FileNotFoundError as e:
         st.error(f"파일을 찾을 수 없습니다: {e}\n\n경로를 확인해 주세요.")
         st.stop()
-        
     except Exception as e:
         st.error(f"오류가 발생했습니다: {e}")
         st.stop()
 
-# ── 스타일 (기존 디자인 유지 + 새 컴포넌트 커스텀 태그 추가) ───────────────────────────
+    # ── 스타일 (기존 디자인 유지) ───────────────────────────
     st.markdown("""
     <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
         html, body, [class*="css"] { font-family: 'DM Sans', 'Pretendard', sans-serif; }
-
-        /* 상단 헤더 바 */
-        .app-header {
-            display: flex; align-items: center; gap: 10px;
-            font-size: 1.5rem; font-weight: 700; color: #1f2937;
-            padding-bottom: 16px; margin-bottom: 4px;
-            border-bottom: 1px solid #ececec;
-        }
-
-        /* 섹션 제목 */
-        .sec-title { font-weight: 700; font-size: 1.05rem; margin: 4px 0 14px 0; }
-        .sec-red   { color: #dc2626; }
-        .sec-amber { color: #d4881f; }
-
-        /* 확률 배지 및 원인 태그 */
-        .badge-txt-red { background: #fde4e4; color: #c0392b; font-weight: 700; padding: 3px 10px; border-radius: 99px; }
-        .badge-txt-amber { background: #fef3c7; color: #b45309; font-weight: 700; padding: 3px 10px; border-radius: 99px; }
-        
-        .reason-tag {
-            display: inline-block; background: #f3f4f6; color: #4b5563; 
-            font-size: 0.75rem; padding: 2px 8px; border-radius: 6px; margin-right: 4px; margin-top: 5px;
-        }
-
-        /* 빈 상태 */
-        .empty {
-            color: #9ca3af; text-align: center; padding: 32px 10px;
-            border: 1px dashed #e5e7eb; border-radius: 14px;
-        }
-
-        /* 조치 완료 배지 */
-        .done-badge {
-            display: inline-block; background: #dcfce7; color: #166534;
-            font-size: 0.75rem; font-weight: 700; padding: 2px 10px;
-            border-radius: 99px; margin-left: 4px;
-        }
+        .app-header { display:flex; align-items:center; gap:10px; font-size:1.5rem; font-weight:700; color:#1f2937;
+                      padding-bottom:16px; margin-bottom:4px; border-bottom:1px solid #ececec; }
+        .sec-title { font-weight:700; font-size:1.05rem; margin:4px 0 14px 0; }
+        .sec-red   { color:#dc2626; }
+        .sec-amber { color:#d4881f; }
+        .badge-txt-red { background:#fde4e4; color:#c0392b; font-weight:700; padding:3px 10px; border-radius:99px; }
+        .badge-txt-amber { background:#fef3c7; color:#b45309; font-weight:700; padding:3px 10px; border-radius:99px; }
+        .reason-tag { display:inline-block; background:#f3f4f6; color:#4b5563; font-size:0.75rem; padding:2px 8px;
+                      border-radius:6px; margin-right:4px; margin-top:5px; }
+        .empty { color:#9ca3af; text-align:center; padding:32px 10px; border:1px dashed #e5e7eb; border-radius:14px; }
+        .done-badge { display:inline-block; background:#dcfce7; color:#166534; font-size:0.75rem; font-weight:700;
+                      padding:2px 10px; border-radius:99px; margin-left:4px; }
     </style>
     """, unsafe_allow_html=True)
 
-
-
-
-    # ── 취소확률 예측 (df가 정상 로드된 경우에만 실행 보장) ─────────────────────────
-    if df is not None and model is not None:
-        feature_cols = [c for c in df.columns if c not in ['customer_name', 'status', 'is_canceled']]
-        proba = model.predict_proba(df[feature_cols])[:, 1]
-        df['cancel_proba'] = (proba * 100).round(0).astype(int)
-        df['arrival_dt'] = pd.to_datetime(df['arrival_date'], errors='coerce')
-    else:
-        st.error("모델 또는 데이터가 올바르게 로드되지 않아 예측을 수행할 수 없습니다.")
-        st.stop()
-
-    # ── 액션 상태 저장을 위한 세션 상태 초기화 ──────────────────────────────────────────
+    # ── 액션 상태 저장 ───────────────────────────
     if 'actioned_customers' not in st.session_state:
         st.session_state['actioned_customers'] = set()
 
-
-    # ── 메인 화면 상단 레이아웃 ───────────────────────────────────────────────────
+    # ── 헤더 ───────────────────────────
     st.markdown('<div class="app-header">🏨 &nbsp;Resort Overbooking Manager</div>', unsafe_allow_html=True)
 
-    # ── 기준일 선택 (사이드바 권한이 없어 화면 본문에 배치) ──────────────────────────
+    # ── 기준일 선택 ───────────────────────────
     date_col, _ = st.columns([0.25, 0.75])
     with date_col:
         base_date = st.date_input("📅 기준일", value=datetime.date(2017, 8, 14))
 
-    # ── 다가오는 체크인 + 위험도 분류 ─────────────────────────────────────────────
     base_ts = pd.Timestamp(base_date)
     upcoming = df[df['arrival_dt'] >= base_ts].copy()
 
-    # 데이터 처리 안정성을 위해 결측치(NaN)가 있으면 0일로 기본 처리
     if not upcoming.empty:
         upcoming['dday'] = (upcoming['arrival_dt'] - base_ts).dt.days.fillna(0).astype(int)
     else:
         upcoming['dday'] = 0
 
-    # 이미 조치 완료한 고객도 목록에 남기되, 렌더 단계에서 맨 아래로 정렬한다
-
-    # 상단 미니 대시보드 (KPI Metrics) 생성
+    # ── KPI ───────────────────────────
     total_upcoming = len(upcoming)
     immediate_pool = upcoming[upcoming['cancel_proba'] >= 70]
     monitor_pool = upcoming[(upcoming['cancel_proba'] >= 50) & (upcoming['cancel_proba'] < 70)]
@@ -124,16 +68,11 @@ def run():
 
     st.write("")
 
-    # 정렬 필터 컨트롤러 박스 추가
-    sort_col1, sort_col2 = st.columns([0.25, 0.75])
+    # ── 정렬 옵션 ───────────────────────────
+    sort_col1, _ = st.columns([0.25, 0.75])
     with sort_col1:
-        sort_option = st.selectbox(
-            "📋 리스트 정렬 기준",
-            ["취소 확률 높은 순", "체크인 임박 순"],
-            index=0
-        )
+        sort_option = st.selectbox("📋 리스트 정렬 기준", ["취소 확률 높은 순", "체크인 임박 순"], index=0)
 
-    # 선택된 기준에 맞게 데이터 정렬 구조 재정의
     if sort_option == "취소 확률 높은 순":
         immediate = immediate_pool.sort_values('cancel_proba', ascending=False)
         monitor = monitor_pool.sort_values('cancel_proba', ascending=False)
@@ -141,19 +80,17 @@ def run():
         immediate = immediate_pool.sort_values(['dday', 'cancel_proba'], ascending=[True, False])
         monitor = monitor_pool.sort_values(['dday', 'cancel_proba'], ascending=[True, False])
 
-
-    # 인터랙티브 카드 컴포넌트 함수 정의
+    # ── 카드 렌더링 함수 ───────────────────────────
     def render_interactive_column(frame, kind):
         if frame.empty:
             st.markdown('<div class="empty">해당 리스크 그룹에 고객이 없습니다 🎉</div>', unsafe_allow_html=True)
             return
 
-        # 조치 완료된 고객은 맨 아래로 내린다 (stable 정렬 → 기존 정렬 순서는 유지)
         frame = frame.copy()
         frame['is_done'] = frame['customer_name'].isin(st.session_state['actioned_customers'])
         frame = frame.sort_values('is_done', kind='stable')
 
-        for idx, row in frame.iterrows():
+        for _, row in frame.iterrows():
             name = row['customer_name']
             is_done = name in st.session_state['actioned_customers']
 
@@ -173,16 +110,13 @@ def run():
                         dlabel = f"D-{dday}"
 
                     badge_style = "badge-txt-red" if kind == "immediate" else "badge-txt-amber"
-
-                    # 완료된 카드는 회색으로 흐리게 + 완료 배지 표시
                     name_color = "#9ca3af" if is_done else "#1f2937"
                     done_badge = "<span class='done-badge'>✅ 조치 완료</span>" if is_done else ""
                     opacity = "opacity:0.55;" if is_done else ""
 
                     st.markdown(
                         f"<h5 style='{opacity}'><b style='color:{name_color}'>{name}</b> "
-                        f"&nbsp;&nbsp;<span class='{badge_style}'>{int(row['cancel_proba'])}%</span>"
-                        f"{done_badge}</h5>",
+                        f"&nbsp;&nbsp;<span class='{badge_style}'>{int(row['cancel_proba'])}%</span>{done_badge}</h5>",
                         unsafe_allow_html=True,
                     )
                     st.markdown(
@@ -191,13 +125,11 @@ def run():
                         unsafe_allow_html=True,
                     )
 
-                    # 피처 기반 원인 분석 태그 시스템
                     tags = []
                     if row.get('lead_time', 0) > 200:
                         tags.append(f"🏷️ 장기 예약 ({int(row['lead_time'])}일 전)")
                     if row.get('previous_cancellations', 0) > 0:
                         tags.append(f"⚠️ 과거 취소 이력 ({int(row['previous_cancellations'])}회)")
-
                     if row.get('total_of_special_requests', 0) == 0:
                         tags.append("💬 특별 요청 사항 없음")
 
@@ -206,19 +138,16 @@ def run():
                         st.markdown(f"<div style='{opacity}'>{tag_html}</div>", unsafe_allow_html=True)
 
                 with col_action:
-                    st.write("")
                     if st.button("✉️ 안내 발송", key=f"msg_{name}", use_container_width=True):
                         st.toast(f"✉️ {name} 고객님께 예약 재확인 알림톡이 발송되었습니다.")
 
-                    # 체크하면 완료 처리 → 맨 아래로 이동, 해제하면 원위치로 복구
                     checked = st.checkbox("조치 완료", value=is_done, key=f"chk_{name}")
                     if checked and not is_done:
                         st.session_state['actioned_customers'].add(name)
                         st.rerun()
                     elif not checked and is_done:
                         st.session_state['actioned_customers'].discard(name)
-                        st.rerun()
-
+                        
 
     # ── 화면 2분할 시각화 부 ───────────────────────────────────────────────────────────
     col_left, col_right = st.columns(2, gap="large")
