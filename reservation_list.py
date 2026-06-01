@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 import joblib
+from utils import load_data
 
 # ── 상수 ───────────────────────────────────────────────────────────────────
 # 전체 객실 수 (KPI 계산에 사용 / 현재 이 파일에서는 직접 사용하지 않지만
@@ -15,17 +16,6 @@ TOTAL_ROOMS = 100
 @st.cache_resource
 def load_model():
     return joblib.load('model&preprocessing/best_model.pkl')
-
-
-# @st.cache_data : DataFrame처럼 직렬화 가능한 데이터에 사용.
-#   반환값을 내부적으로 pickle 직렬화 → 캐시 저장 → 다음 호출 시 역직렬화해서 반환.
-#   원본 변형을 막기 위해 호출부에서 .copy()를 추가로 호출하는 것이 권장됨.
-@st.cache_data
-def load_data():
-    df = pd.read_csv('Dataset/demo_data.csv')
-    # arrival_date를 문자열 → datetime으로 변환: 날짜 필터링·정렬·포맷팅에 필요
-    df['arrival_date'] = pd.to_datetime(df['arrival_date'])
-    return df
 
 
 def run():

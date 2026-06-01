@@ -3,16 +3,13 @@ import pandas as pd
 import joblib
 import plotly.express as px
 from datetime import date
+from utils import load_data
 
 TOTAL_ROOMS = 100
 
 @st.cache_resource
 def load_model():
     return joblib.load('model&preprocessing/best_model.pkl')
-
-@st.cache_data
-def load_data():
-    return pd.read_csv('Dataset/demo_data.csv')
 
 def run():
     df = load_data()

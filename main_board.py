@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 import joblib
 from datetime import date
+from utils import load_data
 
 # ── 설정 ───────────────────────────────────────────────────────────────────
 TOTAL_ROOMS = 100   # 전체 객실 수
@@ -10,10 +11,6 @@ TOTAL_ROOMS = 100   # 전체 객실 수
 @st.cache_resource
 def load_model():
     return joblib.load('model&preprocessing/best_model.pkl')
-
-@st.cache_data
-def load_data():
-    return pd.read_csv('Dataset/demo_data.csv')
 
 
 def run():

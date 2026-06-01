@@ -2,6 +2,7 @@ import datetime
 import joblib
 import pandas as pd
 import streamlit as st
+from utils import load_data
 
 st.set_page_config(page_title="알림 / 액션", page_icon="🔔", layout="wide")
 
@@ -10,11 +11,6 @@ st.set_page_config(page_title="알림 / 액션", page_icon="🔔", layout="wide"
 @st.cache_resource
 def load_model():
     return joblib.load('model&preprocessing/best_model.pkl')
-
-@st.cache_data
-def load_data():
-    return pd.read_csv('Dataset/mock_dataset.csv')
-
 
 # 메인 화면 실행 함수
 def run():
