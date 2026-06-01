@@ -91,21 +91,6 @@ def run():
     if 'actioned_customers' not in st.session_state:
         st.session_state['actioned_customers'] = set()
 
-    # ── 사이드바 ─────────────────────────────────────────────────────────
-    # with st.sidebar:
-    #     st.markdown("### 🏨 Resort OBM")
-    #     nav = st.radio(
-    #         "메뉴",
-    #         ["📊 현황판", "📋 예약 리스트", "📈 오버부킹 추천", "🔔 알림 / 액션"],
-    #         index=3,
-    #         label_visibility="collapsed",
-    #     )
-
-    # 알림/액션 외 메뉴 안내 처리
-    # if not nav.endswith("알림 / 액션"):
-    #     st.markdown(f'<div class="app-header">🏨 &nbsp;Resort Overbooking Manager</div>', unsafe_allow_html=True)
-    #     st.info(f"**{nav}** 화면은 다른 담당자가 구축 중입니다. 좌측에서 **🔔 알림 / 액션** 을 선택해 주세요.")
-    #     st.stop()
 
     # ── 메인 화면 상단 레이아웃 ───────────────────────────────────────────────────
     st.markdown('<div class="app-header">🏨 &nbsp;Resort Overbooking Manager</div>', unsafe_allow_html=True)
@@ -113,7 +98,7 @@ def run():
     # ── 기준일 선택 (사이드바 권한이 없어 화면 본문에 배치) ──────────────────────────
     date_col, _ = st.columns([0.25, 0.75])
     with date_col:
-        base_date = st.date_input("📅 기준일", value=datetime.date(2026, 5, 29))
+        base_date = st.date_input("📅 기준일", value=datetime.date(2017, 8, 14))
 
     # ── 다가오는 체크인 + 위험도 분류 ─────────────────────────────────────────────
     base_ts = pd.Timestamp(base_date)
@@ -212,10 +197,7 @@ def run():
                         tags.append(f"🏷️ 장기 예약 ({int(row['lead_time'])}일 전)")
                     if row.get('previous_cancellations', 0) > 0:
                         tags.append(f"⚠️ 과거 취소 이력 ({int(row['previous_cancellations'])}회)")
-                    # if row.get('deposit_type') == 'Non Refund':
-                    #     tags.append("💳 환불불가 상품")
-                    # elif row.get('deposit_type') == 'No Deposit':
-                    #     tags.append("🛑 보증금 없음 (위험 고조)")
+
                     if row.get('total_of_special_requests', 0) == 0:
                         tags.append("💬 특별 요청 사항 없음")
 
