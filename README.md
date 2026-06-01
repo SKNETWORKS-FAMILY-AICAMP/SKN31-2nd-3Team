@@ -2,6 +2,22 @@
 
 > 머신러닝 기반 호텔 예약 취소 예측 및 오버부킹 관리 대시보드
 
+<br>
+
+<p align="center">
+  <img src="./assets/profile.png" width="700"/>
+</p>
+
+<br>
+
+| 이름 | 역할 | 담당 업무 |
+|:----:|:----:|-----------|
+| 박동관 | 팀장 👑 | 데이터 전처리 · 오버부킹 추천 페이지 · 데이터 조사 |
+| 박종현 | 팀원 | 모델 학습 · 현황판 페이지 · 데이터 조사 |
+| 오형호 | 팀원 | 모델 학습 · 알림/액션 페이지 · 데이터 조사 |
+| 이재일 | 팀원 | 데이터 전처리 · 예약 리스트 페이지 · 데이터 조사 |
+| 고현아 | 팀원 | 데이터 전처리 · 알림/액션 페이지 · 데이터 조사 |
+
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.x-FF4B4B?logo=streamlit&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-Pipeline-F7931E?logo=scikit-learn&logoColor=white)
