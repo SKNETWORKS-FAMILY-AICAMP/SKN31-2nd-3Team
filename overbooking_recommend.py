@@ -2,10 +2,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 import plotly.express as px
-from datetime import date
-from utils import load_data
-
-TOTAL_ROOMS = 100
+import plotly.graph_objects as go
+from utils import load_data, DEMO_TODAY
 
 @st.cache_resource
 def load_model():
@@ -13,292 +11,167 @@ def load_model():
 
 def run():
     df = load_data()
-    df["arrival_date"] = pd.to_datetime(df["arrival_date"])
+    model = load_model()
 
-    model = joblib.load(
-        "model&preprocessing/best_model.pkl"
-    )
-
-    selected_date = st.date_input(
-        "날짜 선택"
-    )
-
-    selected_df = df[
-        (df["arrival_date"].dt.date == selected_date)
-        &
-        (df["status"] == "Expected")
-    ].copy()
-
-    if len(selected_df) == 0:
-        st.warning(
-            "해당 날짜 예약 데이터가 없습니다."
-        )
-        return
-# 모델 fit하기 위한 컬럼 drop
-    X = selected_df.drop(
-        columns=[
-            "customer_name",
-            "status"
-        ],
-        errors="ignore"
-    )
-    cancel_prob = model.predict_proba(X)[:, 1]
-
-    # 기대 취소 인원
-    expected_cancel = cancel_prob.sum()
-
-    total_reservations = len(selected_df)
-
-    # 기대 실제 투숙 인원
-    predicted_stay = (
-        total_reservations
-        - expected_cancel
-    )
-
-    # KPI 계산
-    current_occupied = len(
-        df[df["status"] == "In-House"]
-    )
-
-    current_occupancy_rate = (
-        current_occupied
-        / TOTAL_ROOMS
-    ) * 100
-
-    predicted_occupancy_rate = (
-        predicted_stay
-        / TOTAL_ROOMS
-    ) * 100
-
-    recommended_overbooking = int(
-        round(expected_cancel)
-    )
-
-    st.title(
-        "🏨 호텔 오버부킹 추천 시스템"
-    )
-
-    col1, col2 = st.columns(
-        [1.3, 1]
-    )
-
-#왼쪽
-    with col1:
-
-        st.subheader(
-            f"{selected_date} 체크인 예정 현황"
-        )
-
-        kpi1, kpi2, kpi3 = st.columns(3)
-
-        kpi1.metric(
-            "선택일 예약 건수",
-            total_reservations
-        )
-
-        kpi2.metric(
-            "선택일 예상 취소",
-            f"{expected_cancel:.1f}"
-        )
-
-        kpi3.metric(
-            "선택일 예상 체크인",
-            f"{predicted_stay:.1f}"
-        )
-
-        kpi4, kpi5, kpi6 = st.columns(3)
-
-        kpi4.metric(
-            "현재 객실 점유율",
-            f"{current_occupancy_rate:.1f}%"
-        )
-
-        kpi5.metric(
-            "선택일 예상 체크인 객실 비율",
-            f"{predicted_occupancy_rate:.1f}%"
-        )
-
-        kpi6.metric(
-            "추천 오버부킹 수",
-            recommended_overbooking
-        )
-
-    # 오른쪽
-    with col2:
-
-        st.subheader(
-            "추천 결과"
-        )
-
-        st.success(
-            f"""
-            추가 예약 권장: **{recommended_overbooking}건**
-
-            취소 가능성이 높은 고객을 기반으로
-            추가 예약 가능 수를 계산했습니다.
-            """
-        )
-
-        st.markdown(
-            f"**신규 체크인 기준 예상 점유율 ({selected_date})**"
-        )
-
-        st.progress(float(
-            min(
-                predicted_occupancy_rate / 100,
-                1.0
-            )
-        )
-        )
-
-        st.write(
-            f"{predicted_occupancy_rate:.1f}%"
-        )
-    # 향후 7일 추천 예약
-
+    st.title("📈 오버부킹 추천 시스템")
+    st.caption(f"기준일: {DEMO_TODAY.strftime('%Y년 %m월 %d일')}")
     st.divider()
-    st.caption(
-        f"기준일: {date.today()}"
-    )
-    st.subheader(
-        "향후 7일 추천 추가 예약 수"
-    )
 
+    # ── 향후 7일 전체 계산 ───────────────────────────────────────────────────
+    future_dates = pd.date_range(start=DEMO_TODAY, periods=18, freq="D")
     future_result = []
 
-    future_dates = pd.date_range(
-        start=date.today(),
-        periods=7,
-        freq="D"
-    )
-
     for day in future_dates:
-
         day_df = df[
-            (df["arrival_date"].dt.date
-            == day.date()) & (df['status'] == 'Expected')
+            (df["arrival_date"].dt.date == day.date()) &
+            (df["status"] == "Expected")
         ].copy()
 
         if len(day_df) == 0:
-
             future_result.append({
                 "date": day.strftime("%m/%d"),
-                "recommend": 0
+                "full_date": day,
+                "예약수": 0,
+                "예측취소": 0.0,
+                "추천추가": 0,
+                "예상투숙": 0.0,
             })
-
             continue
 
-        X_day = day_df.drop(
-            columns=[
-                "customer_name",
-                "status",
-            ],
-            errors="ignore"
-        )
-
-        cancel_prob_day = (
-            model.predict_proba(X_day)[:, 1]
-        )
-
-        expected_cancel_day = (
-            cancel_prob_day.sum()
-        )
-
-        recommend_day = int(
-            round(expected_cancel_day)
-        )
+        X_day      = day_df.drop(columns=["customer_name", "status", "is_canceled", "checkout_date"], errors="ignore")
+        proba      = model.predict_proba(X_day)[:, 1]
+        exp_cancel = proba.sum()
+        exp_stay   = len(day_df) - exp_cancel
 
         future_result.append({
-            "date": day.strftime("%m/%d"),
-            "recommend": recommend_day
+            "date":     day.strftime("%m/%d"),
+            "full_date": day,
+            "예약수":   len(day_df),
+            "예측취소": round(exp_cancel,1),
+            "추천추가": int(round(exp_cancel)),
+            "예상투숙": round(exp_stay, 1),
         })
 
-    future_df = pd.DataFrame(
-        future_result
-    )
+    future_df = pd.DataFrame(future_result)
 
-    fig_bar = px.bar(
-        future_df,
-        x="date",
-        y="recommend",
-        text="recommend",
-        title="향후 7일 추천 오버부킹 수"
-    )
+    # ── 날짜 필터 ────────────────────────────────────────────────────────────
+    col_filter, col_info = st.columns([2, 3])
+    with col_filter:
+        selected_date = st.selectbox(
+            "📅 날짜 선택",
+            options=future_df["date"].tolist(),
+            index=0
+        )
 
-    fig_bar.update_layout(
-        showlegend=False,
-        height=350
-    )
+    selected = future_df[future_df["date"] == selected_date].iloc[0]
 
-    st.plotly_chart(
-        fig_bar,
-        use_container_width=True
-    )
-
-    # Feature Importance
+    with col_info:
+        st.write("")
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("예약 건수",  f"{int(selected['예약수'])}건")
+        c2.metric("예측 취소",  f"{selected['예측취소']:.1f}명")
+        c3.metric("예상 투숙",  f"{selected['예상투숙']:.1f}명")
+        c4.metric("추천 추가",  f"{int(selected['추천추가'])}건",
+                  delta="추가 예약 가능" if selected['추천추가'] > 0 else "추가 불필요",
+                  delta_color="normal" if selected['추천추가'] > 0 else "off")
 
     st.divider()
 
-    st.subheader(
-        "취소 예측 중요 변수 TOP 5"
-    )
+    # ── 그래프 2개 나란히 ─────────────────────────────────────────────────────
+    col_g1, col_g2 = st.columns(2)
 
-    try:
-
-        classifier = (
-            model.named_steps[
-                "classifier"
-            ]
+    with col_g1:
+        st.subheader("📊 날짜별 예약 vs 예측 취소")
+        colors = ["#F09595" if d == selected_date else "#85B7EB" for d in future_df["date"]]
+        fig1 = go.Figure()
+        fig1.add_bar(
+            x=future_df["date"], y=future_df["예약수"],
+            name="전체 예약수", marker_color=colors,
+            text=future_df["예약수"], textposition="outside"
         )
-
-        preprocessor = (
-            model.named_steps[
-                "preprocessor"
-            ]
+        fig1.add_scatter(
+            x=future_df["date"], y=future_df["예측취소"],
+            name="예측 취소", mode="lines+markers+text",
+            line=dict(color="#E24B4A", width=2),
+            marker=dict(size=8),
+            text=[f"{x:.1f}" for x in future_df["예측취소"]],
+            textposition="top center",
+            textfont=dict(size=10)
         )
-
-        feature_names = (
-            preprocessor
-            .get_feature_names_out()
+        fig1.update_layout(
+            height=320, margin=dict(t=20,b=20,l=0,r=0),
+            legend=dict(orientation="h", yanchor="bottom", y=1.02),
+            plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)",
+            yaxis=dict(gridcolor="#f0f0f0"),
+            xaxis_tickangle=-45
         )
+        st.plotly_chart(fig1, use_container_width=True)
 
-        importance_df = pd.DataFrame({
-            "feature":
-                feature_names,
-            "importance":
-                classifier.feature_importances_
-        })
+    with col_g2:
+        st.subheader("🟢 날짜별 추천 추가 예약 수")
+        bar_colors = ["#639922" if d == selected_date else "#C0DD97" for d in future_df["date"]]
+        fig2 = go.Figure()
+        fig2.add_bar(
+            x=future_df["date"], y=future_df["추천추가"],
+            marker_color=bar_colors,
+            text=future_df["추천추가"], textposition="outside"
+        )
+        fig2.update_layout(
+            height=320, margin=dict(t=20,b=20,l=0,r=0),
+            plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)",
+            yaxis=dict(gridcolor="#f0f0f0"),
+            xaxis_tickangle=-45
+        )
+        st.plotly_chart(fig2, use_container_width=True)
 
-        importance_df = (
-            importance_df
-            .sort_values(
-                "importance",
-                ascending=False
+    # ── 선택 날짜 상세 파이 차트 ─────────────────────────────────────────────
+    st.subheader(f"🔎 {selected_date} 상세 — 예약 구성")
+    col_pie, col_fi = st.columns(2)
+
+    with col_pie:
+        if selected["예약수"] > 0:
+            pie_df = pd.DataFrame({
+                "구분": ["예상 실제 투숙", "예측 취소"],
+                "인원": [selected["예상투숙"], selected["예측취소"]]
+            })
+            fig_pie = px.pie(
+                pie_df, names="구분", values="인원",
+                color="구분",
+                color_discrete_map={"예상 실제 투숙": "#85B7EB", "예측 취소": "#F09595"},
+                hole=0.45
             )
-            .head(5)
-        )
+            fig_pie.update_layout(height=280, margin=dict(t=20,b=20,l=0,r=0))
+            st.plotly_chart(fig_pie, use_container_width=True)
+        else:
+            st.info("해당 날짜 예약 데이터가 없습니다.")
 
-        fig_pie = px.pie(
-            importance_df,
-            names="feature",
-            values="importance",
-            hole=0.5,
-            title="TOP5 중요 변수"
-        )
+    # ── Feature Importance ────────────────────────────────────────────────────
+    with col_fi:
+        st.subheader("🔍 취소 예측 중요 변수 TOP 5")
+        try:
+            importance_df = pd.DataFrame({
+                "feature":    model.named_steps["preprocessor"].get_feature_names_out(),
+                "importance": model.named_steps["classifier"].feature_importances_
+            }).sort_values("importance", ascending=False).head(5)
 
-        st.plotly_chart(
-            fig_pie,
-            use_container_width=True
-        )
+            importance_df["feature"] = importance_df["feature"].str.replace(r"^(num__|cat__)", "", regex=True)
 
-        st.dataframe(
-            importance_df,
-            use_container_width=True,
-            hide_index=True
-        )
+            fig_fi = px.bar(
+                importance_df, x="importance", y="feature",
+                orientation="h",
+                color="importance",
+                color_continuous_scale=["#B5D4F4", "#185FA5"],
+                text=importance_df["importance"].apply(lambda x: f"{x:.3f}")
+            )
+            fig_fi.update_layout(
+                height=280, margin=dict(t=20,b=20,l=0,r=0),
+                showlegend=False, coloraxis_showscale=False,
+                yaxis=dict(autorange="reversed"),
+                plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)",
+                xaxis=dict(gridcolor="#f0f0f0")
+            )
+            fig_fi.update_traces(textposition="outside")
+            st.plotly_chart(fig_fi, use_container_width=True)
 
-    except Exception as e:
-
-        st.warning(
-            f"Feature Importance 추출 실패\n\n{e}"
-        )
+        except Exception as e:
+            st.warning(f"Feature Importance 추출 실패: {e}")
