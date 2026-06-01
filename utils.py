@@ -5,6 +5,7 @@ DEMO_TODAY = pd.Timestamp('2017-08-14')
 @st.cache_data
 def load_data():
     df = pd.read_csv('Dataset/demo_data.csv')
+    df = df[df['hotel']== 'Resort Hotel']       #리조트 호텔 한해서 시연.
     df['arrival_date'] = pd.to_datetime(df['arrival_date'])
     df['arrival_date_month_num'] = df['arrival_date'].dt.month
     df['checkout_date'] = df['arrival_date'] + pd.to_timedelta(df['total_stay_nights'], unit='D')

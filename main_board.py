@@ -5,7 +5,7 @@ import joblib
 from utils import load_data, DEMO_TODAY
 
 # ── 설정 ───────────────────────────────────────────────────────────────────
-TOTAL_ROOMS = 800   # 전체 객실 수 (대형 시티호텔 기준)
+TOTAL_ROOMS = 200   # 전체 객실 수 (대형 리조트호텔 기준)
 
 # ── 모델 로드 (캐싱) ────────────────────────────────────────────────────────
 @st.cache_resource
@@ -83,13 +83,12 @@ def run():
         <p style="font-size:12px; color:#9E9890; margin:0;">{sub if sub else '&nbsp;'}</p>
         """, unsafe_allow_html=True)
 
-    k1, k2, k3, k4, k5, k6 = st.columns(6)
+    k1, k2, k3, k4, k5 = st.columns(5)
     kpi(k1, "현재 투숙 중",  f"{inhouse_cnt}건",          f"점유율 {occupancy:.0f}%")
     kpi(k2, "오늘 체크아웃", f"{checkout_cnt}건",         "오후에 빌 예정")
     kpi(k3, "가용 객실",     f"{total_available}실",      f"빈방 {available_rooms} + 체크아웃 {checkout_cnt}")
     kpi(k4, "오늘 체크인",   f"{checkin_cnt}건",          "취소 제외, 실제 도착 예정")
-    kpi(k5, "오늘 취소",     f"{cancel_today_cnt}건",     "오늘 예정 중 실제 취소건")
-    kpi(k6, "예측 취소",     f"{expected_cancel:.1f}건",  "모델 예측 (오늘 도착 기준)")
+    kpi(k5, "예측 취소",     f"{expected_cancel:.1f}건",  "모델 예측 (오늘 도착 기준)")
 
     st.divider()
 
