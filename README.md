@@ -1,4 +1,4 @@
-# 🏨 Resort Overbooking Manager
+# 🏨 Hotel Overbooking Manager
 
 > 머신러닝 기반 호텔 예약 취소 예측 및 오버부킹 관리 대시보드
 
