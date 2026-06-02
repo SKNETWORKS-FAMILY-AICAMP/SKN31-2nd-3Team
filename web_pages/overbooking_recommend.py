@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 import plotly.express as px
 import plotly.graph_objects as go
-from utils import DEMO_TODAY, get_predictions, load_model
+from utils.utils import DEMO_TODAY, get_predictions, load_model
 
 model = load_model()
 

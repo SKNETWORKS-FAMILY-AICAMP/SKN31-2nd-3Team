@@ -1,7 +1,7 @@
 import datetime
 import pandas as pd
 import streamlit as st
-from utils import get_predictions   # util에서 가져오기
+from utils.utils import get_predictions   # util에서 가져오기
 
 st.set_page_config(page_title="알림 / 액션", page_icon="🔔", layout="wide")
 

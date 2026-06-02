@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import joblib
 
-from utils import DEMO_TODAY, get_predictions
+from utils.utils import DEMO_TODAY, get_predictions
 
 TOTAL_ROOMS = 200   # 전체 객실 수 (대형 리조트호텔 기준)
 
