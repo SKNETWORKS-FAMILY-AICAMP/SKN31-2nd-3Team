@@ -52,7 +52,8 @@
 호텔을 관리하는 매니져 입장에서,  최고의 경영상태는 
 「모든 객실이, 항상 100% 만실일때」의 모습일 것입니다. 
 
-<img width="250" height="130" alt="image" src="https://github.com/user-attachments/assets/933b345b-eb98-4a8e-88ec-ab49663ba143" />
+<img width="220" height="170" alt="image" src="https://github.com/user-attachments/assets/e98e889c-a387-4c9e-8372-bcde03e8c615" />
+
 
 
 본 프로젝트는, 약 3년간 조사한 11만 9천건의 호텔예약 dataset으로부터,
