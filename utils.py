@@ -39,7 +39,7 @@ def get_predictions(return_df=True):
 
     # 모델 예측 추가
     model = load_model()
-    feature_cols = [c for c in df.columns if c not in ['customer_name','status','is_canceled']]
+    feature_cols = [c for c in df.columns if c not in ['customer_name','status','is_canceled','arrival_date']]
     proba = model.predict_proba(df[feature_cols])[:, 1]
     df['cancel_proba'] = (proba * 100).round(0).astype(int)
     df['arrival_dt'] = pd.to_datetime(df['arrival_date'], errors='coerce')
