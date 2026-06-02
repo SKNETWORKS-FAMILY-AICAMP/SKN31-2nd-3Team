@@ -51,6 +51,8 @@
 
 호텔을 관리하는 매니져 입장에서,  최고의 경영상태는 
 「모든 객실이, 항상 100% 만실일때」의 모습일 것입니다. 
+<img width="322" height="177" alt="image" src="https://github.com/user-attachments/assets/933b345b-eb98-4a8e-88ec-ab49663ba143" />
+
 
 본 프로젝트는, 약 3년간 조사한 11만 9천건의 호텔예약 dataset으로부터,
 가장 예약취소 확률이 높은 고객들을 사전 예측해 대응하도록 알람을 띄워, 
