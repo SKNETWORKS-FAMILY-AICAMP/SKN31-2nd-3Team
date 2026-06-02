@@ -66,7 +66,6 @@
 **ㆍ비즈니스적 가치** 
 
 미리 취소가능성이 높은 고객들을 예측하고 연락할수 있다면, 
-
 <br>
 <img width="650" height="300" alt="image" src="https://github.com/user-attachments/assets/0726ccfa-3fa8-4fa6-8805-e34e8d2f7a04" />
 
