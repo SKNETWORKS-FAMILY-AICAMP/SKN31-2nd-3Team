@@ -39,7 +39,7 @@ def run():
         st.markdown(
             f"""<div style="background:#fff1f2; border:1px solid #fecdd3; border-radius:8px;
                 padding:10px 16px; margin-bottom:12px; color:#be123c; font-size:14px;">
-                ⚠️ &nbsp; <b>취소 위험 고객 {high_risk_cnt}명</b> — Expected 중 취소확률 70% 이상
+                ⚠️ &nbsp; <b>취소 위험 고객 {high_risk_cnt}명</b> — 예약확정 중 취소확률 70% 이상
             </div>""",
             unsafe_allow_html=True
         )
@@ -49,7 +49,7 @@ def run():
     with filter_col:
         status_tab = st.radio(
             "상태 필터",
-            ["전체", "In-House", "Expected", "위험만", "Canceled"],
+            ["전체", "투숙중", "예약확정", "취소위험", "취소완료"],
             horizontal=True,
             label_visibility="collapsed"
         )
@@ -63,13 +63,13 @@ def run():
     # ── 상태 필터 적용 ─────────────────────────────────────────────────────
     if status_tab == "전체":
         filtered = df.copy()
-    elif status_tab == "In-House":
+    elif status_tab == "투숙중":
         filtered = df[df['status'] == 'In-House'].copy()
-    elif status_tab == "Expected":
+    elif status_tab == "예약확정":
         filtered = df[df['status'] == 'Expected'].copy()
-    elif status_tab == "위험만":
+    elif status_tab == "취소위험":
         filtered = df[(df['status'] == 'Expected') & (df['취소확률'] >= 70)].copy()
-    elif status_tab == "Canceled":
+    elif status_tab == "취소완료":
         filtered = df[(df['status'] == 'Canceled')].copy()
 
     # ── 고객명 검색 필터 ──────────────────────────────────────────────
