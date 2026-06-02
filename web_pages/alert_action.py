@@ -49,7 +49,10 @@ def run():
         base_date = st.date_input("📅 기준일", value=datetime.date(2017, 8, 14))
 
     base_ts = pd.Timestamp(base_date)
-    upcoming = df[df['arrival_dt'] >= base_ts].copy()
+
+    upcoming = df[
+        df['arrival_dt'].dt.date == base_date
+    ].copy()
 
     if not upcoming.empty:
         upcoming['dday'] = (upcoming['arrival_dt'] - base_ts).dt.days.fillna(0).astype(int)
@@ -69,16 +72,17 @@ def run():
     st.write("")
 
     # ── 정렬 옵션 ───────────────────────────
-    sort_col1, _ = st.columns([0.25, 0.75])
-    with sort_col1:
-        sort_option = st.selectbox("📋 리스트 정렬 기준", ["취소 확률 높은 순", "체크인 임박 순"], index=0)
+    st.info("📌 아래 고객 목록은 취소 확률이 높은 순으로 정렬되어 있습니다.")
 
-    if sort_option == "취소 확률 높은 순":
-        immediate = immediate_pool.sort_values('cancel_proba', ascending=False)
-        monitor = monitor_pool.sort_values('cancel_proba', ascending=False)
-    else:
-        immediate = immediate_pool.sort_values(['dday', 'cancel_proba'], ascending=[True, False])
-        monitor = monitor_pool.sort_values(['dday', 'cancel_proba'], ascending=[True, False])
+    immediate = immediate_pool.sort_values(
+        'cancel_proba',
+        ascending=False
+    )
+
+    monitor = monitor_pool.sort_values(
+        'cancel_proba',
+        ascending=False
+    )
 
     # ── 카드 렌더링 함수 ───────────────────────────
     def render_interactive_column(frame, kind):
