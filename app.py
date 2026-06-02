@@ -13,21 +13,18 @@ st.set_page_config(
 st.markdown("""
 <style>
 
-/* 상단 Streamlit 헤더/툴바 제거 */
-header[data-testid="stHeader"]{
-    display:none;
-}
-div[data-testid="stToolbar"]{
-    display:none;
-}
-
-/* 본문 여백 */
+/* 전체 여백 */
 .block-container{
-    padding-top:0.8rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+            
+.block-container{
+    padding-top:3rem;
     padding-bottom:1rem;
 }
 
-/* 사이드바 */
+/* 사이드바 배경 */
 section[data-testid="stSidebar"]{
     background: linear-gradient(
         180deg,
@@ -36,25 +33,38 @@ section[data-testid="stSidebar"]{
     );
 }
 
-/* 사이드바 전체 글씨 */
-section[data-testid="stSidebar"] *{
+/* 사이드바 텍스트 */
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] div,
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3{
     color:white !important;
 }
 
-/* 메뉴 버튼 */
+/* Radio 메뉴 */
 div[data-testid="stRadio"] label{
-    background: rgba(255,255,255,0.08);
+    background:rgba(255,255,255,0.08);
     border-radius:12px;
     padding:12px;
     margin-bottom:8px;
+    transition:all 0.2s ease;
 }
+
 div[data-testid="stRadio"] label:hover{
-    background: rgba(255,255,255,0.18);
+    background:rgba(255,255,255,0.18);
+}
+
+/* 구분선 */
+section[data-testid="stSidebar"] hr{
+    border-color:rgba(255,255,255,0.15);
 }
 
 /* 메인 배너 */
 .main-banner{
-    background: linear-gradient(
+    background:linear-gradient(
         90deg,
         #183153,
         #2F5D8A
@@ -64,6 +74,18 @@ div[data-testid="stRadio"] label:hover{
     color:white;
     margin-bottom:15px;
 }
+
+/* Streamlit 기본 메뉴만 숨김 */
+#MainMenu{
+    visibility:hidden;
+}
+
+footer{
+    visibility:hidden;
+}
+
+
+
 </style>
 """, unsafe_allow_html=True)
 

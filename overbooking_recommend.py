@@ -3,7 +3,9 @@ import pandas as pd
 import joblib
 import plotly.express as px
 import plotly.graph_objects as go
-from utils import DEMO_TODAY, get_predictions
+from utils import DEMO_TODAY, get_predictions, load_model
+
+model = load_model()
 
 def run():
     # 캐싱된 예측 결과 포함된 df 가져오기
