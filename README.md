@@ -89,7 +89,7 @@
 ★데이터 준비 및 전처리 (Data Preparation)
  : 기존 데이터 중에서 취소여부에 큰 영향을 미치는 아래의 핵심 변수(Feature)들을 추출하고 정제헀습니다.
  
-<img width="850" height="290" alt="image" src="https://github.com/user-attachments/assets/9fd225d2-bf8d-43b2-a0f1-ba2ee0d4c463" />
+<img width="900" height="275" alt="image" src="https://github.com/user-attachments/assets/9fd225d2-bf8d-43b2-a0f1-ba2ee0d4c463" />
 
 
 
