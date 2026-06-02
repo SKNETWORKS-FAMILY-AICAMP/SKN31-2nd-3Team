@@ -61,8 +61,6 @@
 
 바로 대체자를 찾아 공실을 최소화 하도록 프로그램 되었습니다. 
 
-<img width="650" height="300" alt="image" src="https://github.com/user-attachments/assets/f16545af-24bf-43f7-87de-1262c9d12f3e" />
-
 
 ---------------------------------------
 **ㆍ비즈니스적 가치** 
@@ -70,6 +68,8 @@
 미리 취소가능성이 높은 고객들을 예측하고 연락할수 있다면, 
 
 <br>
+<img width="650" height="300" alt="image" src="https://github.com/user-attachments/assets/f16545af-24bf-43f7-87de-1262c9d12f3e" />
+
 
 예약취소가 되더라도, 아직 예약대기자가 있을때 대체고객을 즉시 배정할수 있으므로
 
