@@ -167,8 +167,8 @@ demo_data.csv
 
 ```
 📦 Hotel-overbooking-manager
- ┣ 📂 assets                                # README 프로필 이미지
- ┃  └ 📄 profile.png
+ ┣ 📂 assets                                
+ ┃  └ 📄 profile.png                        # README 프로필 이미지
  ┣ 📂 Dataset
  ┃  └ 📄 demo_data.csv                      # 호텔 예약 데이터셋
  ┃  └ 📄 hotel_bookings.csv                 # 학습용 데이터셋
