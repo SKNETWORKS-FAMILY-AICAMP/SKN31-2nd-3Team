@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-from utils import get_predictions   # util에서 가져오기 
+from utils.utils import get_predictions   # util에서 가져오기 
+
 
 def run():
     # 캐싱된 예측 결과 포함된 df 가져오기
