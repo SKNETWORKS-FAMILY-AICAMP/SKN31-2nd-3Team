@@ -39,7 +39,7 @@ def run():
         st.markdown(
             f"""<div style="background:#fff1f2; border:1px solid #fecdd3; border-radius:8px;
                 padding:10px 16px; margin-bottom:12px; color:#be123c; font-size:14px;">
-                ⚠️ &nbsp; <b>취소 위험 고객 {high_risk_cnt}명</b> — 예약확정 중 취소확률 70% 이상
+                ⚠️ &nbsp; <b>취소 위험 고객 {high_risk_cnt}명</b> — 체크인예정 중 취소확률 70% 이상
             </div>""",
             unsafe_allow_html=True
         )
@@ -49,7 +49,7 @@ def run():
     with filter_col:
         status_tab = st.radio(
             "상태 필터",
-            ["전체", "투숙중", "예약확정", "취소위험", "취소완료"],
+            ["전체", "투숙중", "체크인예정", "취소위험", "취소완료"],
             horizontal=True,
             label_visibility="collapsed"
         )
@@ -65,7 +65,7 @@ def run():
         filtered = df.copy()
     elif status_tab == "투숙중":
         filtered = df[df['status'] == 'In-House'].copy()
-    elif status_tab == "예약확정":
+    elif status_tab == "체크인예정":
         filtered = df[df['status'] == 'Expected'].copy()
     elif status_tab == "취소위험":
         filtered = df[(df['status'] == 'Expected') & (df['취소확률'] >= 70)].copy()
@@ -77,7 +77,7 @@ def run():
         filtered = filtered[filtered['customer_name'].str.contains(search_query, case=False, na=False)]
 
     # ── 정렬 ──────────────────────────────────────────────────────────────
-    if status_tab in ["Expected", "위험만"]:
+    if status_tab in ["체크인예정", "취소위험"]:
         filtered = filtered.sort_values('취소확률', ascending=False)
     else:
         filtered = filtered.sort_values('arrival_date')
