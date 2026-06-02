@@ -167,18 +167,20 @@ demo_data.csv
 
 ```
 📦 Hotel-overbooking-manager
- ┣ 📂 assets                        # README 프로필 이미지
+ ┣ 📂 assets                                # README 프로필 이미지
  ┃  └ 📄 profile.png
  ┣ 📂 Dataset
- ┃  └ 📄 demo_data.csv              # 호텔 예약 데이터셋
+ ┃  └ 📄 demo_data.csv                      # 호텔 예약 데이터셋
+ ┃  └ 📄 hotel_bookings.csv                 # 학습용 데이터셋
  ┣ 📂 model&preprocessing
- ┃  └ 📄 best_model.pkl             # 학습 완료 ML 모델 (sklearn Pipeline)
- ┣ 📄 app.py                        # 진입점 – 사이드바 네비게이션 및 페이지 라우팅
- ┣ 📄 utils.py                      # 공통 유틸 – CSV 로드, status 파생, DEMO_TODAY
- ┣ 📄 main_board.py                 # 현황판 모듈
- ┣ 📄 reservation_list.py           # 예약 리스트 모듈
- ┣ 📄 overbooking_recommend.py      # 오버부킹 추천 모듈
- ┗ 📄 alert_action.py               # 알림 / 액션 모듈
+ ┃  └ 📄 best_model.pkl                     # 학습 완료 ML 모델 (sklearn Pipeline)
+ ┃  └ 📄 Preprocessing_hotel_dataset.ipynb  # 프로세스 실행파일      
+ ┣ 📄 app.py                                # 진입점 – 사이드바 네비게이션 및 페이지 라우팅
+ ┣ 📄 utils.py                              # 공통 유틸 – CSV 로드, status 파생, DEMO_TODAY
+ ┣ 📄 main_board.py                         # 현황판 모듈
+ ┣ 📄 reservation_list.py                   # 예약 리스트 모듈
+ ┣ 📄 overbooking_recommend.py              # 오버부킹 추천 모듈
+ ┗ 📄 alert_action.py                       # 알림 / 액션 모듈
 ```
 
 <br>
