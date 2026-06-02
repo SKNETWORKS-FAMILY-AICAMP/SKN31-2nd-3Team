@@ -146,14 +146,14 @@ with st.sidebar:
 # 페이지 라우팅
 # ─────────────────────────────────────────────
 if page == "📊 현황판":
-    import main_board
+    import web_pages.main_board as main_board
     main_board.run()
 elif page == "📋 예약 리스트":
-    import reservation_list
+    import web_pages.reservation_list as reservation_list
     reservation_list.run()
 elif page == "📈 오버부킹 추천":
-    import overbooking_recommend
+    import web_pages.overbooking_recommend as overbooking_recommend
     overbooking_recommend.run()
 elif page == "🔔 알림 / 액션":
-    import alert_action
+    import web_pages.alert_action as alert_action
     alert_action.run()

@@ -22,6 +22,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.x-FF4B4B?logo=streamlit&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-Pipeline-F7931E?logo=scikit-learn&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-Classifier-AA0000?logoColor=white)
+![Random Forest](https://img.shields.io/badge/Random_Forest-Classifier-228B22?logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-Data%20Processing-150458?logo=pandas&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-Visualization-3F4F75?logo=plotly&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
@@ -45,10 +46,29 @@
 <br>
 
 ## 🔍 프로젝트 소개
+<br>
+##・서론 및 개요
 
-Hotel Overbooking Manager는 호텔 예약 취소 확률을 머신러닝 모델로 실시간 예측하여 객실 점유율을 극대화하는 **Streamlit 기반 대시보드 시스템**입니다.
+호텔을 관리하는 매니져 입장에서,  최고의 경영상태는 
+「모든 객실이, 항상 100% 만실일때」의 모습일 것입니다. 
 
-취소 가능성이 높은 고객을 사전에 식별하고, 그 수만큼 추가 예약(오버부킹)을 허용함으로써 공실 손실을 최소화합니다.
+본 프로젝트는, 약 3년간 조사한 11만 9천건의 호텔예약 dataset으로부터,
+가장 예약취소 확률이 높은 고객들을 사전 예측해 대응하도록 알람을 띄워, 
+바로 대체자를 찾아 공실을 최소화 하도록 프로그램 되었습니다. 
+
+---------------------------------------
+##ㆍ비즈니스 가치 
+
+미리 취소가능성이 높은 고객들을 예측하고 선별해 
+예약유지를 재확인하는 연락을 보낼수 있다면, 
+
+예약취소를 시키더라도, 대기자나 대체고객을 바로 유치할수 있으므로
+공실율을 막고 매출향상으로 이어지게 할수있다.
+
+ ---------------------------------------
+##ㆍ사용 Data
+ 약 3년간의 호텔 예약실적 11만 9천건 (포르투갈, Lisbon)
+   ⇒숙박 기간,  고객의 과거 예약취소 이력, 보증금 납입여부, 특별 요구조건 유무, 주차공간의 요구 등
 
 > SKN31 2차 프로젝트 3팀
 
@@ -100,7 +120,8 @@ Hotel Overbooking Manager는 호텔 예약 취소 확률을 머신러닝 모델�
 |------|------|-----------|
 | **scikit-learn Pipeline** | latest | 전처리기(`ColumnTransformer`)와 분류기를 하나의 `Pipeline`으로 묶어 학습·추론 일관성 보장 |
 | **ColumnTransformer** | - | 수치형 컬럼(중앙값 대치 → `StandardScaler`)과 범주형 컬럼(최빈값 대치 → `OneHotEncoder`) 병렬 전처리 |
-| **XGBoostClassifier** | latest | 최종 선택 분류 모델. 5개 후보 모델(Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, XGBoost) 비교 후 AUC 기준 최고 성능으로 채택 |
+| **RandomForestClassifier** | latest | 최종 선택 분류 모델. 5개 후보 모델(Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, XGBoost) 비교 후 AUC 기준 최고 성능으로 채택 |
+| **XGBoostClassifier** | latest | 5개 후보 모델 중 하나로 비교 실험에 사용. AUC 기준 Random Forest에 이어 2위 성능을 기록했으나 최종 모델에서 제외 |
 | **GridSearchCV** | - | XGBoost 하이퍼파라미터 튜닝 (`n_estimators`, `max_depth`, `learning_rate`). `scoring='roc_auc'`, `cv=3` |
 | **joblib** | latest | 학습 완료 Pipeline을 `best_model.pkl`로 직렬화(저장) 및 역직렬화(로드) |
 
