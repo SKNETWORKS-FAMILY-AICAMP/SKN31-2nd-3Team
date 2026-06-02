@@ -46,7 +46,7 @@
 
 ## 🔍 프로젝트 소개
 
-Resort Overbooking Manager는 호텔 예약 취소 확률을 머신러닝 모델로 실시간 예측하여 객실 점유율을 극대화하는 **Streamlit 기반 대시보드 시스템**입니다.
+Hotel Overbooking Manager는 호텔 예약 취소 확률을 머신러닝 모델로 실시간 예측하여 객실 점유율을 극대화하는 **Streamlit 기반 대시보드 시스템**입니다.
 
 취소 가능성이 높은 고객을 사전에 식별하고, 그 수만큼 추가 예약(오버부킹)을 허용함으로써 공실 손실을 최소화합니다.
 
@@ -166,7 +166,9 @@ demo_data.csv
 ## 📁 파일 구조
 
 ```
-📦 resort-overbooking-manager
+📦 Hotel-overbooking-manager
+ ┣ 📂 assets
+ ┃  └ 📄 profile.png
  ┣ 📂 Dataset
  ┃  └ 📄 demo_data.csv              # 호텔 예약 데이터셋
  ┣ 📂 model&preprocessing
