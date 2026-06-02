@@ -207,6 +207,7 @@ demo_data.csv
  ┃  └ 📄 demo_data.csv                      # 호텔 예약 데이터셋
  ┃  └ 📄 hotel_bookings.csv                 # 학습용 데이터셋
  ┣ 📂 model&preprocessing
+ ┃  └ 📄 best_model.zip                     # 학습 완료 ML 모델 zip 파일
  ┃  └ 📄 best_model.pkl                     # 학습 완료 ML 모델 (sklearn Pipeline)
  ┃  └ 📄 Preprocessing_hotel_dataset.ipynb  # 프로세스 실행파일
  ┣ 📂 utils
