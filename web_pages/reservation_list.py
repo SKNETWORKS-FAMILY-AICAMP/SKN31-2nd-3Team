@@ -49,7 +49,7 @@ def run():
     with filter_col:
         status_tab = st.radio(
             "상태 필터",
-            ["전체", "In-House", "Expected", "위험만"],
+            ["전체", "In-House", "Expected", "위험만", "Canceled"],
             horizontal=True,
             label_visibility="collapsed"
         )
@@ -69,6 +69,8 @@ def run():
         filtered = df[df['status'] == 'Expected'].copy()
     elif status_tab == "위험만":
         filtered = df[(df['status'] == 'Expected') & (df['취소확률'] >= 70)].copy()
+    elif status_tab == "Canceled":
+        filtered = df[(df['status'] == 'Canceled')].copy()
 
     # ── 고객명 검색 필터 ──────────────────────────────────────────────
     if search_query:
