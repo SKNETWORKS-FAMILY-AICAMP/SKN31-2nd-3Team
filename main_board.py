@@ -27,8 +27,7 @@ def run():
     # ── 헤더 ───────────────────────────────────
     col_title, col_info = st.columns([2, 1])
     with col_title:
-        st.markdown('<p style="font-size:28px; font-weight:700; margin:0;">Resort Overbooking Manager</p>',
-                    unsafe_allow_html=True)
+        st.title("🏨 현황판")
     with col_info:
         st.markdown(
             f'<p style="text-align:right; color:#9E9890; font-size:13px; padding-top:12px;">'

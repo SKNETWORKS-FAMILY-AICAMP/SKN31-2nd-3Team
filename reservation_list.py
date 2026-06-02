@@ -22,7 +22,7 @@ def run():
     # ── 헤더: 타이틀 + 액션 버튼 ──────────────────────────────────────────
     col_title, col_btn = st.columns([3, 1])
     with col_title:
-        st.markdown("## 예약 리스트")
+        st.title("📋 예약 리스트")
     with col_btn:
         st.markdown("<div style='display:flex; gap:8px; justify-content:flex-end; padding-top:8px;'>", unsafe_allow_html=True)
         bcol1, bcol2 = st.columns(2)

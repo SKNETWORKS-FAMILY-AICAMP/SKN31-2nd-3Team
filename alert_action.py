@@ -41,7 +41,7 @@ def run():
         st.session_state['actioned_customers'] = set()
 
     # ── 헤더 ───────────────────────────
-    st.markdown('<div class="app-header">🏨 &nbsp;Resort Overbooking Manager</div>', unsafe_allow_html=True)
+    st.title("🔔 알림 / 액션")
 
     # ── 기준일 선택 ───────────────────────────
     date_col, _ = st.columns([0.25, 0.75])
