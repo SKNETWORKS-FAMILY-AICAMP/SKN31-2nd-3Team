@@ -202,13 +202,18 @@ demo_data.csv
  ┃  └ 📄 hotel_bookings.csv                 # 학습용 데이터셋
  ┣ 📂 model&preprocessing
  ┃  └ 📄 best_model.pkl                     # 학습 완료 ML 모델 (sklearn Pipeline)
- ┃  └ 📄 Preprocessing_hotel_dataset.ipynb  # 프로세스 실행파일      
+ ┃  └ 📄 Preprocessing_hotel_dataset.ipynb  # 프로세스 실행파일
+ ┣ 📂 utils
+ ┃  └ 📄 __init__.py                        # 해당폴더 패키지로 인식
+ ┃  └ 📄 utils.py                           # 공통 유틸 – CSV 로드, status 파생, DEMO_TODAY
+ ┣ 📂 web_pages
+ ┃  └ 📄 __init__.py                        # 해당폴더 패키지로 인식  
+ ┃  └ 📄 main_board.py                      # 현황판 모듈
+ ┃  └ 📄 reservation_list.py                # 예약 리스트 모듈
+ ┃  └ 📄 overbooking_recommend.py           # 오버부킹 추천 모듈
+ ┃  └ 📄 alert_action.py                    # 알림 / 액션 모듈
  ┣ 📄 app.py                                # 진입점 – 사이드바 네비게이션 및 페이지 라우팅
- ┣ 📄 utils.py                              # 공통 유틸 – CSV 로드, status 파생, DEMO_TODAY
- ┣ 📄 main_board.py                         # 현황판 모듈
- ┣ 📄 reservation_list.py                   # 예약 리스트 모듈
- ┣ 📄 overbooking_recommend.py              # 오버부킹 추천 모듈
- ┗ 📄 alert_action.py                       # 알림 / 액션 모듈
+ ┗ 📄 requirements.txt                      # 파이썬 라이브러리(패키지) 목록          
 ```
 
 <br>
