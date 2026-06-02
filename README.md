@@ -101,7 +101,8 @@ Hotel Overbooking Manager는 호텔 예약 취소 확률을 머신러닝 모델�
 |------|------|-----------|
 | **scikit-learn Pipeline** | latest | 전처리기(`ColumnTransformer`)와 분류기를 하나의 `Pipeline`으로 묶어 학습·추론 일관성 보장 |
 | **ColumnTransformer** | - | 수치형 컬럼(중앙값 대치 → `StandardScaler`)과 범주형 컬럼(최빈값 대치 → `OneHotEncoder`) 병렬 전처리 |
-| **XGBoostClassifier** | latest | 최종 선택 분류 모델. 5개 후보 모델(Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, XGBoost) 비교 후 AUC 기준 최고 성능으로 채택 |
+| **RandomForestClassifier** | latest | 최종 선택 분류 모델. 5개 후보 모델(Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, XGBoost) 비교 후 AUC 기준 최고 성능으로 채택 |
+| **XGBoostClassifier** | latest | 5개 후보 모델 중 하나로 비교 실험에 사용. AUC 기준 Random Forest에 이어 2위 성능을 기록했으나 최종 모델에서 제외 |
 | **GridSearchCV** | - | XGBoost 하이퍼파라미터 튜닝 (`n_estimators`, `max_depth`, `learning_rate`). `scoring='roc_auc'`, `cv=3` |
 | **joblib** | latest | 학습 완료 Pipeline을 `best_model.pkl`로 직렬화(저장) 및 역직렬화(로드) |
 
