@@ -84,18 +84,6 @@
 
 
 
-**예측 모델의 Logic**
-
-★데이터 준비 (Data Preparation)
- : 기존 데이터 중에서 취소여부에 큰 영향을 미치는 아래의 핵심 변수(Feature)들을 추출하고 정제헀습니다.
- 
-<img width="1485" height="403" alt="image" src="https://github.com/user-attachments/assets/39037e4f-b8ea-4dbe-b1e4-170fab63e1bc" />
-
-
-
-
-
-
 ## 📆WBS
 
 | 작업 | 담당/내용 | 5/22~25 | 5/26~27 | 5/28~29 | 5/30~31 | 6/1~6/3 |
