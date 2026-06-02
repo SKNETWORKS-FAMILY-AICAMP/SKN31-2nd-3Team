@@ -73,7 +73,7 @@
 
 예약취소가 되더라도, 아직 예약대기자가 있을때 대체고객을 즉시 배정할수 있으므로
 
-공실발생을 막고 매출향상으로 이어지게 할수있다.
+공실발생을 막고 매출향상으로 이어지게 할수있습니다.
 
  ---------------------------------------
 **ㆍ사용 Data**
@@ -81,6 +81,16 @@
  약 3년간의 호텔 예약실적 11만 9천건 (포르투갈, Lisbon)
  
      ⇒ 숙박 기간,  고객의 과거 예약취소 이력, 보증금 납입여부, 특별 요구조건 유무, 주차공간의 요구 등
+
+
+
+**예측 모델의 Logic**
+
+★데이터 준비 (Data Preparation)
+ : 기존 데이터 중에서 취소여부에 큰 영향을 미치는 아래의 핵심 변수(Feature)들을 추출하고 정제헀습니다.
+ 
+<img width="1485" height="403" alt="image" src="https://github.com/user-attachments/assets/39037e4f-b8ea-4dbe-b1e4-170fab63e1bc" />
+
 
 
 
@@ -199,7 +209,7 @@ demo_data.csv
 ## 📁 파일 구조
 
 ```
-📦 Hotel-overbooking-manager
+📦 SKN31-2nd-3Team
  ┣ 📂 산출물                                # 데이터 전 처리 결과서, 모델 학습 결과서
  ┣ 📂 assets                                
  ┃  └ 📄 profile.png                        # README 프로필 이미지
@@ -207,14 +217,20 @@ demo_data.csv
  ┃  └ 📄 demo_data.csv                      # 호텔 예약 데이터셋
  ┃  └ 📄 hotel_bookings.csv                 # 학습용 데이터셋
  ┣ 📂 model&preprocessing
+ ┃  └ 📄 best_model.zip                     # 학습 완료 ML 모델 zip 파일
  ┃  └ 📄 best_model.pkl                     # 학습 완료 ML 모델 (sklearn Pipeline)
- ┃  └ 📄 Preprocessing_hotel_dataset.ipynb  # 프로세스 실행파일      
+ ┃  └ 📄 Preprocessing_hotel_dataset.ipynb  # 프로세스 실행파일
+ ┣ 📂 utils
+ ┃  └ 📄 __init__.py                        # 해당폴더 패키지로 인식
+ ┃  └ 📄 utils.py                           # 공통 유틸 – CSV 로드, status 파생, DEMO_TODAY
+ ┣ 📂 web_pages
+ ┃  └ 📄 __init__.py                        # 해당폴더 패키지로 인식  
+ ┃  └ 📄 main_board.py                      # 현황판 모듈
+ ┃  └ 📄 reservation_list.py                # 예약 리스트 모듈
+ ┃  └ 📄 overbooking_recommend.py           # 오버부킹 추천 모듈
+ ┃  └ 📄 alert_action.py                    # 알림 / 액션 모듈
  ┣ 📄 app.py                                # 진입점 – 사이드바 네비게이션 및 페이지 라우팅
- ┣ 📄 utils.py                              # 공통 유틸 – CSV 로드, status 파생, DEMO_TODAY
- ┣ 📄 main_board.py                         # 현황판 모듈
- ┣ 📄 reservation_list.py                   # 예약 리스트 모듈
- ┣ 📄 overbooking_recommend.py              # 오버부킹 추천 모듈
- ┗ 📄 alert_action.py                       # 알림 / 액션 모듈
+ ┗ 📄 requirements.txt                      # 파이썬 라이브러리(패키지) 목록          
 ```
 
 <br>
@@ -307,7 +323,7 @@ Expected   : 위 3가지 조건에 해당하지 않는 나머지 모든 예약
 | ID | 설명 | 우선순위 |
 |----|------|----------|
 | FR-RL-001 | `Expected` 상태에만 취소확률 예측, 그 외는 `—` 표시 | 필수 |
-| FR-RL-002 | 전체 / In-House / Expected / 위험만(70%↑) 4가지 탭 필터 | 필수 |
+| FR-RL-002 | 전체 / 투숙중 / 예약확정 / 취소위험(70%↑) / 취소완료 5가지 탭 필터 | 필수 |
 | FR-RL-003 | 고객명 부분 검색 (대소문자 무시) | 필수 |
 | FR-RL-004 | 취소확률 70%↑ 고객 수를 상단 경고 배너로 표시 | 필수 |
 | FR-RL-005 | 행 배경색 + 배지 스타일 + 취소확률 바 차트 스타일드 테이블 | 필수 |
