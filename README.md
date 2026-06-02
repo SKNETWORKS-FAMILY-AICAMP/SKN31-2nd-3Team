@@ -61,6 +61,9 @@
 
 바로 대체자를 찾아 공실을 최소화 하도록 프로그램 되었습니다. 
 
+<img width="300" height="190" alt="image" src="https://github.com/user-attachments/assets/f16545af-24bf-43f7-87de-1262c9d12f3e" />
+
+
 ---------------------------------------
 **ㆍ비즈니스적 가치** 
 
