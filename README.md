@@ -68,7 +68,8 @@
 미리 취소가능성이 높은 고객들을 예측하고 연락할수 있다면, 
 
 <br>
-<img width="650" height="300" alt="image" src="https://github.com/user-attachments/assets/f16545af-24bf-43f7-87de-1262c9d12f3e" />
+<img width="650" height="300" alt="image" src="https://github.com/user-attachments/assets/0726ccfa-3fa8-4fa6-8805-e34e8d2f7a04" />
+
 
 
 예약취소가 되더라도, 아직 예약대기자가 있을때 대체고객을 즉시 배정할수 있으므로
