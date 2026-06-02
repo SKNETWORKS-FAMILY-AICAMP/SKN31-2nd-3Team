@@ -199,7 +199,7 @@ demo_data.csv
 ## 📁 파일 구조
 
 ```
-📦 Hotel-overbooking-manager
+📦 SKN31-2nd-3Team
  ┣ 📂 산출물                                # 데이터 전 처리 결과서, 모델 학습 결과서
  ┣ 📂 assets                                
  ┃  └ 📄 profile.png                        # README 프로필 이미지
