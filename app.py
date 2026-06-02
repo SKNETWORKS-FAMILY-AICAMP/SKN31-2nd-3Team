@@ -118,9 +118,13 @@ with st.sidebar:
 
     st.markdown("---")
 
+    # label_visibility="collapsed" : 빈 문자열 라벨("")을 넘겨도
+    # Streamlit이 빈 라벨 영역을 DOM에 렌더링해 불필요한 버튼처럼 보임.
+    # collapsed로 설정하면 라벨 요소 자체를 제거해 현황판 위 여분 버튼이 사라짐.
     page = st.radio(
-        "",
-        ["📊 현황판","📋 예약 리스트","📈 오버부킹 추천","🔔 알림 / 액션"]
+        "페이지 선택",
+        ["📊 현황판", "📋 예약 리스트", "📈 오버부킹 추천", "🔔 알림 / 액션"],
+        label_visibility="collapsed"
     )
 
     st.markdown("---")
