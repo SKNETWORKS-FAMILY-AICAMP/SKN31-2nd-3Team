@@ -102,79 +102,6 @@ markdown으로 전처리 결과서 써야되는데 헤더만 만들어줘
 
 ### 2.2 컬럼 정보
 
-### 2.3 타겟 변수 정의
-
----
-
-## 3. 데이터 품질 점검
-
-### 3.1 데이터 크기 및 형태
-
-### 3.2 데이터 타입 확인
-
-### 3.3 결측치 분석
-
-### 3.4 이상치 분석
-
-### 3.5 중복 데이터 확인
-
----
-
-## 4. 데이터 전처리 수행 내용
-
-### 4.1 불필요 컬럼 제거
-
-### 4.2 데이터 타입 변환
-
-### 4.3 결측치 처리
-
-### 4.4 이상치 처리
-
-### 4.5 범주형 변수 인코딩
-
-### 4.6 파생 변수 생성
-
-### 4.7 데이터 스케일링
-
----
-
-## 5. 전처리 결과
-
-### 5.1 최종 데이터셋 정보
-
-### 5.2 컬럼별 변경 사항
-
-### 5.3 클래스 분포 확인
-
-### 5.4 전처리 전·후 비교
-
----
-
-## 6. 학습 데이터 분할
-
-### 6.1 Train / Validation / Test 분할
-
-### 6.2 데이터 비율
-
----
-
-## 7. 전처리 파이프라인
-
-### 7.1 전처리 흐름도
-
-### 7.2 사용 라이브러리 및 기법
-
----
-
-## 8. 결론
-
-### 8.1 주요 전처리 결과 요약
-
-### 8.2 향후 개선 사항
-컬럼 정보는 요래 hotel	is_canceled	lead_time	arrival_date_year	arrival_date_month	arrival_date_week_number	arrival_date_day_of_month	stays_in_weekend_nights	stays_in_week_nights	adults	children	babies	meal	country	market_segment	distribution_channel	is_repeated_guest	previous_cancellations	previous_bookings_not_canceled	reserved_room_type	assigned_room_type	booking_changes	deposit_type	agent	company	days_in_waiting_list	customer_type	adr	required_car_parking_spaces	total_of_special_requests	reservation_status	reservation_status_date
-0	Resort Hotel	0	342	2015	July	27	1	0	0	2	0.0	0	BB	PRT	Direct	Direct	0	0	0	C	C	3	No Deposit	NaN	NaN	0	Transient	0.0	0	0	Check-Out	2015-07-01
-### 2.2 컬럼 정보
-
 | 컬럼명 | 설명 |
 |---------|---------|
 | hotel | 호텔 유형 (Resort Hotel / City Hotel) |
@@ -218,123 +145,9 @@ markdown으로 전처리 결과서 써야되는데 헤더만 만들어줘
 - 1 : 예약 취소
 
 이를 통해 고객의 예약 정보와 행동 패턴을 기반으로 예약 취소(노쇼 포함) 가능성을 예측하는 이진 분류(Binary Classification) 모델을 구축하고자 한다.
-컬럼드롭전에 파생변수먼저 만들기로했어 month_map = {
-        'January':'01', 'February':'02', 'March':'03', 'April':'04',
-        'May':'05', 'June':'06', 'July':'07', 'August':'08',
-        'September':'09', 'October':'10', 'November':'11', 'December':'12'
-    }
-data['arrival_date_month_num'] = data['arrival_date_month'].map(month_map)
 
-    # 년-월-일 합쳐서 진짜 datetime 객체로 만들기
-data['arrival_date'] = pd.to_datetime(
-        data['arrival_date_year'].astype(str) + '-' +
-        data['arrival_date_month_num'] + '-' +
-        data['arrival_date_day_of_month'].astype(str),
-        errors='coerce'
-  )
-    # status date도 날짜형 변환
-data['reservation_status_date'] = pd.to_datetime(data['reservation_status_date'], errors='coerce')import numpy as np
-#파생변수
-#예약했던 방이랑 배정받은 방이 다른지?
-data['room_assignment_changed'] = (data['reserved_room_type'] != data['assigned_room_type']).astype(int)
-#호텔에 머문 주말 일수 + 주중 일수 = 총 일수
-data['total_stay_nights'] = data['stays_in_weekend_nights'] + data['stays_in_week_nights']
-#아기, 어린이, 성인 다 합친 컬럼 생성 ** Children 컬럼 결측치 4개있음으로 0으로 치환
-data['total_people'] = data['adults'] + data['children'].fillna(0) + data['babies']
-#그날 방 가격이 0원이었던 방들은 프로모션, 쿠폰 등 다양한 요소 작용 그래서 adr = 0유무 확인
-data['is_adr_0'] = (data['adr'] == 0).astype(int)
-#Agent가 포함 되어있는 예약인지 확인하는 컬럼 ( 기존 Agent컬럼은 삭제)
-data['Agent_check'] = (~data['agent'].isna()).astype(int)
-#데이터가 포르투갈 호텔대상으로 한 데이터라 country컬럼에서 포르투갈인일때, 혹은 외국인일때를 분석 할 수 있는 컬럼 생성.
-data['foreigner'] = (data['country'] != 'PRT').astype(int)
-#도착 날 변환(월,화,수...)
-data['arrival_weekday'] = data['arrival_date'].dt.dayofweek
-data.head(10)
-#
-
-전처리 결과서에는 이런 식으로 적으면 깔끔함.
-
-### 4.1 파생 변수 생성
-
-기존 변수만으로는 고객의 예약 행동 특성을 충분히 반영하기 어렵다고 판단하여 예약 정보, 객실 배정 정보, 고객 정보 등을 활용한 파생 변수를 생성하였다.
-
-| 파생 변수명 | 생성 방법 | 생성 목적 |
-|------------|------------|------------|
-| arrival_date | arrival_date_year, arrival_date_month, arrival_date_day_of_month 결합 | 실제 도착일 정보 생성 |
-| room_assignment_changed | 예약 객실 유형과 실제 배정 객실 유형 비교 | 객실 변경 여부 파악 |
-| total_stay_nights | 주말 숙박일 + 평일 숙박일 | 총 숙박 기간 계산 |
-| total_people | 성인 + 어린이 + 유아 수 | 실제 투숙 인원 수 계산 |
-| is_adr_0 | ADR(평균 객실 요금)이 0인지 여부 | 무료 숙박 또는 프로모션 여부 확인 |
-| Agent_check | Agent 정보 존재 여부 | 여행사 예약 여부 확인 |
-| foreigner | 국적이 PRT(포르투갈)인지 여부 | 내국인/외국인 구분 |
-| arrival_weekday | arrival_date의 요일 정보 추출 | 요일별 예약 패턴 분석 |
-
-#### 4.1.1 도착일(Date) 변수 생성
-
-기존 데이터는 연도, 월, 일 정보가 각각 분리되어 있어 분석에 활용하기 어려웠다. 따라서 `arrival_date_year`, `arrival_date_month`, `arrival_date_day_of_month`를 결합하여 실제 날짜 형태의 `arrival_date` 컬럼을 생성하였다.
-
-또한 `reservation_status_date` 컬럼도 datetime 형식으로 변환하여 날짜 기반 분석이 가능하도록 하였다.
-
-#### 4.1.2 객실 변경 여부 변수 생성
-
-예약 당시 객실(`reserved_room_type`)과 실제 배정 객실(`assigned_room_type`)이 서로 다른 경우를 확인하기 위해 `room_assignment_changed` 변수를 생성하였다.
-
-- 0 : 객실 변경 없음
-- 1 : 객실 변경 발생
-
-#### 4.1.3 총 숙박일 변수 생성
-
-주말 숙박일수(`stays_in_weekend_nights`)와 평일 숙박일수(`stays_in_week_nights`)를 합산하여 `total_stay_nights` 변수를 생성하였다.
-
-이를 통해 고객의 실제 체류 기간을 하나의 변수로 표현하였다.
-
-#### 4.1.4 총 투숙객 수 변수 생성
-
-성인(`adults`), 어린이(`children`), 유아(`babies`) 수를 합산하여 `total_people` 변수를 생성하였다.
-
-`children` 컬럼의 결측치 4건은 실제 인원 계산을 위해 0으로 대체한 후 사용하였다.
-
-#### 4.1.5 객실 요금 0원 여부 변수 생성
-
-ADR(Average Daily Rate)이 0인 예약을 구분하기 위해 `is_adr_0` 변수를 생성하였다.
-
-ADR이 0인 경우 프로모션, 쿠폰, 무료 숙박 등의 특수한 예약일 가능성이 있어 별도 변수로 관리하였다.
-
-#### 4.1.6 여행사 예약 여부 변수 생성
-
-`agent` 컬럼의 결측 여부를 활용하여 여행사를 통한 예약인지 확인하는 `Agent_check` 변수를 생성하였다.
-
-- 0 : 직접 예약
-- 1 : 여행사 예약
-
-#### 4.1.7 외국인 여부 변수 생성
-
-데이터셋은 포르투갈 호텔 예약 데이터이므로 `country` 컬럼을 활용하여 외국인 여부를 나타내는 `foreigner` 변수를 생성하였다.
-
-- 0 : 포르투갈(PRT)
-- 1 : 외국인
-
-#### 4.1.8 도착 요일 변수 생성
-
-생성한 `arrival_date`를 이용하여 요일 정보를 추출한 `arrival_weekday` 변수를 생성하였다.
-
-- 0 : 월요일
-- 1 : 화요일
-- 2 : 수요일
-- 3 : 목요일
-- 4 : 금요일
-- 5 : 토요일
-- 6 : 일요일
-
-요일별 예약 취소 패턴 및 고객 행동 특성을 분석하기 위해 활용하였다.
-
-이 다음에 
-4.2 컬럼 제거, 
-4.3 결측치 처리, 
-4.4 이상치 처리 순으로 쓰면 자연스럽다.
-
-## 4. Feature Engineering
-### 4.1 파생 변수 생성
+## 3. Feature Engineering
+### 3.1 파생 변수 생성
 기존 변수만으로는 고객의 예약 행동 특성을 충분히 반영하기 어렵다고 판단하여 예약 정보, 객실 배정 정보, 고객 정보 등을 활용한 파생 변수를 생성하였다.
 
 | 파생 변수명 | 생성 방법 | 생성 목적 |
@@ -358,7 +171,7 @@ data = data.drop(columns=['reserved_room_type', 'assigned_room_type'])
 
 그럼 보고서 느낌으로는 이렇게 쓰면 됨.
 
-### 4.2 컬럼 제거
+### 3.2 컬럼 제거
 
 Feature Engineering 이후 모델 학습에 불필요하거나 데이터 누수(Data Leakage) 위험이 있는 컬럼을 제거하였다.
 
@@ -370,6 +183,18 @@ Feature Engineering 이후 모델 학습에 불필요하거나 데이터 누수(
 - 범주형 변수의 Cardinality 분석
 - 생성한 파생 변수와의 중복 여부
 - 호텔 예약 도메인 지식 활용
+
+#### 데이터 분포 분석 (Histogram)
+
+<p align="center">
+  <img src="../assets/히스토그램.png" width="800">
+</p>
+
+#### 타겟 변수와의 상관관계 분석
+
+<p align="center">
+  <img src="../assets/correlation.png" width="800">
+</p>
 
 #### 제거된 컬럼
 
@@ -406,13 +231,13 @@ Feature Engineering 이후 모델 학습에 불필요하거나 데이터 누수(
 
 `agent`의 경우 여행사 예약 여부만을 나타내는 `Agent_check` 변수를 생성하여 활용하고 원본 컬럼은 제거하였다.
 
-## 5. Train/Test Split
+## 4. Train/Test Split
 
 모델 학습 과정에서 발생할 수 있는 데이터 누수(Data Leakage)를 방지하기 위해 데이터 분할을 먼저 수행한 후 전처리를 진행하였다.
 
 일반적으로 결측치 처리, 스케일링, 인코딩 등의 전처리를 전체 데이터에 대해 먼저 수행할 경우 Test 데이터의 정보가 학습 과정에 간접적으로 반영될 수 있다. 이러한 문제를 방지하기 위해 Train/Test Split 이후 학습 데이터 기준으로 전처리를 수행하였다.
 
-### 5.1 데이터 분할
+### 4.1 데이터 분할
 
 모델 학습을 위해 독립 변수(X)와 타겟 변수(y)를 다음과 같이 정의하였다.
 
@@ -421,7 +246,7 @@ Feature Engineering 이후 모델 학습에 불필요하거나 데이터 누수(
 
 또한 `arrival_date` 컬럼은 모델 입력 변수에서 제외하였다.
 
-### 5.2 arrival_date 컬럼 제외
+### 4.2 arrival_date 컬럼 제외
 
 Feature Engineering 과정에서 생성한 `arrival_date`는 실제 날짜 정보를 포함하고 있지만 모델 입력 변수로는 사용하지 않았다.
 
@@ -431,7 +256,7 @@ Feature Engineering 과정에서 생성한 `arrival_date`는 실제 날짜 정�
 
 본 프로젝트는 시계열 예측(Time Series Forecasting)이 아닌 개별 예약 건에 대한 취소 여부를 예측하는 이진 분류(Binary Classification) 문제이므로 날짜 자체보다는 날짜로부터 추출한 요일 정보(`arrival_weekday`)를 활용하였다.
 
-### 5.3 랜덤 데이터 분할
+### 4.3 랜덤 데이터 분할
 
 본 데이터셋은 시간의 흐름에 따른 미래 예측이 목적이 아닌 개별 예약 건의 취소 여부 예측이 목적이다.
 
@@ -439,7 +264,7 @@ Feature Engineering 과정에서 생성한 `arrival_date`는 실제 날짜 정�
 
 Scikit-Learn의 `train_test_split()` 함수를 사용하여 데이터를 8:2 비율로 분할하였으며, 재현 가능한 결과를 위해 `random_state=42`를 설정하였다.
 
-### 5.4 분할 결과
+### 4.4 분할 결과
 
 | Dataset | 행 수 | 비율 |
 |----------|---------:|---------:|
@@ -448,7 +273,7 @@ Scikit-Learn의 `train_test_split()` 함수를 사용하여 데이터를 8:2 비
 
 분할 결과 학습 데이터는 모델 학습 및 전처리 기준 데이터로 활용하였으며, 테스트 데이터는 최종 성능 평가에만 사용하였다.
 
-### 5.5 이후 전처리 진행
+### 4.5 이후 전처리 진행
 
 데이터 분할 이후 다음 전처리 과정을 순차적으로 수행하였다.
 
@@ -458,16 +283,22 @@ Scikit-Learn의 `train_test_split()` 함수를 사용하여 데이터를 8:2 비
 
 모든 전처리 과정은 학습 데이터에 대해 `fit`을 수행한 후 테스트 데이터에는 동일한 변환만 적용하여 데이터 누수를 방지하였다.
 
-## 6. 이상치 제거
+## 5. 이상치 제거
 
 이상치 확인을 위해 `total_people`, `adults`, `children`, `babies`, `adr` 컬럼에 대해 Box Plot을 시각화하였다.
 
-### 6.1 이상치 탐색
+#### Box-Plot으로 이상치 시각화
+
+<p align="center">
+  <img src="../assets/이상치 분석을 위한 box_plot.png" width="800">
+</p>
+
+### 5.1 이상치 탐색
 
 - Box Plot을 통해 수치형 변수의 분포와 극단값을 확인
 - `adr`(객실 평균 요금)과 `total_people`(총 투숙객 수)에서 일부 이상치 존재 확인
 
-### 6.2 이상치 제거 기준
+### 5.2 이상치 제거 기준
 
 | 컬럼 | 제거 기준 |
 |--------|--------|
@@ -478,11 +309,11 @@ Scikit-Learn의 `train_test_split()` 함수를 사용하여 데이터를 8:2 비
 
 이상치 제거는 학습 데이터(`X_train`)에 대해서만 수행하였으며, 테스트 데이터는 실제 운영 환경을 반영하기 위해 별도의 제거 작업을 수행하지 않았다.
 
-## 7. 결측치 처리 및 인코딩
+## 6. 결측치 처리 및 인코딩
 
 Train/Test Split 이후 `ColumnTransformer`와 `Pipeline`을 활용하여 수치형 변수와 범주형 변수에 대한 전처리를 수행하였다.
 
-### 7.1 수치형 변수 처리
+### 6.1 수치형 변수 처리
 
 수치형 변수는 결측치를 중앙값(Median)으로 대체한 후 `StandardScaler`를 적용하여 표준화하였다.
 
@@ -493,7 +324,7 @@ Train/Test Split 이후 `ColumnTransformer`와 `Pipeline`을 활용하여 수치
 
 중앙값은 이상치의 영향을 적게 받기 때문에 평균보다 안정적인 결측치 대체 방법으로 판단하였다.
 
-### 7.2 범주형 변수 처리
+### 6.2 범주형 변수 처리
 
 범주형 변수는 결측치를 최빈값(Mode)으로 대체한 후 One-Hot Encoding을 적용하였다.
 
@@ -504,7 +335,7 @@ Train/Test Split 이후 `ColumnTransformer`와 `Pipeline`을 활용하여 수치
 
 인코딩 과정에서는 `handle_unknown='ignore'` 옵션을 적용하여 테스트 데이터에 학습 시 존재하지 않았던 범주가 등장하더라도 오류가 발생하지 않도록 설정하였다.
 
-### 7.3 최종 전처리 파이프라인
+### 6.3 최종 전처리 파이프라인
 
 전처리 과정의 일관성을 유지하고 데이터 누수를 방지하기 위해 `ColumnTransformer`와 `Pipeline`을 활용하여 수치형 변수와 범주형 변수의 전처리를 하나의 파이프라인으로 구성하였다.
 
