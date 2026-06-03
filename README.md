@@ -206,7 +206,9 @@ demo_data.csv
 
 ```
 📦 SKN31-2nd-3Team
- ┣ 📂 산출물                                # 데이터 전 처리 결과서, 모델 학습 결과서
+ ┣ 📂 산출물
+ ┃  └ 📄 Preprocessing_Results.md           # 데이터 전 처리 결과서
+ ┃  └ 📄 호텔_예약취소_모델학습보고서.md      # 모델 학습 결과서
  ┣ 📂 assets                                
  ┃  └ 📄 profile.png                        # README 프로필 이미지
  ┣ 📂 Dataset
