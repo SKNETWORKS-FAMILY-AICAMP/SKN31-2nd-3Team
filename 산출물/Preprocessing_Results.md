@@ -80,7 +80,6 @@
 | foreigner | 국적이 PRT(포르투갈)인지 여부 | 내국인/외국인 구분 |
 | arrival_weekday | arrival_date의 요일 정보 추출 | 요일별 예약 패턴 분석 |
 
-markdown으로 전처리 결과서 써야되는데 헤더만 만들어줘
 # 데이터 전처리 결과서
 
 ## 1. 데이터 출처
@@ -166,10 +165,7 @@ markdown으로 전처리 결과서 써야되는데 헤더만 만들어줘
     'agent', 'company',          # 중복컬럼(이미 arrival date로 합쳤음) : arrival_date_year, arrival_date_week_number, arrival_date_month
     'reservation_status_date',   # country: 200개의 국가 encoding하면 컬럼 터짐. is_foreigner(파생컬럼) 컬럼으로 대체
     'country', 'deposit_type',   # company: 컬럼은 결측치가 너무 많음.
-]#reserved_room_type, assigned_room_type도 의심됨. 이미 방이 바꼈는지의 변수존재. 
-data = data.drop(columns=['reserved_room_type', 'assigned_room_type'])
-
-그럼 보고서 느낌으로는 이렇게 쓰면 됨.
+]
 
 ### 3.2 컬럼 제거
 
