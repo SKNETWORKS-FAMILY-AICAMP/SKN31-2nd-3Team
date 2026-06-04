@@ -176,7 +176,19 @@ Agent_check              # 에이전트 예약 여부 (0/1)
 foreigner                # 비포르투갈인 여부 (0/1)
 arrival_weekday          # 체크인 요일
 ```
-
+**피처 엔지니어링** (학습 시 불필요, 성능저하 유발 컬럼 드랍)
+```python
+arrival_date_year        # 연도 정보 (편향 가능)
+arrival_date_month       # 월 정보 (중복 정보)
+arrival_date             # 원본 날짜 (파생 후 제거)
+reservation_status       # 데이터 누수 (정답 정보 포함)
+reservation_status_date  # 사후 정보 → 학습 불가
+assigned_room_type      # room_assignment_changed로 대체
+reserved_room_type      # 비교 후 불필요
+country                 # foreigner 변수로 대체
+agent                   # Agent_check로 대체
+company                 # 결측 많고 영향 낮음
+```
 ### Development Environment
 
 | 기술 | 사용 목적 |
@@ -394,7 +406,7 @@ Expected   : 위 3가지 조건에 해당하지 않는 나머지 모든 예약
 
 ## 💬 회고
 
-박동관 :
+박동관 : 이번 프로젝트에서는 기존에 이미 전처리된 데이터를 이용해 모델을 돌려본 경험은 있었지만, 직접 데이터 전처리 전 과정을 수행한 것은 처음이었습니다. 단순히 결측치를 채우고 스케일링하는 것만이 전처리의 전부라고 생각했지만, 인코딩과 도메인 지식을 활용한 피처 엔지니어링까지 포함된다는 점을 새롭게 알게 되었습니다. 특히 직접 생성한 파생 변수가 모델 성능 향상에 크게 기여하는 것을 보면서 매우 흥미롭고 뿌듯함을 느꼈습니다. 또한 PM 역할을 맡아 데이터 조사부터 전처리, 모델링, 서비스 구현까지 전반을 관리하면서 프로젝트 흐름을 깊이 있게 이해할 수 있었습니다. PM은 책임과 할 일이 많은 역할이었지만 그만큼 다양한 과정을 경험할 수 있어 많은 것을 배울 수 있는 좋은 경험이었습니다.
 
 
 박종현 :
