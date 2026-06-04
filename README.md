@@ -94,6 +94,7 @@
 <br>
 (취소확률 높은 고객을 예측해, 자동연락하도록 알람↓)
 
+<br>
 <img width="530" height="260" alt="image" src="https://github.com/user-attachments/assets/0726ccfa-3fa8-4fa6-8805-e34e8d2f7a04" />
 
 
