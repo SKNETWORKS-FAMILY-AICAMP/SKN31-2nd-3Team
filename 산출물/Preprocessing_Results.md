@@ -151,7 +151,7 @@
 
 | 파생 변수명 | 생성 방법 | 생성 목적 |
 |------------|------------|------------|
-| arrival_date | arrival_date_year, arrival_date_month, arrival_date_day_of_month 결합 | 실제 도착일 정보 생성 |
+| arrival_date | arrival_date_year, arrival_date_month, arrival_date_day_of_month 결합 | 실제 도착일 정보 생성(훈련에는 쓰이지 않음)|
 | room_assignment_changed | 예약 객실 유형과 실제 배정 객실 유형 비교 | 객실 변경 여부 파악 |
 | total_stay_nights | 주말 숙박일 + 평일 숙박일 | 총 숙박 기간 계산 |
 | total_people | 성인 + 어린이 + 유아 수 | 실제 투숙 인원 수 계산 |
@@ -199,14 +199,13 @@ Feature Engineering 이후 모델 학습에 불필요하거나 데이터 누수(
 | reservation_status | 예약 취소 여부가 직접 반영된 정보로 데이터 누수 발생 |
 | reservation_status_date | 예약 결과가 확정된 이후 생성되는 정보로 데이터 누수 발생 |
 | deposit_type | 예약 취소 여부와 강하게 연관되어 있으며 실제 예측 시점에서 활용이 어려움 |
-| arrival_date_year | arrival_date 컬럼 생성 후 중복 정보 |
-| arrival_date_month | arrival_date 컬럼 생성 후 중복 정보 |
+| arrival_date_year | 데이터가 2015~2017년 기간에만 한정되어 있어 특정 연도 정보에 과적합될 가능성이 있으며, 향후 데이터 예측 시 일반화 성능 저하가 예상됨 |
+| arrival_date_month | Feature Engineering 과정에서 생성한 월 숫자 정보 컬럼을 사용하여 대체 |
 | agent | 결측치 비율이 높으며 Agent_check 파생 변수로 대체 |
 | company | 대부분 결측치로 구성 |
 | country | 국가 종류가 매우 많아 인코딩 시 차원 증가 문제 발생, foreigner 변수로 대체 |
 | reserved_room_type | room_assignment_changed 파생 변수로 대체 |
 | assigned_room_type | room_assignment_changed 파생 변수로 대체 |
-
 #### 데이터 누수(Data Leakage) 컬럼 제거
 
 `reservation_status`, `reservation_status_date`는 예약이 완료된 이후에 생성되는 정보이다.
