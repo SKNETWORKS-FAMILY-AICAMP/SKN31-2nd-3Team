@@ -62,6 +62,10 @@
 바로 대체자를 찾아 공실을 최소화 하도록 프로그램 되었습니다. 
 
 
+<img width="212" height="168" alt="image" src="https://github.com/user-attachments/assets/6ef8c81f-6a01-4630-b146-135a6ad2c08a" />
+
+
+
 ---------------------------------------
 **ㆍ비즈니스적 가치** 
 
@@ -83,8 +87,6 @@
 : 호텔의 비즈니스 매니저들이 실시간으로 통제/관리할수 있는 
   
   사용가능한 프로그램의 제공.
-
-<img width="212" height="168" alt="image" src="https://github.com/user-attachments/assets/6ef8c81f-6a01-4630-b146-135a6ad2c08a" />
 
  ---------------------------------------
  
