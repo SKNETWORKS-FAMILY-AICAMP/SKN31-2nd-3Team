@@ -75,7 +75,7 @@
 
 공실발생을 막고 매출향상으로 이어지게 할수있습니다.
 <br>
-<img width="650" height="300" alt="image" src="https://github.com/user-attachments/assets/0726ccfa-3fa8-4fa6-8805-e34e8d2f7a04" />
+<img width="500" height="260" alt="image" src="https://github.com/user-attachments/assets/0726ccfa-3fa8-4fa6-8805-e34e8d2f7a04" />
 
 
 
