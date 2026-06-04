@@ -73,16 +73,18 @@
 <br>
 <img width="650" height="300" alt="image" src="https://github.com/user-attachments/assets/0726ccfa-3fa8-4fa6-8805-e34e8d2f7a04" />
 
-<img width="212" height="168" alt="image" src="https://github.com/user-attachments/assets/6ef8c81f-6a01-4630-b146-135a6ad2c08a" />
+
 
 
 
  ---------------------------------------
 **・프로그램 개발목적**
 
-: 호텔의 비즈니스 매니저들이 실시간으로 공실률을 통제/관리할수 있는 
+: 호텔의 비즈니스 매니저들이 실시간으로 통제/관리할수 있는 
   
-  실제 사용가능한 프로그램의 제공.
+  사용가능한 프로그램의 제공.
+
+<img width="212" height="168" alt="image" src="https://github.com/user-attachments/assets/6ef8c81f-6a01-4630-b146-135a6ad2c08a" />
 
  ---------------------------------------
  
