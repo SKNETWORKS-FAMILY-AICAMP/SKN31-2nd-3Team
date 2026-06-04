@@ -65,7 +65,7 @@ def run():
     kpi(k1, "현재 투숙 중",  f"{inhouse_cnt}건",          f"점유율 {occupancy:.0f}%")
     kpi(k2, "오늘 체크아웃", f"{checkout_cnt}건",         "오후에 빌 예정")
     kpi(k3, "가용 객실",     f"{total_available}실",      f"빈방 {available_rooms} + 체크아웃 {checkout_cnt}")
-    kpi(k4, "오늘 체크인",   f"{checkin_cnt}건",          "취소 제외, 실제 도착 예정")
+    kpi(k4, "오늘 체크인 예정",   f"{checkin_cnt}건",          "오늘 도착 예정")
     kpi(k5, "예측 취소",     f"{expected_cancel:.1f}건",  "모델 예측 (오늘 도착 기준)")
 
     st.divider()
