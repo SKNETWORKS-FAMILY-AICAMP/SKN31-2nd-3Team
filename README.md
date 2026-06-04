@@ -77,7 +77,9 @@
 예약취소가 되더라도, 아직 예약대기자가 있을때 대체고객을 즉시 배정할수 있으므로
 
 공실발생을 막고 매출향상으로 이어지게 할수있습니다.
+
 <br>
+(취소확률 높은 고객을 예측해, 자동연락하도록 알람↓)
 <img width="530" height="260" alt="image" src="https://github.com/user-attachments/assets/0726ccfa-3fa8-4fa6-8805-e34e8d2f7a04" />
 
 
